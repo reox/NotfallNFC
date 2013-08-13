@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notfall</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Vorname, Nachname</string>
+    <string name="medication">Medikamente</string>
+    <string name="diseases">Krankheiten</string>
+    <string name="save">Speichern</string>
+    <string name="surname">Vorname</string>
+    <string name="nname">Name</string>
+    <string name="address">Adresse</string>
+    <string name="socialnumber">SVNR (DDMMYYNNNN)</string>
+    <string name="freetext">Freitext</string>
+    <string name="title_activity_nfcwrite">NFCWriteActivity</string>
+    <string name="nfctag">Legen Sie ein NFC Tag auf ihr Gerät</string>
+    <string name="title_activity_medication">MedicationActivity</string>
+    <string name="new_medication">Neues Medikament</string>
+    <string name="done">Fertig</string>
+
+</resources>
