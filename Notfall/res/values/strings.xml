@@ -42,4 +42,5 @@
     </string-array>
         <string name="HelpString">Geben Sie ihre Notfalldaten in die Felder ein und drücken Sie dann auf Speichern.</string>
         <string name="save_local">Lokal speichern</string>
+        <string name="diseasehelp">Krankheit eingeben</string>
 </resources>
