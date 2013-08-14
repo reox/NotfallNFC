@@ -38,7 +38,19 @@
         </activity>
         <activity
             android:name="at.reox.emergency.MedicationActivity"
-            android:label="@string/title_activity_medication" >
+            android:label="@string/title_activity_medication" 
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="at.reox.emergency.DiseaseActivity"
+            android:label="@string/title_activity_disease"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
         </activity>
     </application>
 

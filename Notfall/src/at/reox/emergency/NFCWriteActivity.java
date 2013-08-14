@@ -12,6 +12,7 @@ import android.nfc.tech.NfcV;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class NFCWriteActivity extends Activity {
@@ -34,10 +35,22 @@ public class NFCWriteActivity extends Activity {
 	if (data != null) {
 	    ((EmergencyApplication) getApplication()).setData(data);
 	    Log.d(TAG, "found data...");
+	    TextView t = (TextView) findViewById(R.id.sizeInformation);
+	    t.setText("Minimum Tag Size required: " + data.length + "Bytes");
 	}
 
 	Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 	if (tag != null) {
+	    Log.d(TAG, "Got a tag that supports these Tech: " + Arrays.toString(tag.getTechList()));
+	    try {
+		Log.d(TAG, "Read a whole Tag: " + Arrays.toString(read(tag)));
+	    } catch (IOException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	    } catch (FormatException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	    }
 
 	    Log.d(TAG, "Found a NFC Tag: " + tag);
 	    try {
@@ -49,6 +62,36 @@ public class NFCWriteActivity extends Activity {
 		Log.e(TAG, "Exception", e);
 	    }
 	}
+    }
+
+    private byte[] read(Tag tag) throws IOException, FormatException {
+	byte[] data = new byte[64 * 4];
+	Arrays.fill(data, (byte) 0x0);
+	if (tag == null) {
+	    return data;
+	}
+	NfcV nfc = NfcV.get(tag);
+	byte[] ID = tag.getId();
+
+	nfc.connect();
+
+	for (int i = 0; i < 64; i++) {
+	    byte[] arrByte = new byte[11];
+
+	    // Flags
+	    arrByte[0] = 0x22; // 0x20 = Addressed Mode, 0x02 = Fast Mode
+	    // Command
+	    arrByte[1] = 0x20; // read single block
+	    // ID
+	    System.arraycopy(ID, 0, arrByte, 2, 8);
+	    // block number
+	    arrByte[10] = (byte) (i);
+	    byte[] result = nfc.transceive(arrByte);
+	    System.arraycopy(result, 0, data, i * 4, 4);
+	}
+
+	nfc.close();
+	return data;
     }
 
     private void write(Tag tag) throws IOException, FormatException {
@@ -74,7 +117,7 @@ public class NFCWriteActivity extends Activity {
 	    byte[] arrByte = new byte[15];
 
 	    // Flags
-	    arrByte[0] = 0x22; // Tag only supports flags = 0
+	    arrByte[0] = (byte) 0x22; // Tag only supports flags = 0
 	    // Command
 	    arrByte[1] = 0x21;
 	    // ID
@@ -116,6 +159,7 @@ public class NFCWriteActivity extends Activity {
 	cmd[1] = (byte) 0x2B; // command
 	System.arraycopy(ID, 0, cmd, 2, ID.length); // UID
 	byte[] infoRmation = mNfcV.transceive(cmd);
+	Log.d(TAG, "RMATION: " + printHexString(infoRmation));
 	byte blockNumber = infoRmation[12];
 	byte oneBlockSize = infoRmation[13];
 
@@ -123,6 +167,19 @@ public class NFCWriteActivity extends Activity {
 	Log.d(TAG, "blockNumber: " + blockNumber + " -- oneBlockSize: " + oneBlockSize);
 	mNfcV.close();
 	return infoRmation;
+    }
+
+    private String printHexString(byte[] data) {
+	StringBuffer s = new StringBuffer();
+	;
+	for (int i = 0; i < data.length; i++) {
+	    String hex = Integer.toHexString(data[i] & 0xFF);
+	    if (hex.length() == 1) {
+		hex = '0' + hex;
+	    }
+	    s.append(hex);
+	}
+	return s.toString();
     }
 
     @Override

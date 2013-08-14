@@ -32,13 +32,29 @@ public class MedicationActivity extends Activity {
 	setContentView(R.layout.activity_medication);
 
 	ListView lv = (ListView) findViewById(R.id.listView1);
+	Intent intent = getIntent();
 
-	data.add(createItem("12345678", "Generic Item"));
+	for (String s : intent.getStringArrayExtra("pzndata")) {
+	    // TODO get from list
+	    data.add(createItem(s, "Generic Item GEN"));
+	}
 
 	simpleAdpt = new SimpleAdapter(this, data, android.R.layout.simple_list_item_2,
 	    new String[] { "name", "pzn" }, new int[] { android.R.id.text1, android.R.id.text2 });
 	lv.setAdapter(simpleAdpt);
 	registerForContextMenu(lv);
+
+	// Show the Up button in the action bar.
+	setupActionBar();
+    }
+
+    /**
+     * Set up the {@link android.app.ActionBar}.
+     */
+    private void setupActionBar() {
+
+	getActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -68,23 +84,36 @@ public class MedicationActivity extends Activity {
 
     }
 
-    public void onDone(View view) {
-	Intent data = new Intent();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+	switch (item.getItemId()) {
+	case android.R.id.home:
+	    // This ID represents the Home or Up button. In the case of this
+	    // activity, the Up button is shown. Use NavUtils to allow users
+	    // to navigate up one level in the application structure. For
+	    // more details, see the Navigation pattern on Android Design:
+	    //
+	    // http://developer.android.com/design/patterns/navigation.html#up-vs-back
+	    //
+	    Intent data = new Intent();
 
-	String[] pzn = new String[this.data.size()];
-	int c = 0;
-	for (Map<String, String> m : this.data) {
-	    pzn[c++] = m.get("pzn");
+	    String[] pzn = new String[this.data.size()];
+	    int c = 0;
+	    for (Map<String, String> m : this.data) {
+		pzn[c++] = m.get("pzn");
+	    }
+
+	    data.putExtra("PZNList", pzn);
+
+	    if (getParent() == null) {
+		setResult(Activity.RESULT_OK, data);
+	    } else {
+		getParent().setResult(Activity.RESULT_OK, data);
+	    }
+	    finish();
+	    return true;
 	}
-
-	data.putExtra("PZNList", pzn);
-
-	if (getParent() == null) {
-	    setResult(Activity.RESULT_OK, data);
-	} else {
-	    getParent().setResult(Activity.RESULT_OK, data);
-	}
-	finish();
+	return super.onOptionsItemSelected(item);
     }
 
     @Override

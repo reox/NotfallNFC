@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Notfall</string>
+    <string name="app_name">Notfalldaten</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="name">Vorname, Nachname</string>
@@ -11,12 +11,35 @@
     <string name="surname">Vorname</string>
     <string name="nname">Name</string>
     <string name="address">Adresse</string>
-    <string name="socialnumber">SVNR (DDMMYYNNNN)</string>
-    <string name="freetext">Freitext</string>
-    <string name="title_activity_nfcwrite">NFCWriteActivity</string>
+    <string name="socialnumber">Sozialversicherungsnummer</string>
+    <string name="freetext">Freitext, zB Notfallnummer, Wichtige Informationen im Notfall</string>
+    <string name="title_activity_nfcwrite">NFC Tag erstellen</string>
     <string name="nfctag">Legen Sie ein NFC Tag auf ihr Gerät</string>
-    <string name="title_activity_medication">MedicationActivity</string>
+    <string name="title_activity_medication">Medikamenten Liste</string>
     <string name="new_medication">Neues Medikament</string>
     <string name="done">Fertig</string>
+    <string name="title_activity_disease">Krankheiten Liste</string>
+    <string name="rhesus">Rhesus Faktor positiv</string>
+    <string name="bloodgroup">Blutgruppe</string>
 
+    <string-array name="bloodgroups">
+        <item>Unbekannt</item>
+        <item>A</item>
+        <item>B</item>
+    	<item>AB</item>
+    	<item>0</item>
+    </string-array>
+    
+    <string-array name="rhesus">
+        <item>Unbekannt</item>
+        <item>Rhesus positiv</item>
+        <item>Rhesus negativ</item>
+    </string-array>
+    <string-array name="kell">
+        <item>Unbekannt</item>
+        <item>Kell positiv</item>
+        <item>Kell negativ</item>
+    </string-array>
+        <string name="HelpString">Geben Sie ihre Notfalldaten in die Felder ein und drücken Sie dann auf Speichern.</string>
+        <string name="save_local">Lokal speichern</string>
 </resources>

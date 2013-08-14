@@ -1,10 +1,11 @@
 package at.reox.emergency.tools;
 
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import android.util.Log;
 
@@ -19,33 +20,97 @@ public class EmergencyData {
     private Date update;
     private String extra;
 
-    private final List<String> PZN;
-    private final List<String> ICD;
+    private int bloodgroup = BLOOD_UNKNOWN;
+    private int rhesus = RHESUS_UNKNOWN;
+    private int kell = KELL_UNKNOWN;
 
-    public final byte TYPE_MEDICATION = 0x01;
-    public final byte TYPE_DISEASE = 0x02;
+    public static final int BLOOD_UNKNOWN = 0;
+    public static final int BLOOD_A = 1;
+    public static final int BLOOD_B = 2;
+    public static final int BLOOD_AB = 3;
+    public static final int BLOOD_0 = 4;
+
+    public static final int RHESUS_UNKNOWN = 0;
+    public static final int RHESUS_POS = 1;
+    public static final int RHESUS_NEG = 2;
+
+    public static final int KELL_UNKNOWN = 0;
+    public static final int KELL_POS = 1;
+    public static final int KELL_NEG = 2;
+
+    private final Set<String> PZN;
+    private final Set<String> ICD;
+
+    public final byte TYPE_EXTRA = 0x01;
+    public final byte TYPE_MEDICATION = 0x01 << 1;
+    public final byte TYPE_DISEASE = 0x01 << 2;
 
     public final int HAS_EXTRA_DATA = 0x01;
     public final int HAS_MEDICATION_DATA = 0x01 << 1;
     public final int HAS_DISEASE_DATA = 0x01 << 2;
 
     public EmergencyData() {
+
 	surname = "";
 	name = "";
 	address = "";
 	svnr = "";
 	extra = "";
 
-	PZN = new ArrayList<String>();
-	ICD = new ArrayList<String>();
+	PZN = new HashSet<String>();
+	ICD = new HashSet<String>();
+
+	setUpdate();
+    }
+
+    public int getBloodgroup() {
+	return bloodgroup;
+    }
+
+    public void setBloodgroup(int bloodgroup) {
+	this.bloodgroup = bloodgroup;
+    }
+
+    public int getRhesus() {
+	return rhesus;
+    }
+
+    public void setRhesus(int rhesus) {
+	this.rhesus = rhesus;
+    }
+
+    public int getKell() {
+	return kell;
+    }
+
+    public void setKell(int kell) {
+	this.kell = kell;
+    }
+
+    public void setUpdate() {
+	update = Calendar.getInstance().getTime();
     }
 
     public void addPZN(String pzn) {
 	PZN.add(pzn);
     }
 
+    public void addPZN(String[] pzn) {
+	for (String s : pzn) {
+	    PZN.add(s);
+	}
+    }
+
+    public void addPZN(Set<String> pzn) {
+	PZN.addAll(pzn);
+    }
+
     public void addICD(String icd) {
 	ICD.add(icd);
+    }
+
+    public void addICD(Set<String> icd) {
+	ICD.addAll(icd);
     }
 
     public void removePZN(String pzn) {
@@ -54,6 +119,14 @@ public class EmergencyData {
 
     public void removeICD(String icd) {
 	ICD.remove(icd);
+    }
+
+    public void clearPZN() {
+	PZN.clear();
+    }
+
+    public void clearICD() {
+	ICD.clear();
     }
 
     public String getSurname() {
@@ -96,6 +169,14 @@ public class EmergencyData {
 	this.extra = extra;
     }
 
+    public Set<String> getPZN() {
+	return PZN;
+    }
+
+    public Set<String> getICD() {
+	return ICD;
+    }
+
     public Date getUpdate() {
 	return update;
     }
@@ -103,7 +184,7 @@ public class EmergencyData {
     public byte[] getBinaryData() {
 	ByteBuffer b = ByteBuffer.allocate(256);
 
-	int header = 0x0000;
+	byte header = 0x00;
 
 	if (extra.length() > 0) {
 	    header |= HAS_EXTRA_DATA;
@@ -115,40 +196,67 @@ public class EmergencyData {
 	    header |= HAS_DISEASE_DATA;
 	}
 
-	b.putInt(header);
+	b.put(header);
 
 	// add the name
-	b.putInt(name.length());
+	b.putShort((short) name.length());
 	b.put(name.getBytes());
-	b.putShort((short) 0x00);
+	b.put((byte) 0x00);
 
 	// add the surname
-	b.putInt(surname.length());
+	b.putShort((short) surname.length());
 	b.put(surname.getBytes());
-	b.putShort((short) 0x00);
+	b.put((byte) 0x00);
 
 	// Add the address
-	b.putInt(address.length());
+	b.putShort((short) address.length());
 	b.put(address.getBytes());
-	b.putShort((short) 0x00);
+	b.put((byte) 0x00);
 
-	// TODO proper length check
-	b.put(svnr.getBytes());
-
-	// TODO add the medication/disease data here
-
-	if (extra.length() > 0) {
-	    b.putInt(extra.length());
-	    b.put(extra.getBytes());
-	    b.putShort((short) 0x00);
+	// svnr is always nnnX DDMMYY.
+	// so we can use an 33 bit = 5 Byte value here!
+	if (svnr.equals("")) {
+	    b.put((byte) 0x00);
+	    b.putInt(0x00);
+	} else {
+	    long number = Long.parseLong(svnr);
+	    b.put((byte) ((number >> 32) & 0xFF)); // strip off first byte
+	    b.putInt((int) (number & 0xFFFFFFFF)); // get 32bit
 	}
 
-	// TODO add the update Date here
+	// Bloodgroup
+	// we have one byte for that...
+	// 4 bit for the bloodgroup, 2 bit each for rhesus and kell.
+	// if one of these is 0, its unknown.
+	Log.d(TAG, "Calculating Bloodgroup: "
+	    + getHex(new byte[] { (byte) ((bloodgroup << 4) | (rhesus << 2) | kell) }));
+	b.put((byte) ((bloodgroup << 4) | (rhesus << 2) | kell));
+
+	if (PZN.size() > 0) {
+	    b.put(TYPE_MEDICATION);
+	    b.putInt(PZN.size());
+	    // PZN has 8 integers, old ones have 7, add padding 0 then...
+	    // that means we need 27 bits for the number...
+	    // so for easy access we store it as 4byte integer
+	    for (String s : PZN) {
+		b.putInt(Integer.parseInt(s));
+	    }
+	}
+	// TODO add the disease data here
+
+	if (extra.length() > 0) {
+	    b.put(TYPE_EXTRA);
+	    b.putInt(extra.length());
+	    b.put(extra.getBytes());
+	    b.put((byte) 0x00);
+	}
+
+	b.putLong(update.getTime());
 
 	// adding a CRC of the whole Array
 	int crc = CRC.crc16(Arrays.copyOf(b.array(), b.position()));
 	Log.d(TAG, "Calculating CRC: " + crc);
-	b.putInt(crc);
+	b.putShort((short) (crc & 0xFFFF));
 
 	byte[] raw = new byte[b.position()];
 	raw = Arrays.copyOf(b.array(), b.position());
