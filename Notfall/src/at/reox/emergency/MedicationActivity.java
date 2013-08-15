@@ -88,32 +88,36 @@ public class MedicationActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
 	switch (item.getItemId()) {
 	case android.R.id.home:
-	    // This ID represents the Home or Up button. In the case of this
-	    // activity, the Up button is shown. Use NavUtils to allow users
-	    // to navigate up one level in the application structure. For
-	    // more details, see the Navigation pattern on Android Design:
-	    //
-	    // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-	    //
-	    Intent data = new Intent();
-
-	    String[] pzn = new String[this.data.size()];
-	    int c = 0;
-	    for (Map<String, String> m : this.data) {
-		pzn[c++] = m.get("pzn");
-	    }
-
-	    data.putExtra("PZNList", pzn);
-
-	    if (getParent() == null) {
-		setResult(Activity.RESULT_OK, data);
-	    } else {
-		getParent().setResult(Activity.RESULT_OK, data);
-	    }
-	    finish();
+	    saveData();
 	    return true;
 	}
 	return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+	super.onBackPressed();
+	saveData();
+    }
+
+    private void saveData() {
+	Intent data = new Intent();
+
+	String[] pzn = new String[this.data.size()];
+	int c = 0;
+	for (Map<String, String> m : this.data) {
+	    pzn[c++] = m.get("pzn");
+	}
+
+	data.putExtra("PZNList", pzn);
+
+	if (getParent() == null) {
+	    setResult(Activity.RESULT_OK, data);
+	} else {
+	    getParent().setResult(Activity.RESULT_OK, data);
+	}
+	finish();
+
     }
 
     @Override
