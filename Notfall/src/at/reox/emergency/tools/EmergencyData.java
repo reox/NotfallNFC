@@ -266,7 +266,7 @@ public class EmergencyData {
 
 	if (PZN.size() > 0) {
 	    b.put(TYPE_MEDICATION);
-	    b.putShort((short) PZN.size());
+	    b.putShort((short) (PZN.size() * 4));
 	    // PZN has 8 integers, old ones have 7, add padding 0 then...
 	    // that means we need 27 bits for the number...
 	    // so for easy access we store it as 4byte integer
@@ -274,10 +274,9 @@ public class EmergencyData {
 		b.putInt(Integer.parseInt(s));
 	    }
 	}
-	// TODO add the disease data here
 	if (ICD.size() > 0) {
 	    b.put(TYPE_DISEASE);
-	    b.putShort((short) ICD.size());
+	    b.putShort((short) (ICD.size() * 3));
 	    for (String s : ICD) {
 		// first byte is for character
 		b.put((byte) Arrays.asList(chars).indexOf(s.charAt(0)));
