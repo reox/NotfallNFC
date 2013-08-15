@@ -13,6 +13,9 @@ public class EmergencyData {
 
     private final String TAG = this.getClass().getName();
 
+    private final char[] chars = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+	'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
     private String surname;
     private String name;
     private String address;
@@ -263,7 +266,7 @@ public class EmergencyData {
 
 	if (PZN.size() > 0) {
 	    b.put(TYPE_MEDICATION);
-	    b.putInt(PZN.size());
+	    b.putShort((short) PZN.size());
 	    // PZN has 8 integers, old ones have 7, add padding 0 then...
 	    // that means we need 27 bits for the number...
 	    // so for easy access we store it as 4byte integer
@@ -272,6 +275,25 @@ public class EmergencyData {
 	    }
 	}
 	// TODO add the disease data here
+	if (ICD.size() > 0) {
+	    b.put(TYPE_DISEASE);
+	    b.putShort((short) ICD.size());
+	    for (String s : ICD) {
+		// first byte is for character
+		b.put((byte) Arrays.asList(chars).indexOf(s.charAt(0)));
+
+		String[] numbers = s.substring(1).split("\\.");
+		int[] n = new int[2];
+		Arrays.fill(n, 0x7F); // Default Value if not set
+		for (int i = 0; i < numbers.length; i++) {
+		    n[i] = Integer.parseInt(numbers[i]);
+		}
+		for (int i : n) {
+		    b.put((byte) i);
+		}
+
+	    }
+	}
 
 	if (extra.length() > 0) {
 	    b.put(TYPE_EXTRA);
@@ -307,6 +329,12 @@ public class EmergencyData {
 	    hexChars[(j * 2) + 1] = hexArray[v & 0x0F];
 	}
 	return new String(hexChars);
+    }
+
+    public void addICD(String[] icd2) {
+	for (String s : icd2) {
+	    ICD.add(s);
+	}
     }
 
 }

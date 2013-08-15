@@ -12,17 +12,20 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 import at.reox.emergency.tools.IcdObject;
 
 public class DiseaseActivity extends Activity {
@@ -124,7 +127,21 @@ public class DiseaseActivity extends Activity {
 	    //
 	    // http://developer.android.com/design/patterns/navigation.html#up-vs-back
 	    //
-	    NavUtils.navigateUpFromSameTask(this);
+	    Intent data = new Intent();
+
+	    String[] pzn = new String[this.data.size()];
+	    int c = 0;
+	    for (Map<String, String> m : this.data) {
+		pzn[c++] = m.get("icd");
+	    }
+
+	    data.putExtra("ICDList", pzn);
+
+	    if (getParent() == null) {
+		setResult(Activity.RESULT_OK, data);
+	    } else {
+		getParent().setResult(Activity.RESULT_OK, data);
+	    }
 	    finish();
 	    return true;
 	}
@@ -136,6 +153,36 @@ public class DiseaseActivity extends Activity {
 	item.put("icd", pzn);
 	item.put("name", name);
 	return item;
+    }
+
+    private int currentPos = -1;
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+
+	super.onCreateContextMenu(menu, v, menuInfo);
+	AdapterContextMenuInfo aInfo = (AdapterContextMenuInfo) menuInfo;
+
+	// We know that each row in the adapter is a Map
+	HashMap<String, String> map = (HashMap<String, String>) simpleAdpt.getItem(aInfo.position);
+
+	menu.setHeaderTitle(map.get("name"));
+	menu.add(1, 2, 2, "Löschen");
+	currentPos = aInfo.position;
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+	if ((item.getItemId() == 2) && (item.getGroupId() == 1)) {
+	    // delete
+	    data.remove(simpleAdpt.getItem(currentPos));
+	    simpleAdpt.notifyDataSetChanged();
+
+	    Toast.makeText(this, "Krankheit wurde entfernt", Toast.LENGTH_LONG).show();
+	    return true;
+	}
+	return super.onContextItemSelected(item);
     }
 
 }

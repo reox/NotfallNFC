@@ -308,8 +308,14 @@ public class MainActivity extends Activity {
 
 	}
 	if ((requestCode == 200) && (resultCode == Activity.RESULT_OK)) {
-	    d.clearICD();
-	    // TODO ICD10 Code
+	    String[] icd = intent.getStringArrayExtra("ICDList");
+	    if (icd != null) {
+		d.clearICD();
+		Log.d(TAG, "Got some ICD: " + Arrays.toString(icd));
+		d.addICD(icd);
+		Button b = (Button) findViewById(R.id.button2);
+		b.setText(getString(R.string.diseases) + " (" + icd.length + ")");
+	    }
 	}
     }
 
