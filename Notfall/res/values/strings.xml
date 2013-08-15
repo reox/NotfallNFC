@@ -43,4 +43,7 @@
         <string name="HelpString">Geben Sie ihre Notfalldaten in die Felder ein und drücken Sie dann auf Speichern.</string>
         <string name="save_local">Lokal speichern</string>
         <string name="diseasehelp">Krankheit eingeben</string>
+        <string name="male">männlich</string>
+        <string name="female">weiblich</string>
+        <string name="organdonor">Organspender</string>
 </resources>

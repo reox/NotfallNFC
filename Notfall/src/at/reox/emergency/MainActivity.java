@@ -17,6 +17,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 import at.reox.emergency.tools.EmergencyData;
@@ -49,8 +50,18 @@ public class MainActivity extends Activity {
 	((EditText) findViewById(R.id.extraText)).setText(d.getExtra());
 	((CheckBox) findViewById(R.id.savelocal)).setChecked(sharedPref.getBoolean("savelocal",
 	    false));
+	((CheckBox) findViewById(R.id.checkorgan)).setChecked(sharedPref.getBoolean("organdonor",
+	    false));
+
 	d.addPZN(sharedPref.getStringSet("pzn", new HashSet<String>()));
 	d.addICD(sharedPref.getStringSet("icd", new HashSet<String>()));
+
+	d.setSex(sharedPref.getInt("sex", 0));
+	if (d.getSex() == EmergencyData.MALE) {
+	    ((RadioButton) findViewById(R.id.sexmale)).setChecked(true);
+	} else {
+	    ((RadioButton) findViewById(R.id.sexfemale)).setChecked(true);
+	}
 
 	Button b = (Button) findViewById(R.id.button1);
 	b.setText(getString(R.string.medication) + " (" + d.getPZN().size() + ")");
@@ -189,6 +200,25 @@ public class MainActivity extends Activity {
 	});
     }
 
+    public void onRadioButtonClicked(View view) {
+	// Is the button now checked?
+	boolean checked = ((RadioButton) view).isChecked();
+
+	// Check which radio button was clicked
+	switch (view.getId()) {
+	case R.id.sexmale:
+	    if (checked) {
+		d.setSex(EmergencyData.MALE);
+	    }
+	    break;
+	case R.id.sexfemale:
+	    if (checked) {
+		d.setSex(EmergencyData.FEMALE);
+	    }
+	    break;
+	}
+    }
+
     public void onSaveClick(View view) {
 	boolean error = false;
 	for (int id : new int[] { R.id.name, R.id.surname, R.id.address, R.id.svnr }) {
@@ -205,6 +235,8 @@ public class MainActivity extends Activity {
 	    d.setAddress(((EditText) findViewById(R.id.address)).getText().toString());
 	    d.setExtra(((EditText) findViewById(R.id.extraText)).getText().toString());
 	    d.setSvnr(((EditText) findViewById(R.id.svnr)).getText().toString());
+
+	    d.setOrganDonor(((CheckBox) findViewById(R.id.checkorgan)).isChecked());
 
 	    SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
 	    SharedPreferences.Editor editor = sharedPref.edit();
@@ -225,6 +257,11 @@ public class MainActivity extends Activity {
 		    ((Spinner) findViewById(R.id.kellfaktor)).getSelectedItemPosition());
 		editor.putStringSet("pzn", d.getPZN());
 		editor.putStringSet("icd", d.getICD());
+		editor.putInt("sex",
+		    ((RadioButton) findViewById(R.id.sexmale)).isChecked() ? EmergencyData.MALE
+			: EmergencyData.FEMALE);
+		editor.putBoolean("organdonor",
+		    ((CheckBox) findViewById(R.id.checkorgan)).isChecked());
 
 		editor.commit();
 	    } else {

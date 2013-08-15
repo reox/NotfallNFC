@@ -43,7 +43,7 @@ public class DiseaseActivity extends Activity {
 	HashMap<String, String> lookup = new HashMap<String, String>();
 	try {
 	    InputStream input = getAssets().open("icd10.txt");
-	    BufferedReader br = new BufferedReader(new InputStreamReader(input));
+	    BufferedReader br = new BufferedReader(new InputStreamReader(input, "ISO-8859-1"));
 
 	    String line;
 	    while ((line = br.readLine()) != null) {
@@ -72,7 +72,7 @@ public class DiseaseActivity extends Activity {
 	Log.d(TAG, "Read " + codes.size() + " Items");
 
 	final ArrayAdapter<IcdObject> adapter = new ArrayAdapter<IcdObject>(this,
-	    android.R.layout.select_dialog_item, codes);
+	    android.R.layout.simple_list_item_1, codes);
 	AutoCompleteTextView at = (AutoCompleteTextView) findViewById(R.id.diseaseAutoComplete);
 	at.setThreshold(3);
 	at.setAdapter(adapter);

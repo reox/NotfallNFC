@@ -19,6 +19,8 @@ public class EmergencyData {
     private String svnr;
     private Date update;
     private String extra;
+    private int sex;
+    private boolean organdonor = false;
 
     private int bloodgroup = BLOOD_UNKNOWN;
     private int rhesus = RHESUS_UNKNOWN;
@@ -38,6 +40,9 @@ public class EmergencyData {
     public static final int KELL_POS = 1;
     public static final int KELL_NEG = 2;
 
+    public static final int MALE = 0;
+    public static final int FEMALE = 1;
+
     private final Set<String> PZN;
     private final Set<String> ICD;
 
@@ -56,11 +61,28 @@ public class EmergencyData {
 	address = "";
 	svnr = "";
 	extra = "";
+	sex = MALE;
 
 	PZN = new HashSet<String>();
 	ICD = new HashSet<String>();
 
 	setUpdate();
+    }
+
+    public boolean isOrganDonor() {
+	return organdonor;
+    }
+
+    public void setOrganDonor(boolean organdonor) {
+	this.organdonor = organdonor;
+    }
+
+    public void setSex(int sex) {
+	this.sex = sex;
+    }
+
+    public int getSex() {
+	return sex;
     }
 
     public int getBloodgroup() {
@@ -184,6 +206,7 @@ public class EmergencyData {
     public byte[] getBinaryData() {
 	ByteBuffer b = ByteBuffer.allocate(256);
 
+	// Create header
 	byte header = 0x00;
 
 	if (extra.length() > 0) {
@@ -197,6 +220,12 @@ public class EmergencyData {
 	}
 
 	b.put(header);
+
+	// Flags
+	byte flags = 0x00;
+	flags |= (sex & 0x1);
+	flags |= (organdonor ? 1 << 1 : 0 << 1);
+	b.put(flags);
 
 	// add the name
 	b.putShort((short) name.length());
