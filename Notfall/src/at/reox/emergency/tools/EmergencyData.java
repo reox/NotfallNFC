@@ -24,7 +24,8 @@ public class EmergencyData {
     private String extra;
     private int sex;
     private boolean organdonor = false;
-
+    private final Set<String> PZN;
+    private final Set<String> ICD;
     private int bloodgroup = BLOOD_UNKNOWN;
     private int rhesus = RHESUS_UNKNOWN;
     private int kell = KELL_UNKNOWN;
@@ -46,16 +47,13 @@ public class EmergencyData {
     public static final int MALE = 0;
     public static final int FEMALE = 1;
 
-    private final Set<String> PZN;
-    private final Set<String> ICD;
+    public static final byte TYPE_EXTRA = 0x01;
+    public static final byte TYPE_MEDICATION = 0x01 << 1;
+    public static final byte TYPE_DISEASE = 0x01 << 2;
 
-    public final byte TYPE_EXTRA = 0x01;
-    public final byte TYPE_MEDICATION = 0x01 << 1;
-    public final byte TYPE_DISEASE = 0x01 << 2;
-
-    public final int HAS_EXTRA_DATA = 0x01;
-    public final int HAS_MEDICATION_DATA = 0x01 << 1;
-    public final int HAS_DISEASE_DATA = 0x01 << 2;
+    public static final int HAS_EXTRA_DATA = 0x01;
+    public static final int HAS_MEDICATION_DATA = 0x01 << 1;
+    public static final int HAS_DISEASE_DATA = 0x01 << 2;
 
     public EmergencyData() {
 
@@ -70,6 +68,12 @@ public class EmergencyData {
 	ICD = new HashSet<String>();
 
 	setUpdate();
+    }
+
+    public void addICD(String[] icd2) {
+	for (String s : icd2) {
+	    ICD.add(s);
+	}
     }
 
     public boolean isOrganDonor() {
@@ -210,19 +214,17 @@ public class EmergencyData {
 	ByteBuffer b = ByteBuffer.allocate(256);
 
 	// Create header
-	byte header = 0x00;
+	short extracount = 0x00;
 
 	if (extra.length() > 0) {
-	    header |= HAS_EXTRA_DATA;
+	    extracount++;
 	}
 	if (PZN.size() > 0) {
-	    header |= HAS_MEDICATION_DATA;
+	    extracount++;
 	}
 	if (ICD.size() > 0) {
-	    header |= HAS_DISEASE_DATA;
+	    extracount++;
 	}
-
-	b.put(header);
 
 	// Flags
 	byte flags = 0x00;
@@ -263,6 +265,9 @@ public class EmergencyData {
 	Log.d(TAG, "Calculating Bloodgroup: "
 	    + getHex(new byte[] { (byte) ((bloodgroup << 4) | (rhesus << 2) | kell) }));
 	b.put((byte) ((bloodgroup << 4) | (rhesus << 2) | kell));
+
+	// Extra Data
+	b.putShort(extracount);
 
 	if (PZN.size() > 0) {
 	    b.put(TYPE_MEDICATION);
@@ -316,6 +321,103 @@ public class EmergencyData {
 	return raw;
     }
 
+    public void readBinaryData(byte[] data) throws EmergencyDataParseException {
+	ByteBuffer b = ByteBuffer.wrap(data);
+
+	// get crc first, we check the whole thing for read errors...
+	short crc = (short) ((b.get(data.length - 2) << 8) | b.get(data.length - 1));
+	if (crc != CRC.crc16(Arrays.copyOf(data, data.length - 2))) {
+	    throw new EmergencyDataParseException("CRC does not match");
+	}
+
+	// Getting information from the flags
+	byte flags = b.get();
+	sex = flags & 0x1;
+	organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
+
+	// parse the name
+	short n = b.getShort();
+	byte[] t = new byte[n];
+	for (short s = 0; s < n; s++) {
+	    t[s] = b.get();
+	}
+	name = new String(t);
+	if (b.get() != 0x00) {
+	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
+		+ " is not terminated correctly");
+	}
+
+	// parse the surname
+	n = b.getShort();
+	t = new byte[n];
+	for (short s = 0; s < n; s++) {
+	    t[s] = b.get();
+	}
+	surname = new String(t);
+	if (b.get() != 0x00) {
+	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
+		+ " is not terminated correctly");
+	}
+
+	// parse the address
+	n = b.getShort();
+	t = new byte[n];
+	for (short s = 0; s < n; s++) {
+	    t[s] = b.get();
+	}
+	address = new String(t);
+	if (b.get() != 0x00) {
+	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
+		+ " is not terminated correctly");
+	}
+
+	// get the svnr
+	long number = (b.get() << 32) | b.getInt();
+	svnr = new String(number + "");
+
+	// get the blood group
+	byte group = b.get();
+	bloodgroup = group >> 4;
+	rhesus = (group >> 2) & 0xFF;
+	kell = group & 0xFF;
+
+	// now we have some extra data here...
+	for (int i = 0; i < b.getShort(); i++) {
+	    short len = b.getShort();
+
+	    switch (b.get()) {
+	    case TYPE_EXTRA:
+		t = new byte[len];
+		for (short s = 0; s < len; s++) {
+		    t[s] = b.get();
+		}
+		extra = new String(t);
+		break;
+	    case TYPE_MEDICATION:
+		for (short s = 0; s < len; s++) {
+		    addPZN(new String(b.getInt() + ""));
+		}
+		break;
+	    case TYPE_DISEASE:
+		for (short s = 0; s < len; s++) {
+		    char a = chars[b.get()];
+		    byte c1 = b.get();
+		    byte c2 = b.get();
+
+		    String icd = a + "" + ((int) c1);
+		    if (c2 != 0x7F) {
+			icd += "." + ((int) c2);
+		    }
+		    addICD(icd);
+		}
+		break;
+	    }
+	}
+
+	// read timestamp
+	update = new Date(b.getLong());
+    }
+
     final protected static char[] hexArray = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
 	'A', 'B', 'C', 'D', 'E', 'F' };
 
@@ -328,12 +430,6 @@ public class EmergencyData {
 	    hexChars[(j * 2) + 1] = hexArray[v & 0x0F];
 	}
 	return new String(hexChars);
-    }
-
-    public void addICD(String[] icd2) {
-	for (String s : icd2) {
-	    ICD.add(s);
-	}
     }
 
 }

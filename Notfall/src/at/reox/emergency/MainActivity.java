@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
 
 			t.setError(null);
 			if (t.getText().toString().length() == 0) {
-			    t.setError("Pflichtfeld");
+			    t.setError(getString(R.string.obligatoryfield));
 			}
 		    }
 		}
@@ -167,7 +167,7 @@ public class MainActivity extends Activity {
 		    // check if svnr is entered correctly...
 		    String rawNumber = editText.getText().toString();
 		    if (rawNumber.length() != 10) {
-			editText.setError("Keine Gültige SVNR");
+			editText.setError(getString(R.string.novalidsvnr));
 			Log.d(TAG, "SVNR: Length check denied");
 			return;
 		    }
@@ -192,7 +192,7 @@ public class MainActivity extends Activity {
 		    } while (checksum == 10);
 
 		    if (checksum != n[3]) {
-			editText.setError("Keine Gültige SVNR (Checksum)");
+			editText.setError(getString(R.string.novalidsvnr) + " (Checksum)");
 		    }
 
 		}
@@ -223,7 +223,7 @@ public class MainActivity extends Activity {
 	boolean error = false;
 	for (int id : new int[] { R.id.name, R.id.surname, R.id.address, R.id.svnr }) {
 	    if (((EditText) findViewById(id)).getText().toString().length() == 0) {
-		((EditText) findViewById(id)).setError("Pflichtfeld");
+		((EditText) findViewById(id)).setError(getString(R.string.obligatoryfield));
 		error = true;
 	    }
 	}
@@ -275,9 +275,7 @@ public class MainActivity extends Activity {
 	    i.putExtra("binarydata", d.getBinaryData());
 	    startActivity(i);
 	} else {
-	    Toast
-		.makeText(this, "Alle Pflichtfelder müssen ausgefüllt werden!", Toast.LENGTH_SHORT)
-		.show();
+	    Toast.makeText(this, getString(R.string.fillallfields), Toast.LENGTH_SHORT).show();
 	}
     }
 
