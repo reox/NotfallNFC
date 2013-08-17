@@ -235,17 +235,14 @@ public class EmergencyData {
 	// add the name
 	b.putShort((short) name.length());
 	b.put(name.getBytes());
-	b.put((byte) 0x00);
 
 	// add the surname
 	b.putShort((short) surname.length());
 	b.put(surname.getBytes());
-	b.put((byte) 0x00);
 
 	// Add the address
 	b.putShort((short) address.length());
 	b.put(address.getBytes());
-	b.put((byte) 0x00);
 
 	// svnr is always nnnX DDMMYY.
 	// so we can use an 33 bit = 5 Byte value here!
@@ -339,10 +336,6 @@ public class EmergencyData {
 	    t[s] = b.get();
 	}
 	name = new String(t);
-	if (b.get() != 0x00) {
-	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
-		+ " is not terminated correctly");
-	}
 	Log.d(TAG, "Name Extracted: " + name);
 
 	// parse the surname
@@ -352,10 +345,6 @@ public class EmergencyData {
 	    t[s] = b.get();
 	}
 	surname = new String(t);
-	if (b.get() != 0x00) {
-	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
-		+ " is not terminated correctly");
-	}
 	Log.d(TAG, "Surname extracted: " + surname);
 
 	// parse the address
@@ -365,10 +354,6 @@ public class EmergencyData {
 	    t[s] = b.get();
 	}
 	address = new String(t);
-	if (b.get() != 0x00) {
-	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
-		+ " is not terminated correctly");
-	}
 	Log.d(TAG, "Address extracted: " + address);
 
 	// get the svnr
