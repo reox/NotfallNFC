@@ -13,7 +13,7 @@ public class NfcUtils {
     private static final String TAG = "NfcUtils";
 
     public static byte[] read(Tag tag) throws IOException, FormatException {
-	byte[] data = new byte[64 * 4];
+	byte[] data = new byte[64 * 4]; // FIXME should be generic for other kinds of tags
 	Arrays.fill(data, (byte) 0x0);
 	if (tag == null) {
 	    return data;
@@ -23,15 +23,15 @@ public class NfcUtils {
 
 	nfc.connect();
 
-	for (int i = 0; i < 64; i++) {
-	    byte[] arrByte = new byte[11];
+	byte[] arrByte = new byte[11];
+	// Flags
+	arrByte[0] = 0x22; // 0x20 = Addressed Mode, 0x02 = Fast Mode
+	// Command
+	arrByte[1] = 0x20; // read single block
+	// ID
+	System.arraycopy(ID, 0, arrByte, 2, 8);
 
-	    // Flags
-	    arrByte[0] = 0x22; // 0x20 = Addressed Mode, 0x02 = Fast Mode
-	    // Command
-	    arrByte[1] = 0x20; // read single block
-	    // ID
-	    System.arraycopy(ID, 0, arrByte, 2, 8);
+	for (int i = 0; i < 64; i++) {
 	    // block number
 	    arrByte[10] = (byte) (i);
 	    byte[] result = nfc.transceive(arrByte);
@@ -57,34 +57,42 @@ public class NfcUtils {
 	    Log.d(TAG, "too much data...");
 	}
 
-	for (int i = 0; i < data.length; i++) {
-	    byte[] arrByte = new byte[15];
+	if ((data.length % 4) != 0) {
+	    byte[] ndata = new byte[(data.length) + (4 - (data.length % 4))];
+	    Arrays.fill(ndata, (byte) 0x00);
+	    System.arraycopy(data, 0, ndata, 0, data.length);
+	    data = ndata;
+	}
+
+	for (int i = 0; i < (data.length / 4); i++) {
+	    byte[] arrByte = new byte[17];
 
 	    // Flags
 	    arrByte[0] = (byte) 0x22; // Tag only supports flags = 0
 	    // Command
 	    arrByte[1] = 0x21;
 	    // ID
-	    Log.d(TAG, "Found ID length: " + ID.length + "... ID: " + Arrays.toString(ID));
 	    System.arraycopy(ID, 0, arrByte, 2, 8);
 	    // block number
 	    arrByte[10] = (byte) (i);
 
 	    // data
-	    // TODO send LSB first...
-	    System.arraycopy(data, i * 4, arrByte, 11, 4);
+	    arrByte[11] = data[(i * 4) + 3];
+	    arrByte[12] = data[(i * 4) + 2];
+	    arrByte[13] = data[(i * 4) + 1];
+	    arrByte[14] = data[(i * 4)];
 
 	    // CRC 16 of all command
 	    byte[] check = new byte[15];
 	    System.arraycopy(arrByte, 0, check, 0, 15);
-	    // int crc = CRC.crc16(check);
-	    // arrByte[16] = (byte) (crc >> 8);
-	    // arrByte[15] = (byte) (crc & 0xFF);
+	    int crc = CRC.crc16(check);
+	    arrByte[15] = (byte) (crc >>> 8);
+	    arrByte[16] = (byte) (crc & 0xFF);
 
-	    Log.d(TAG, "Writing Data: " + Arrays.toString(arrByte));
+	    Log.d(TAG, "Writing Data to block " + i + " [" + printHexString(arrByte) + "]");
 
-	    byte[] result = nfc.transceive(arrByte);
-	    Log.d(TAG, "got result: " + Arrays.toString(result));
+	    // byte[] result = nfc.transceive(arrByte);
+	    // Log.d(TAG, "got result: " + Arrays.toString(result));
 	}
 
 	nfc.close();
@@ -119,9 +127,9 @@ public class NfcUtils {
 	    if (hex.length() == 1) {
 		hex = '0' + hex;
 	    }
-	    s.append(hex);
+	    s.append("0x" + hex + ", ");
 	}
-	return s.toString();
+	return s.toString().substring(0, s.length() - 2);
     }
 
 }

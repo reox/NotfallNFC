@@ -47,9 +47,9 @@ public class EmergencyData {
     public static final int MALE = 0;
     public static final int FEMALE = 1;
 
-    public static final byte TYPE_EXTRA = 0x01;
-    public static final byte TYPE_MEDICATION = 0x01 << 1;
-    public static final byte TYPE_DISEASE = 0x01 << 2;
+    public static final byte TYPE_EXTRA = 1;
+    public static final byte TYPE_MEDICATION = 1 << 1;
+    public static final byte TYPE_DISEASE = 1 << 2;
 
     public static final int HAS_EXTRA_DATA = 0x01;
     public static final int HAS_MEDICATION_DATA = 0x01 << 1;
@@ -284,7 +284,7 @@ public class EmergencyData {
 	    b.putShort((short) (ICD.size() * 3));
 	    for (String s : ICD) {
 		// first byte is for character
-		b.put((byte) Arrays.asList(chars).indexOf(s.charAt(0)));
+		b.put((byte) charToPos(s.charAt(0)));
 
 		String[] numbers = s.substring(1).split("\\.");
 		int[] n = new int[2];
@@ -301,9 +301,8 @@ public class EmergencyData {
 
 	if (extra.length() > 0) {
 	    b.put(TYPE_EXTRA);
-	    b.putInt(extra.length());
+	    b.putShort((short) extra.length());
 	    b.put(extra.getBytes());
-	    b.put((byte) 0x00);
 	}
 
 	b.putLong(update.getTime());
@@ -321,13 +320,17 @@ public class EmergencyData {
 	return raw;
     }
 
-    public void readBinaryData(byte[] data) throws EmergencyDataParseException {
+    public EmergencyData readBinaryData(byte[] data) throws EmergencyDataParseException {
+	Log.d(TAG, "got data to read: " + data.length + " Byte long");
+
 	ByteBuffer b = ByteBuffer.wrap(data);
 
 	// Getting information from the flags
 	byte flags = b.get();
 	sex = flags & 0x1;
 	organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
+
+	Log.d(TAG, "Header extracted " + Integer.toHexString(flags));
 
 	// parse the name
 	short n = b.getShort();
@@ -340,6 +343,7 @@ public class EmergencyData {
 	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
 		+ " is not terminated correctly");
 	}
+	Log.d(TAG, "Name Extracted: " + name);
 
 	// parse the surname
 	n = b.getShort();
@@ -352,6 +356,7 @@ public class EmergencyData {
 	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
 		+ " is not terminated correctly");
 	}
+	Log.d(TAG, "Surname extracted: " + surname);
 
 	// parse the address
 	n = b.getShort();
@@ -364,36 +369,54 @@ public class EmergencyData {
 	    throw new EmergencyDataParseException("string at " + b.arrayOffset()
 		+ " is not terminated correctly");
 	}
+	Log.d(TAG, "Address extracted: " + address);
 
 	// get the svnr
 	long number = (b.get() << 32) | b.getInt();
 	svnr = new String(number + "");
+	Log.d(TAG, "SVNR extracted: " + svnr);
 
 	// get the blood group
 	byte group = b.get();
-	bloodgroup = group >> 4;
-	rhesus = (group >> 2) & 0xFF;
+	bloodgroup = group >>> 4;
+	rhesus = (group >>> 2) & 0xFF;
 	kell = group & 0xFF;
+	Log.d(TAG, "Bloodgroup Byte: " + Integer.toHexString(group));
 
 	// now we have some extra data here...
-	for (int i = 0; i < b.getShort(); i++) {
+	int extraCount = b.getShort();
+	Log.d(TAG, "Will read " + extraCount + " extra data");
+	for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
+	    byte ident = b.get();
 	    short len = b.getShort();
 
-	    switch (b.get()) {
+	    Log.d(TAG, "ident: " + ident + " ... len: " + len);
+
+	    switch (ident) {
 	    case TYPE_EXTRA:
 		t = new byte[len];
 		for (short s = 0; s < len; s++) {
 		    t[s] = b.get();
 		}
 		extra = new String(t);
+		Log.d(TAG, "Found Extra String: " + extra);
 		break;
 	    case TYPE_MEDICATION:
-		for (short s = 0; s < len; s++) {
+		if ((len % 4) != 0) {
+		    throw new EmergencyDataParseException("Number of Medication Elements missmatch");
+		}
+		for (short s = 0; s < (len / 4); s++) {
 		    addPZN(new String(b.getInt() + ""));
 		}
+		Log.d(TAG, "Found PZN Numbers: " + Arrays.toString(PZN.toArray()));
 		break;
 	    case TYPE_DISEASE:
-		for (short s = 0; s < len; s++) {
+		if ((len % 3) != 0) {
+		    throw new EmergencyDataParseException("Number of Disease Elements missmatch");
+		}
+
+		for (short s = 0; s < (len / 3); s++) {
+		    Log.d(TAG, "current offset: " + b.position());
 		    char a = chars[b.get()];
 		    byte c1 = b.get();
 		    byte c2 = b.get();
@@ -403,6 +426,7 @@ public class EmergencyData {
 			icd += "." + ((int) c2);
 		    }
 		    addICD(icd);
+		    Log.d(TAG, "Found ICD Numbers: " + Arrays.toString(ICD.toArray()));
 		}
 		break;
 	    }
@@ -410,14 +434,22 @@ public class EmergencyData {
 
 	// read timestamp
 	update = new Date(b.getLong());
+	Log.d(TAG, "Got a Timestamp: " + update);
 
 	// get crc , we check the whole thing for read errors...
-	short crc = (short) ((b.get() << 8) | b.get());
-	if (crc != CRC.crc16(Arrays.copyOf(data, b.position() - 2))) {
+	int crc = b.getShort() & 0xFFFF;
+	int ccrc = CRC.crc16(Arrays.copyOf(data, b.position() - 2));
+	Log.d(
+	    TAG,
+	    "Found CRC: " + Integer.toHexString(crc) + ", computed crc: "
+		+ Integer.toHexString(ccrc));
+	if (crc != ccrc) {
 	    throw new EmergencyDataParseException("CRC does not match");
 	}
 
 	// every byte after this is garbage..
+
+	return this;
 
     }
 
@@ -433,6 +465,15 @@ public class EmergencyData {
 	    hexChars[(j * 2) + 1] = hexArray[v & 0x0F];
 	}
 	return new String(hexChars);
+    }
+
+    private int charToPos(char x) {
+	for (int i = 0; i < 26; i++) {
+	    if (chars[i] == x) {
+		return i;
+	    }
+	}
+	return -1;
     }
 
 }

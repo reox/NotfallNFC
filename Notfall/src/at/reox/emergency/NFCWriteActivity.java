@@ -77,7 +77,6 @@ public class NFCWriteActivity extends Activity {
 	    TextView t = (TextView) findViewById(R.id.sizeInformation);
 	    t.setText("Minimum Tag Size required: " + data.length + "Bytes");
 	}
-
     }
 
     @Override
