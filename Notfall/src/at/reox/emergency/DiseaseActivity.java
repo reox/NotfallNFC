@@ -71,6 +71,7 @@ public class DiseaseActivity extends Activity {
 	simpleAdpt = new SimpleAdapter(this, data, android.R.layout.simple_list_item_2,
 	    new String[] { "name", "icd" }, new int[] { android.R.id.text1, android.R.id.text2 });
 	lv.setAdapter(simpleAdpt);
+	registerForContextMenu(lv);
 
 	Log.d(TAG, "Read " + codes.size() + " Items");
 

@@ -8,9 +8,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".EmergencyReaderActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <fragment
+        android:id="@+id/fragment_container"
+        class="at.reox.emergency.ListContentFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="98dp" />
 
 </RelativeLayout>
