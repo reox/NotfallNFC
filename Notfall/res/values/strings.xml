@@ -14,7 +14,7 @@
     <string name="socialnumber">Sozialversicherungsnummer</string>
     <string name="freetext">Freitext, zB Notfallnummer, Wichtige Informationen im Notfall</string>
     <string name="title_activity_nfcwrite">NFC Tag erstellen</string>
-    <string name="nfctag">Legen Sie ein NFC Tag auf ihr Gerät</string>
+    <string name="nfctag">Bitte NFC Tag auflegen</string>
     <string name="title_activity_medication">Medikamenten Liste</string>
     <string name="new_medication">Neues Medikament</string>
     <string name="done">Fertig</string>

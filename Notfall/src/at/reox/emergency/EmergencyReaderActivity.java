@@ -1,7 +1,5 @@
 package at.reox.emergency;
 
-import java.io.IOException;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -9,7 +7,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.nfc.FormatException;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.NfcV;
@@ -20,7 +17,6 @@ import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 import at.reox.emergency.tools.EmergencyData;
-import at.reox.emergency.tools.EmergencyDataParseException;
 import at.reox.emergency.tools.NfcUtils;
 
 public class EmergencyReaderActivity extends Activity {
@@ -65,9 +61,7 @@ public class EmergencyReaderActivity extends Activity {
 		    ft.commit();
 		    return true;
 		}
-
 	    });
-
     }
 
     @Override
@@ -92,39 +86,12 @@ public class EmergencyReaderActivity extends Activity {
 	try {
 	    byte[] realData = NfcUtils.read(tag);
 	    Log.d(TAG, "Found a tag and read: " + NfcUtils.printHexString(realData));
-	} catch (IOException e) {
-	    // TODO Auto-generated catch block
-	    e.printStackTrace();
-	} catch (FormatException e) {
-	    // TODO Auto-generated catch block
-	    e.printStackTrace();
-	}
-
-	byte[] fakData = new byte[] { (byte) 0x02, (byte) 0x00, (byte) 0x08, (byte) 0x42,
-	    (byte) 0x61, (byte) 0x63, (byte) 0x68, (byte) 0x6D, (byte) 0x61, (byte) 0x6E,
-	    (byte) 0x6E, (byte) 0x00, (byte) 0x00, (byte) 0x09, (byte) 0x53, (byte) 0x65,
-	    (byte) 0x62, (byte) 0x61, (byte) 0x73, (byte) 0x74, (byte) 0x69, (byte) 0x61,
-	    (byte) 0x6E, (byte) 0x00, (byte) 0x00, (byte) 0x18, (byte) 0x53, (byte) 0x65,
-	    (byte) 0x6E, (byte) 0x65, (byte) 0x6B, (byte) 0x6F, (byte) 0x77, (byte) 0x69,
-	    (byte) 0x74, (byte) 0x73, (byte) 0x63, (byte) 0x68, (byte) 0x67, (byte) 0x61,
-	    (byte) 0x73, (byte) 0x73, (byte) 0x65, (byte) 0x20, (byte) 0x33, (byte) 0x2F,
-	    (byte) 0x33, (byte) 0x2F, (byte) 0x31, (byte) 0x30, (byte) 0x00, (byte) 0x00,
-	    (byte) 0x49, (byte) 0xA5, (byte) 0x45, (byte) 0x12, (byte) 0x26, (byte) 0x00,
-	    (byte) 0x03, (byte) 0x02, (byte) 0x00, (byte) 0x04, (byte) 0x00, (byte) 0x4A,
-	    (byte) 0xE7, (byte) 0x02, (byte) 0x04, (byte) 0x00, (byte) 0x06, (byte) 0x04,
-	    (byte) 0x0A, (byte) 0x5A, (byte) 0x09, (byte) 0x29, (byte) 0x00, (byte) 0x01,
-	    (byte) 0x00, (byte) 0x09, (byte) 0x66, (byte) 0x6F, (byte) 0x6F, (byte) 0x62,
-	    (byte) 0x61, (byte) 0x72, (byte) 0x66, (byte) 0x6F, (byte) 0x6F, (byte) 0x00,
-	    (byte) 0x00, (byte) 0x01, (byte) 0x40, (byte) 0x8D, (byte) 0x68, (byte) 0x33,
-	    (byte) 0xE9, (byte) 0x34, (byte) 0x94, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-	    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-	    0x00, 0x00, 0x00 };
-
-	try {
 	    ((EmergencyApplication) getApplication()).loadTag(new EmergencyData()
-		.readBinaryData(fakData));
-	} catch (EmergencyDataParseException e) {
-	    Toast.makeText(this, "Tag kann nicht geladen werden: " + e.getMessage(),
+		.readBinaryData(NfcUtils.fakeData));
+	    Toast.makeText(this, "Tag wurde gelesen!", Toast.LENGTH_SHORT).show();
+
+	} catch (Exception e) {
+	    Toast.makeText(this, "Tag kann nicht gelesen werden: " + e.getMessage(),
 		Toast.LENGTH_LONG).show();
 	}
     }

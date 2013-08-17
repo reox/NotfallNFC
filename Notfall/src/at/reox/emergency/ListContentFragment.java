@@ -40,9 +40,9 @@ public class ListContentFragment extends Fragment {
 	    // load the ui according to our list of planned features
 	} else {
 	    // Show a default menu for waiting until a tag is scanned...
+	    l.addView(inflater.inflate(R.layout.fragment_notag, container, false));
 	}
 
 	return l;
     }
-
 }
