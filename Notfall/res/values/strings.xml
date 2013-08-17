@@ -42,6 +42,12 @@
         <item>Kell positiv</item>
         <item>Kell negativ</item>
     </string-array>
+    
+    <string-array name="readerOptions">
+        <item>Sanitäter</item>
+        <item>Notarzt</item>
+        <item>Identifizierung</item>
+    </string-array>
 
     <string name="HelpString">Geben Sie ihre Notfalldaten in die Felder ein und drücken Sie dann auf Speichern.</string>
     <string name="save_local">Lokal speichern</string>
