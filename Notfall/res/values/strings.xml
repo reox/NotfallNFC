@@ -56,5 +56,6 @@
     <string name="female">weiblich</string>
     <string name="organdonor">Organspender</string>
     <string name="title_activity_emergency_reader">Notfallkarte Lesen</string>
+    <string name="patiendata">Patientendaten</string>
 
 </resources>

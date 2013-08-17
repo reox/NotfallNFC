@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class ListContentFragment extends Fragment {
     private String mText;
@@ -24,16 +25,24 @@ public class ListContentFragment extends Fragment {
 	// This is called to define the layout for the fragment;
 	// we just create a TextView and set its text to be the fragment tag
 	Log.d("foobar", mText + "  ");
-	View rootView;
-	if ((mText == null) || (mText.equals("Sanitäter"))) {
-	    rootView = inflater.inflate(R.layout.fragment_paramedic, container, false);
-	} else if (mText.equals("Arzt")) {
-	    rootView = inflater.inflate(R.layout.fragment_medic, container, false);
+
+	// Fill up this LinearLayout
+	LinearLayout l = new LinearLayout(getActivity());
+
+	// We need these containers:
+	// * Patient Data (Name, Surname, Age) --> All Views
+	// * patient Extra text, if set --> All Views
+	// * Advanced Patient Data (SVNR, Address, Bloodgroup, Organ Donor) --> Identify, Medic
+	// * Medication --> Medic
+	// * Diseases --> Medic, Paramedic
+
+	if (((EmergencyApplication) getActivity().getApplication()).isTagLoaded()) {
+	    // load the ui according to our list of planned features
 	} else {
-	    rootView = inflater.inflate(R.layout.fragment_identify, container, false);
+	    // Show a default menu for waiting until a tag is scanned...
 	}
 
-	return rootView;
+	return l;
     }
 
 }

@@ -324,12 +324,6 @@ public class EmergencyData {
     public void readBinaryData(byte[] data) throws EmergencyDataParseException {
 	ByteBuffer b = ByteBuffer.wrap(data);
 
-	// get crc first, we check the whole thing for read errors...
-	short crc = (short) ((b.get(data.length - 2) << 8) | b.get(data.length - 1));
-	if (crc != CRC.crc16(Arrays.copyOf(data, data.length - 2))) {
-	    throw new EmergencyDataParseException("CRC does not match");
-	}
-
 	// Getting information from the flags
 	byte flags = b.get();
 	sex = flags & 0x1;
@@ -416,6 +410,15 @@ public class EmergencyData {
 
 	// read timestamp
 	update = new Date(b.getLong());
+
+	// get crc , we check the whole thing for read errors...
+	short crc = (short) ((b.get() << 8) | b.get());
+	if (crc != CRC.crc16(Arrays.copyOf(data, b.position() - 2))) {
+	    throw new EmergencyDataParseException("CRC does not match");
+	}
+
+	// every byte after this is garbage..
+
     }
 
     final protected static char[] hexArray = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
