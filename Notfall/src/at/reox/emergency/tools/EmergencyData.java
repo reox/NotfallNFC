@@ -330,27 +330,27 @@ public class EmergencyData {
 	Log.d(TAG, "Header extracted " + Integer.toHexString(flags));
 
 	// parse the name
-	short n = b.getShort();
+	int n = b.getShort() & 0xFFFF;
 	byte[] t = new byte[n];
-	for (short s = 0; s < n; s++) {
+	for (int s = 0; s < n; s++) {
 	    t[s] = b.get();
 	}
 	name = new String(t);
 	Log.d(TAG, "Name Extracted: " + name);
 
 	// parse the surname
-	n = b.getShort();
+	n = b.getShort() & 0xFFFF;
 	t = new byte[n];
-	for (short s = 0; s < n; s++) {
+	for (int s = 0; s < n; s++) {
 	    t[s] = b.get();
 	}
 	surname = new String(t);
 	Log.d(TAG, "Surname extracted: " + surname);
 
 	// parse the address
-	n = b.getShort();
+	n = b.getShort() & 0xFFFF;
 	t = new byte[n];
-	for (short s = 0; s < n; s++) {
+	for (int s = 0; s < n; s++) {
 	    t[s] = b.get();
 	}
 	address = new String(t);
@@ -369,18 +369,18 @@ public class EmergencyData {
 	Log.d(TAG, "Bloodgroup Byte: " + Integer.toHexString(group));
 
 	// now we have some extra data here...
-	int extraCount = b.getShort();
+	int extraCount = b.getShort() & 0xFFFF;
 	Log.d(TAG, "Will read " + extraCount + " extra data");
 	for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
 	    byte ident = b.get();
-	    short len = b.getShort();
+	    int len = b.getShort() & 0xFFFF;
 
 	    Log.d(TAG, "ident: " + ident + " ... len: " + len);
 
 	    switch (ident) {
 	    case TYPE_EXTRA:
 		t = new byte[len];
-		for (short s = 0; s < len; s++) {
+		for (int s = 0; s < len; s++) {
 		    t[s] = b.get();
 		}
 		extra = new String(t);
@@ -390,7 +390,7 @@ public class EmergencyData {
 		if ((len % 4) != 0) {
 		    throw new EmergencyDataParseException("Number of Medication Elements missmatch");
 		}
-		for (short s = 0; s < (len / 4); s++) {
+		for (int s = 0; s < (len / 4); s++) {
 		    addPZN(new String(b.getInt() + ""));
 		}
 		Log.d(TAG, "Found PZN Numbers: " + Arrays.toString(PZN.toArray()));
@@ -400,7 +400,7 @@ public class EmergencyData {
 		    throw new EmergencyDataParseException("Number of Disease Elements missmatch");
 		}
 
-		for (short s = 0; s < (len / 3); s++) {
+		for (int s = 0; s < (len / 3); s++) {
 		    Log.d(TAG, "current offset: " + b.position());
 		    char a = chars[b.get()];
 		    byte c1 = b.get();
@@ -414,6 +414,10 @@ public class EmergencyData {
 		    Log.d(TAG, "Found ICD Numbers: " + Arrays.toString(ICD.toArray()));
 		}
 		break;
+	    default: // we need this if we find something that we dont know..
+		for (int s = 0; s < len; s++) {
+		    b.get();
+		}
 	    }
 	}
 
