@@ -108,8 +108,8 @@ public class NfcUtils {
 
 	    Log.d(TAG, "Writing Data to block " + i + " [" + printHexString(arrByte) + "]");
 
-	    byte[] result = nfc.transceive(arrByte);
-	    Log.d(TAG, "got result: " + Arrays.toString(result));
+	    // byte[] result = nfc.transceive(arrByte);
+	    // Log.d(TAG, "got result: " + Arrays.toString(result));
 	}
 
 	nfc.close();

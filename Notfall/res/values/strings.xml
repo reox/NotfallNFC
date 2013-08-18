@@ -57,5 +57,8 @@
     <string name="organdonor">Organspender</string>
     <string name="title_activity_emergency_reader">Notfallkarte Lesen</string>
     <string name="patiendata">Patientendaten</string>
+    <string name="dontmove">Tag nicht entfernen!</string>
+    <string name="pleasewait">Bitte Warten</string>
+    <string name="saved">Das Tag wurde gespeichert!</string>
 
 </resources>

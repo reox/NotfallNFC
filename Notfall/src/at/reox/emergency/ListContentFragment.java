@@ -40,6 +40,20 @@ public class ListContentFragment extends Fragment {
 	// * Medication --> Medic
 	// * Diseases --> Medic, Paramedic
 
+	if (mText.equals("wait")) {
+	    // return waiting logo...
+	    l.addView(inflater.inflate(R.layout.fragment_wait, container, false));
+	    return l;
+	}
+	if (mText.equals("place")) {
+	    l.addView(inflater.inflate(R.layout.fragment_notag, container, false));
+	    return l;
+	}
+	if (mText.equals("done")) {
+	    l.addView(inflater.inflate(R.layout.fragment_done, container, false));
+	    return l;
+	}
+
 	if (((EmergencyApplication) getActivity().getApplication()).isTagLoaded()) {
 	    Log.d("foobar", "Tag is loaded...");
 	    EmergencyData d = ((EmergencyApplication) getActivity().getApplication()).getTag();
