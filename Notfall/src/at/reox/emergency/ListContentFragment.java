@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import at.reox.emergency.tools.EmergencyData;
 
 public class ListContentFragment extends Fragment {
     private String mText;
@@ -17,7 +19,9 @@ public class ListContentFragment extends Fragment {
 	// This is the first callback received; here we can set the text for
 	// the fragment as defined by the tag specified during the fragment transaction
 	super.onAttach(activity);
-	mText = getTag();
+	if ((getTag() != null)) {
+	    mText = getTag();
+	}
     }
 
     @Override
@@ -37,7 +41,18 @@ public class ListContentFragment extends Fragment {
 	// * Diseases --> Medic, Paramedic
 
 	if (((EmergencyApplication) getActivity().getApplication()).isTagLoaded()) {
+	    Log.d("foobar", "Tag is loaded...");
+	    EmergencyData d = ((EmergencyApplication) getActivity().getApplication()).getTag();
 	    // load the ui according to our list of planned features
+	    Log.d("foobar", "The Tag: " + d);
+
+	    l.addView(inflater.inflate(R.layout.fragment_patientdata, container, false));
+	    Log.d("foobar", d.getName() + " " + d.getSurname() + " " + d.getAge());
+
+	    ((TextView) l.findViewById(R.id.patient_name)).setText(d.getName());
+	    ((TextView) l.findViewById(R.id.patient_surname)).setText(d.getSurname());
+	    ((TextView) l.findViewById(R.id.patient_age)).setText(d.getAge() + " Jahre");
+
 	} else {
 	    // Show a default menu for waiting until a tag is scanned...
 	    l.addView(inflater.inflate(R.layout.fragment_notag, container, false));

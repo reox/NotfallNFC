@@ -2,6 +2,7 @@ package at.reox.emergency;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -56,13 +57,18 @@ public class EmergencyReaderActivity extends Activity {
 		    FragmentTransaction ft = getFragmentManager().beginTransaction();
 		    // Replace whatever is in the fragment container with this fragment
 		    // and give the fragment a tag name equal to the string at the position selected
-		    ft.replace(R.id.fragment_container, newFragment, strings[arg0]);
+		    currentTag = strings[arg0];
+		    currentFragment = newFragment;
+		    ft.replace(R.id.fragment_container, newFragment, currentTag);
 		    // Apply changes
 		    ft.commit();
 		    return true;
 		}
 	    });
     }
+
+    private String currentTag = null;
+    private Fragment currentFragment = null;
 
     @Override
     public void onPause() {
@@ -89,6 +95,15 @@ public class EmergencyReaderActivity extends Activity {
 	    ((EmergencyApplication) getApplication()).loadTag(new EmergencyData()
 		.readBinaryData(NfcUtils.fakeData));
 	    Toast.makeText(this, "Tag wurde gelesen!", Toast.LENGTH_SHORT).show();
+	    ListContentFragment newFragment = new ListContentFragment();
+	    FragmentTransaction ft = getFragmentManager().beginTransaction();
+	    // Replace whatever is in the fragment container with this fragment
+	    // and give the fragment a tag name equal to the string at the position selected
+	    ft.add(R.id.fragment_container, newFragment, currentTag);
+	    ft.remove(currentFragment);
+	    currentFragment = newFragment;
+	    // Apply changes
+	    ft.commit();
 
 	} catch (Exception e) {
 	    Toast.makeText(this, "Tag kann nicht gelesen werden: " + e.getMessage(),

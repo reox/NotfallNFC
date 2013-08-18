@@ -70,6 +70,23 @@ public class EmergencyData {
 	setUpdate();
     }
 
+    public int getAge() {
+	if (svnr.length() == 10) {
+	    int year = Integer.parseInt(svnr.substring(8));
+	    int cyear = Calendar.getInstance().get(Calendar.YEAR);
+	    // this is a very very lame way... FIXME
+	    if (year > (cyear - 2000)) {
+		year += 1900;
+	    } else {
+		year += 2000;
+	    }
+
+	    return cyear - year;
+
+	}
+	return 0;
+    }
+
     public void addICD(String[] icd2) {
 	for (String s : icd2) {
 	    ICD.add(s);
