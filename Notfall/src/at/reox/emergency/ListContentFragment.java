@@ -33,13 +33,6 @@ public class ListContentFragment extends Fragment {
 	// Fill up this LinearLayout
 	LinearLayout l = new LinearLayout(getActivity());
 
-	// We need these containers:
-	// * Patient Data (Name, Surname, Age) --> All Views
-	// * patient Extra text, if set --> All Views
-	// * Advanced Patient Data (SVNR, Address, Bloodgroup, Organ Donor) --> Identify, Medic
-	// * Medication --> Medic
-	// * Diseases --> Medic, Paramedic
-
 	if (mText.equals("wait")) {
 	    // return waiting logo...
 	    l.addView(inflater.inflate(R.layout.fragment_wait, container, false));
@@ -59,13 +52,30 @@ public class ListContentFragment extends Fragment {
 	    EmergencyData d = ((EmergencyApplication) getActivity().getApplication()).getTag();
 	    // load the ui according to our list of planned features
 	    Log.d("foobar", "The Tag: " + d);
+	    // We need these containers:
+	    // * Patient Data (Name, Surname, Age) --> All Views
+	    // * patient Extra text, if set --> All Views
+	    // * Advanced Patient Data (SVNR, Address, Bloodgroup, Organ Donor) --> Identify, Medic
+	    // * Medication --> Medic
+	    // * Diseases --> Medic, Paramedic
 
+	    // Inflate Data that everyone needs
 	    l.addView(inflater.inflate(R.layout.fragment_patientdata, container, false));
-	    Log.d("foobar", d.getName() + " " + d.getSurname() + " " + d.getAge());
-
 	    ((TextView) l.findViewById(R.id.patient_name)).setText(d.getName());
 	    ((TextView) l.findViewById(R.id.patient_surname)).setText(d.getSurname());
 	    ((TextView) l.findViewById(R.id.patient_age)).setText(d.getAge() + " Jahre");
+
+	    // Load Specific views
+	    if (mText.equals("Sanitäter") || mText.equals("Arzt")) {
+		// Load Diseases
+	    }
+	    if (mText.equals("Arzt")) {
+		// Load Advanced Patient Data
+
+	    }
+	    if (mText.equals("Identifizierung")) {
+
+	    }
 
 	} else {
 	    // Show a default menu for waiting until a tag is scanned...
