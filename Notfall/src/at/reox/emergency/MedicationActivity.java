@@ -31,7 +31,7 @@ public class MedicationActivity extends Activity {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_medication);
 
-	ListView lv = (ListView) findViewById(R.id.listView1);
+	ListView lv = (ListView) findViewById(R.id.list_list);
 	Intent intent = getIntent();
 
 	for (String s : intent.getStringArrayExtra("pzndata")) {

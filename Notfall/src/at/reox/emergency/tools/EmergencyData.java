@@ -1,10 +1,14 @@
 package at.reox.emergency.tools;
 
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import android.util.Log;
@@ -68,6 +72,79 @@ public class EmergencyData {
 	ICD = new HashSet<String>();
 
 	setUpdate();
+    }
+
+    public String getBloodgroupString() {
+	String s = "";
+	switch (bloodgroup) {
+	case BLOOD_UNKNOWN:
+	    s += "unbekannt, ";
+	    break;
+	case BLOOD_A:
+	    s += "A, ";
+	    break;
+	case BLOOD_B:
+	    s += "B, ";
+	    break;
+	case BLOOD_AB:
+	    s += "AB, ";
+	    break;
+	case BLOOD_0:
+	    s += "0, ";
+	    break;
+	}
+
+	switch (rhesus) {
+	case RHESUS_UNKNOWN:
+	    s += "Rhesus unbekannt, ";
+	    break;
+	case RHESUS_POS:
+	    s += "Rhesus pos., ";
+	    break;
+	case RHESUS_NEG:
+	    s += "Rhesus neg., ";
+	    break;
+	}
+	switch (kell) {
+	case KELL_UNKNOWN:
+	    s += "Kell unbekannt";
+	    break;
+	case KELL_POS:
+	    s += "Kell pos.";
+	    break;
+	case KELL_NEG:
+	    s += "Kell neg.";
+	    break;
+	}
+
+	return s;
+    }
+
+    // TODO
+    public List<Map<String, String>> getMedication() {
+	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
+	for (String s : PZN) {
+	    data.add(createItem(s, "foobar"));
+	}
+
+	return data;
+    }
+
+    // TODO
+    public List<Map<String, String>> getDiseases() {
+	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
+	for (String s : ICD) {
+	    data.add(createItem(s, "foobar"));
+	}
+
+	return data;
+    }
+
+    private HashMap<String, String> createItem(String key, String value) {
+	HashMap<String, String> item = new HashMap<String, String>();
+	item.put("key", key);
+	item.put("value", value);
+	return item;
     }
 
     public int getAge() {
