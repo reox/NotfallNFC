@@ -7,13 +7,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".NFCWriteActivity" >
-
-    <FrameLayout
-        android:id="@+id/fragment_write"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp" >
-    </FrameLayout>
+            <FrameLayout
+            android:id="@+id/fragment_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" >
+        </FrameLayout>
+    
     
         <TextView
         android:id="@+id/sizeInformation"
@@ -23,5 +25,6 @@
         android:layout_alignParentLeft="true"
         android:textAppearance="?android:attr/textAppearanceSmall" 
         android:textIsSelectable="false"/>
+
 
 </RelativeLayout>

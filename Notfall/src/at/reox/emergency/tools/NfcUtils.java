@@ -47,7 +47,7 @@ public class NfcUtils {
 	try {
 	    byte[] arrByte = new byte[3];
 	    // Flags
-	    arrByte[0] = 0x02; // 0x20 = Addressed Mode, 0x02 = Fast Mode
+	    arrByte[0] = 0x02; // 0x02 = Fast Mode
 	    // Command
 	    arrByte[1] = 0x20; // read single block
 
@@ -55,11 +55,7 @@ public class NfcUtils {
 	    byte[] result = nfc.transceive(arrByte);
 
 	    for (int i = 0; i < 4; i++) {
-		Log.d(
-		    TAG,
-		    "Verify read " + Integer.toHexString(result[i]) + "should "
-			+ Integer.toHexString(data[i]));
-		if (result[i] != data[i]) {
+		if (result[i + 1] != data[i]) {
 		    return false;
 		}
 	    }
@@ -71,8 +67,7 @@ public class NfcUtils {
 
     }
 
-    public static void write(Tag tag, byte[] data) throws IOException, FormatException,
-	InterruptedException {
+    public static void write(Tag tag, byte[] data) throws IOException, FormatException {
 	if (tag == null) {
 	    return;
 	}
@@ -118,6 +113,13 @@ public class NfcUtils {
 	    } catch (IOException e) {
 		if (e.getMessage().equals("Tag was lost.")) {
 		    // continue, because of Tag bug
+		    Log.d(
+			TAG,
+			"Verify Block "
+			    + i
+			    + ": "
+			    + verify(nfc, i, new byte[] { data[(i * 4)], data[(i * 4) + 1],
+				data[(i * 4) + 2], data[(i * 4) + 3] }));
 		} else {
 		    throw e;
 		}

@@ -17,7 +17,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.TextView;
-import android.widget.Toast;
 import at.reox.emergency.tools.NfcUtils;
 
 public class NFCWriteActivity extends Activity {
@@ -59,7 +58,6 @@ public class NFCWriteActivity extends Activity {
 
 	    // TODO error handling
 	    new WriteNFC().execute(tag);
-	    Toast.makeText(this, "Wrote to tag!", Toast.LENGTH_LONG).show();
 	}
     }
 
@@ -107,9 +105,6 @@ public class NFCWriteActivity extends Activity {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	    } catch (FormatException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	    } catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	    }

@@ -421,18 +421,13 @@ public class EmergencyData {
 	sex = flags & 0x1;
 	organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
 
-	Log.d(TAG, "Header extracted " + Integer.toHexString(flags));
-
-	Log.d(TAG, "pos " + b.position() + " limit " + b.limit());
 	// parse the name
 	int n = b.getShort() & 0xFFFF;
-	Log.d(TAG, "Read String of Length: " + n);
 	byte[] t = new byte[n];
 	for (int s = 0; s < n; s++) {
 	    t[s] = b.get();
 	}
 	name = new String(t);
-	Log.d(TAG, "Name Extracted: " + name);
 
 	// parse the surname
 	n = b.getShort() & 0xFFFF;
@@ -441,7 +436,6 @@ public class EmergencyData {
 	    t[s] = b.get();
 	}
 	surname = new String(t);
-	Log.d(TAG, "Surname extracted: " + surname);
 
 	// parse the address
 	n = b.getShort() & 0xFFFF;
@@ -450,28 +444,22 @@ public class EmergencyData {
 	    t[s] = b.get();
 	}
 	address = new String(t);
-	Log.d(TAG, "Address extracted: " + address);
 
 	// get the svnr
 	long number = (b.get() << 32) | b.getInt();
 	svnr = new String(number + "");
-	Log.d(TAG, "SVNR extracted: " + svnr);
 
 	// get the blood group
 	byte group = b.get();
-	bloodgroup = group >>> 4;
-	rhesus = (group >>> 2) & 0xFF;
-	kell = group & 0xFF;
-	Log.d(TAG, "Bloodgroup Byte: " + Integer.toHexString(group));
+	bloodgroup = (group >>> 4) & 0xF;
+	rhesus = (group >>> 2) & 0x3;
+	kell = group & 0x3;
 
 	// now we have some extra data here...
 	int extraCount = b.getShort() & 0xFFFF;
-	Log.d(TAG, "Will read " + extraCount + " extra data");
 	for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
 	    byte ident = b.get();
 	    int len = b.getShort() & 0xFFFF;
-
-	    Log.d(TAG, "ident: " + ident + " ... len: " + len);
 
 	    switch (ident) {
 	    case TYPE_EXTRA:
@@ -480,7 +468,6 @@ public class EmergencyData {
 		    t[s] = b.get();
 		}
 		extra = new String(t);
-		Log.d(TAG, "Found Extra String: " + extra);
 		break;
 	    case TYPE_MEDICATION:
 		if ((len % 4) != 0) {
@@ -489,7 +476,6 @@ public class EmergencyData {
 		for (int s = 0; s < (len / 4); s++) {
 		    addPZN(new String(b.getInt() + ""));
 		}
-		Log.d(TAG, "Found PZN Numbers: " + Arrays.toString(PZN.toArray()));
 		break;
 	    case TYPE_DISEASE:
 		if ((len % 3) != 0) {
@@ -497,7 +483,6 @@ public class EmergencyData {
 		}
 
 		for (int s = 0; s < (len / 3); s++) {
-		    Log.d(TAG, "current offset: " + b.position());
 		    char a = chars[b.get()];
 		    byte c1 = b.get();
 		    byte c2 = b.get();
@@ -507,7 +492,6 @@ public class EmergencyData {
 			icd += "." + ((int) c2);
 		    }
 		    addICD(icd);
-		    Log.d(TAG, "Found ICD Numbers: " + Arrays.toString(ICD.toArray()));
 		}
 		break;
 	    default: // we need this if we find something that we dont know..
@@ -519,7 +503,6 @@ public class EmergencyData {
 
 	// read timestamp
 	update = new Date(b.getLong());
-	Log.d(TAG, "Got a Timestamp: " + update);
 
 	// get crc , we check the whole thing for read errors...
 	int crc = b.getShort() & 0xFFFF;
@@ -532,7 +515,7 @@ public class EmergencyData {
 	    throw new EmergencyDataParseException("CRC does not match");
 	}
 
-	// every byte after this is garbage..
+	// every byte after this is garbage.. dont read it
 
 	return this;
 

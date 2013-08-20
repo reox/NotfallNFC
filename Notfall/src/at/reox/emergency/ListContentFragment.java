@@ -56,10 +56,8 @@ public class ListContentFragment extends Fragment {
 	}
 
 	if (((EmergencyApplication) getActivity().getApplication()).isTagLoaded()) {
-	    Log.d("foobar", "Tag is loaded...");
 	    EmergencyData d = ((EmergencyApplication) getActivity().getApplication()).getTag();
 	    // load the ui according to our list of planned features
-	    Log.d("foobar", "The Tag: " + d);
 	    // We need these containers:
 	    // * Patient Data (Name, Surname, Age) --> All Views
 	    // * patient Extra text, if set --> All Views
@@ -100,7 +98,6 @@ public class ListContentFragment extends Fragment {
 	    }
 	    if (mText.equals("Identifizierung") || mText.equals("Notarzt")) {
 		// Load Advanced Patient Data
-		Log.d("foobar", "inthere");
 		LinearLayout li = (LinearLayout) inflater.inflate(R.layout.fragment_identify, null);
 		l.addView(li, icounter++, p);
 		((TextView) l.findViewById(R.id.ident_address)).setText(d.getAddress());
@@ -111,8 +108,8 @@ public class ListContentFragment extends Fragment {
 	    }
 
 	    TextView update = new TextView(l.getContext());
-	    SimpleDateFormat sdf = new SimpleDateFormat("H:mm dd.MM.yyyy");
-	    update.setText("Tag vom: " + sdf.format(d.getUpdate()));
+	    update.setText("Tag vom: "
+		+ new SimpleDateFormat("dd.MM.yyyy (H:mm)").format(d.getUpdate()));
 	    l.addView(update);
 
 	} else {
