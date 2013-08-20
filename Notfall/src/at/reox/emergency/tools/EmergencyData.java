@@ -423,8 +423,10 @@ public class EmergencyData {
 
 	Log.d(TAG, "Header extracted " + Integer.toHexString(flags));
 
+	Log.d(TAG, "pos " + b.position() + " limit " + b.limit());
 	// parse the name
 	int n = b.getShort() & 0xFFFF;
+	Log.d(TAG, "Read String of Length: " + n);
 	byte[] t = new byte[n];
 	for (int s = 0; s < n; s++) {
 	    t[s] = b.get();

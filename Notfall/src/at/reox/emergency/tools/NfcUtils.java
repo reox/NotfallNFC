@@ -10,23 +10,6 @@ import android.util.Log;
 
 public class NfcUtils {
 
-    public static byte[] fakeData = new byte[] { (byte) 0x02, (byte) 0x00, (byte) 0x08,
-	(byte) 0x42, (byte) 0x61, (byte) 0x63, (byte) 0x68, (byte) 0x6D, (byte) 0x61, (byte) 0x6E,
-	(byte) 0x6E, (byte) 0x00, (byte) 0x09, (byte) 0x53, (byte) 0x65, (byte) 0x62, (byte) 0x61,
-	(byte) 0x73, (byte) 0x74, (byte) 0x69, (byte) 0x61, (byte) 0x6E, (byte) 0x00, (byte) 0x18,
-	(byte) 0x53, (byte) 0x65, (byte) 0x6E, (byte) 0x65, (byte) 0x6B, (byte) 0x6F, (byte) 0x77,
-	(byte) 0x69, (byte) 0x74, (byte) 0x73, (byte) 0x63, (byte) 0x68, (byte) 0x67, (byte) 0x61,
-	(byte) 0x73, (byte) 0x73, (byte) 0x65, (byte) 0x20, (byte) 0x33, (byte) 0x2F, (byte) 0x33,
-	(byte) 0x2F, (byte) 0x31, (byte) 0x30, (byte) 0x00, (byte) 0x49, (byte) 0xA5, (byte) 0x45,
-	(byte) 0x12, (byte) 0x26, (byte) 0x00, (byte) 0x03, (byte) 0x02, (byte) 0x00, (byte) 0x04,
-	(byte) 0x00, (byte) 0x4A, (byte) 0xE7, (byte) 0x02, (byte) 0x04, (byte) 0x00, (byte) 0x06,
-	(byte) 0x04, (byte) 0x0A, (byte) 0x5A, (byte) 0x09, (byte) 0x29, (byte) 0x00, (byte) 0x01,
-	(byte) 0x00, (byte) 0x09, (byte) 0x66, (byte) 0x6F, (byte) 0x6F, (byte) 0x62, (byte) 0x61,
-	(byte) 0x72, (byte) 0x66, (byte) 0x6F, (byte) 0x6F, (byte) 0x00, (byte) 0x00, (byte) 0x01,
-	(byte) 0x40, (byte) 0x90, (byte) 0xA7, (byte) 0xB0, (byte) 0x23, (byte) 0x0D, (byte) 0xD1,
-	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-
     private static final String TAG = "NfcUtils";
 
     public static byte[] read(Tag tag) throws IOException, FormatException {
@@ -52,21 +35,52 @@ public class NfcUtils {
 	    // block number
 	    arrByte[10] = (byte) (i);
 	    byte[] result = nfc.transceive(arrByte);
-	    System.arraycopy(result, 0, data, i * 4, 4);
+	    System.arraycopy(result, 1, data, i * 4, 4);
 	}
 
 	nfc.close();
 	return data;
     }
 
-    public static void write(Tag tag, byte[] data) throws IOException, FormatException {
+    public static boolean verify(NfcV nfc, int block, byte[] data) {
+
+	try {
+	    byte[] arrByte = new byte[3];
+	    // Flags
+	    arrByte[0] = 0x02; // 0x20 = Addressed Mode, 0x02 = Fast Mode
+	    // Command
+	    arrByte[1] = 0x20; // read single block
+
+	    arrByte[2] = (byte) (block);
+	    byte[] result = nfc.transceive(arrByte);
+
+	    for (int i = 0; i < 4; i++) {
+		Log.d(
+		    TAG,
+		    "Verify read " + Integer.toHexString(result[i]) + "should "
+			+ Integer.toHexString(data[i]));
+		if (result[i] != data[i]) {
+		    return false;
+		}
+	    }
+
+	    return true;
+	} catch (IOException e) {
+	    return false;
+	}
+
+    }
+
+    public static void write(Tag tag, byte[] data) throws IOException, FormatException,
+	InterruptedException {
 	if (tag == null) {
 	    return;
 	}
 	NfcV nfc = NfcV.get(tag);
-	byte[] ID = tag.getId();
 
 	nfc.connect();
+
+	Log.d(TAG, "Max Transceive Bytes: " + nfc.getMaxTransceiveLength());
 
 	// NfcV Tag has 64 Blocks with 4 Byte
 	if ((data.length / 4) > 64) {
@@ -81,35 +95,33 @@ public class NfcUtils {
 	    data = ndata;
 	}
 
+	byte[] arrByte = new byte[7];
+	// Flags
+	arrByte[0] = 0x42;
+	// Command
+	arrByte[1] = 0x21;
+
 	for (int i = 0; i < (data.length / 4); i++) {
-	    byte[] arrByte = new byte[17];
 
-	    // Flags
-	    arrByte[0] = (byte) 0x22; // Tag only supports flags = 0
-	    // Command
-	    arrByte[1] = 0x21;
-	    // ID
-	    System.arraycopy(ID, 0, arrByte, 2, 8);
 	    // block number
-	    arrByte[10] = (byte) (i);
+	    arrByte[2] = (byte) (i);
 
-	    // data
-	    arrByte[11] = data[(i * 4) + 3];
-	    arrByte[12] = data[(i * 4) + 2];
-	    arrByte[13] = data[(i * 4) + 1];
-	    arrByte[14] = data[(i * 4)];
-
-	    // CRC 16 of all command
-	    byte[] check = new byte[15];
-	    System.arraycopy(arrByte, 0, check, 0, 15);
-	    int crc = CRC.crc16(check);
-	    arrByte[15] = (byte) (crc >>> 8);
-	    arrByte[16] = (byte) (crc & 0xFF);
+	    // data, DONT SEND LSB FIRST!
+	    arrByte[3] = data[(i * 4)];
+	    arrByte[4] = data[(i * 4) + 1];
+	    arrByte[5] = data[(i * 4) + 2];
+	    arrByte[6] = data[(i * 4) + 3];
 
 	    Log.d(TAG, "Writing Data to block " + i + " [" + printHexString(arrByte) + "]");
-
-	    // byte[] result = nfc.transceive(arrByte);
-	    // Log.d(TAG, "got result: " + Arrays.toString(result));
+	    try {
+		nfc.transceive(arrByte);
+	    } catch (IOException e) {
+		if (e.getMessage().equals("Tag was lost.")) {
+		    // continue, because of Tag bug
+		} else {
+		    throw e;
+		}
+	    }
 	}
 
 	nfc.close();

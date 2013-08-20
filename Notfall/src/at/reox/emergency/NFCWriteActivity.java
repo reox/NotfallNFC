@@ -109,6 +109,9 @@ public class NFCWriteActivity extends Activity {
 	    } catch (FormatException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+	    } catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	    }
 	    return null;
 	}

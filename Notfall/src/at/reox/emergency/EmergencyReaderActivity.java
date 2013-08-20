@@ -113,7 +113,7 @@ public class EmergencyReaderActivity extends Activity {
 		realData = NfcUtils.read(arg0[0]);
 		Log.d(TAG, "Found a tag and read: " + NfcUtils.printHexString(realData));
 		((EmergencyApplication) getApplication()).loadTag(new EmergencyData()
-		    .readBinaryData(NfcUtils.fakeData));
+		    .readBinaryData(realData));
 
 	    } catch (IOException e) {
 		// TODO Auto-generated catch block
