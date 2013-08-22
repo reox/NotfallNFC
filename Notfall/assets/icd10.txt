@@ -5798,87 +5798,87 @@ C40.9|Bösartige Neubildung der Phalangen
 C40.9|Bösartige Neubildung eines kurzen Knochens
 C40.9|Bösartige Neubildung eines langen Knochens
 C40.9|Epiphysenteratom
-C41.01|Bösartige Neubildung der Calvaria
-C41.01|Bösartige Neubildung der Keilbeinknochen
-C41.01|Bösartige Neubildung der Knochen der Augenhöhle
-C41.01|Bösartige Neubildung der Knochen der Sella turcica
-C41.01|Bösartige Neubildung der Knochen des Gehirn- und des Gesichtsschädels
-C41.01|Bösartige Neubildung der Knochenhaut der Calvaria
-C41.01|Bösartige Neubildung der Knochenhaut der Orbita
-C41.01|Bösartige Neubildung der Knochenhaut der Sella turcica
-C41.01|Bösartige Neubildung der Knochenhaut der Stirn
-C41.01|Bösartige Neubildung der Knochenhaut des Clivus
-C41.01|Bösartige Neubildung der Knochenhaut des Craniums
-C41.01|Bösartige Neubildung der Knochenhaut des Hinterhauptbeins
-C41.01|Bösartige Neubildung der Knochenhaut des Keilbeins
-C41.01|Bösartige Neubildung der Knochenhaut des Scheitelbeins
-C41.01|Bösartige Neubildung der Knochenhaut des Schläfenbeins
-C41.01|Bösartige Neubildung der Knochenhaut des Schädeldaches
-C41.01|Bösartige Neubildung der Knochenhaut des Schädels
-C41.01|Bösartige Neubildung der Knochenhaut des Siebbeins
-C41.01|Bösartige Neubildung der Orbitaknochen
-C41.01|Bösartige Neubildung der Siebbeinknochen
-C41.01|Bösartige Neubildung der Siebbeinzellen
-C41.01|Bösartige Neubildung des Clivus
-C41.01|Bösartige Neubildung des Craniums
-C41.01|Bösartige Neubildung des Gehirnschädels
-C41.01|Bösartige Neubildung des Hinterhauptbeins
-C41.01|Bösartige Neubildung des Keilbeins
-C41.01|Bösartige Neubildung des Mastoidknochens
-C41.01|Bösartige Neubildung des Processus mastoideus
-C41.01|Bösartige Neubildung des Scheitelbeins
-C41.01|Bösartige Neubildung des Schläfenbeins
-C41.01|Bösartige Neubildung des Schädeldaches
-C41.01|Bösartige Neubildung des Schädelknochens
-C41.01|Bösartige Neubildung des Stirnbeins
-C41.01|Bösartige Neubildung des Warzenfortsatzes
-C41.01|Sarkom des Os ethmoidale
-C41.01|Sarkom des Os frontale
-C41.01|Sarkom des Os occipitale
-C41.01|Sarkom des Os parietale
-C41.01|Sarkom des Os sphenoidale
-C41.01|Sarkom des Os temporale
-C41.01|Sarkom des Schädelknochens
-C41.02|Ameloblastisches Fibrosarkom des Oberkieferknochens
-C41.02|Ameloblastisches Karzinom des Oberkieferknochens
-C41.02|Ameloblastisches Odontosarkom des Oberkieferknochens
-C41.02|Ameloblastosarkom des Oberkieferknochens
-C41.02|Amelosarkom des Oberkieferknochens
-C41.02|Bösartige Neubildung der Gesichtsknochen
-C41.02|Bösartige Neubildung der Knochen der Nasenmuschel
-C41.02|Bösartige Neubildung der Knochen der Nebenhöhle
-C41.02|Bösartige Neubildung der Knochenhaut der Gesichtsknochen
-C41.02|Bösartige Neubildung der Knochenhaut der Nase
-C41.02|Bösartige Neubildung der Knochenhaut des Jochbeins
-C41.02|Bösartige Neubildung der Knochenhaut des Pflugscharbeins
-C41.02|Bösartige Neubildung der Knochenhaut des Vomer
-C41.02|Bösartige Neubildung der Knochenhaut des Zungenbeins
-C41.02|Bösartige Neubildung der Maxilla
-C41.02|Bösartige Neubildung der Nasenknochen
-C41.02|Bösartige Neubildung des Gesichtsknochens
-C41.02|Bösartige Neubildung des Gesichtsschädels
-C41.02|Bösartige Neubildung des Jochbeins
-C41.02|Bösartige Neubildung des Nasenbeins
-C41.02|Bösartige Neubildung des Oberkieferalveolarfortsatzes
-C41.02|Bösartige Neubildung des Oberkieferalveolarkamms
-C41.02|Bösartige Neubildung des Oberkieferknochens
-C41.02|Bösartige Neubildung des Pflugscharbeins
-C41.02|Bösartige Neubildung des Zungenbeins
-C41.02|Bösartiger odontogener Oberkiefertumor
-C41.02|Bösartiges Ameloblastom des Oberkieferknochens
-C41.02|Intraossäres Karzinom des Oberkieferknochens
-C41.02|Malignes Adamantinom des Oberkiefers
-C41.02|Maxillasarkom
-C41.02|Odontogenes Fibrosarkom des Oberkieferknochens
-C41.02|Odontogenes Karzinom des Oberkieferknochens
-C41.02|Odontogenes Sarkom des Oberkieferknochens
-C41.02|Odontosarkom des Oberkieferknochens
-C41.02|Sarkom der Nasenmuschel
-C41.02|Sarkom des Gesichtsknochens
-C41.02|Sarkom des Oberkiefers
-C41.02|Sarkom des Os nasale
-C41.02|Sarkom des Os zygomaticum
-C41.02|Sarkom des Vomer
+C41.1|Bösartige Neubildung der Calvaria
+C41.1|Bösartige Neubildung der Keilbeinknochen
+C41.1|Bösartige Neubildung der Knochen der Augenhöhle
+C41.1|Bösartige Neubildung der Knochen der Sella turcica
+C41.1|Bösartige Neubildung der Knochen des Gehirn- und des Gesichtsschädels
+C41.1|Bösartige Neubildung der Knochenhaut der Calvaria
+C41.1|Bösartige Neubildung der Knochenhaut der Orbita
+C41.1|Bösartige Neubildung der Knochenhaut der Sella turcica
+C41.1|Bösartige Neubildung der Knochenhaut der Stirn
+C41.1|Bösartige Neubildung der Knochenhaut des Clivus
+C41.1|Bösartige Neubildung der Knochenhaut des Craniums
+C41.1|Bösartige Neubildung der Knochenhaut des Hinterhauptbeins
+C41.1|Bösartige Neubildung der Knochenhaut des Keilbeins
+C41.1|Bösartige Neubildung der Knochenhaut des Scheitelbeins
+C41.1|Bösartige Neubildung der Knochenhaut des Schläfenbeins
+C41.1|Bösartige Neubildung der Knochenhaut des Schädeldaches
+C41.1|Bösartige Neubildung der Knochenhaut des Schädels
+C41.1|Bösartige Neubildung der Knochenhaut des Siebbeins
+C41.1|Bösartige Neubildung der Orbitaknochen
+C41.1|Bösartige Neubildung der Siebbeinknochen
+C41.1|Bösartige Neubildung der Siebbeinzellen
+C41.1|Bösartige Neubildung des Clivus
+C41.1|Bösartige Neubildung des Craniums
+C41.1|Bösartige Neubildung des Gehirnschädels
+C41.1|Bösartige Neubildung des Hinterhauptbeins
+C41.1|Bösartige Neubildung des Keilbeins
+C41.1|Bösartige Neubildung des Mastoidknochens
+C41.1|Bösartige Neubildung des Processus mastoideus
+C41.1|Bösartige Neubildung des Scheitelbeins
+C41.1|Bösartige Neubildung des Schläfenbeins
+C41.1|Bösartige Neubildung des Schädeldaches
+C41.1|Bösartige Neubildung des Schädelknochens
+C41.1|Bösartige Neubildung des Stirnbeins
+C41.1|Bösartige Neubildung des Warzenfortsatzes
+C41.1|Sarkom des Os ethmoidale
+C41.1|Sarkom des Os frontale
+C41.1|Sarkom des Os occipitale
+C41.1|Sarkom des Os parietale
+C41.1|Sarkom des Os sphenoidale
+C41.1|Sarkom des Os temporale
+C41.1|Sarkom des Schädelknochens
+C41.2|Ameloblastisches Fibrosarkom des Oberkieferknochens
+C41.2|Ameloblastisches Karzinom des Oberkieferknochens
+C41.2|Ameloblastisches Odontosarkom des Oberkieferknochens
+C41.2|Ameloblastosarkom des Oberkieferknochens
+C41.2|Amelosarkom des Oberkieferknochens
+C41.2|Bösartige Neubildung der Gesichtsknochen
+C41.2|Bösartige Neubildung der Knochen der Nasenmuschel
+C41.2|Bösartige Neubildung der Knochen der Nebenhöhle
+C41.2|Bösartige Neubildung der Knochenhaut der Gesichtsknochen
+C41.2|Bösartige Neubildung der Knochenhaut der Nase
+C41.2|Bösartige Neubildung der Knochenhaut des Jochbeins
+C41.2|Bösartige Neubildung der Knochenhaut des Pflugscharbeins
+C41.2|Bösartige Neubildung der Knochenhaut des Vomer
+C41.2|Bösartige Neubildung der Knochenhaut des Zungenbeins
+C41.2|Bösartige Neubildung der Maxilla
+C41.2|Bösartige Neubildung der Nasenknochen
+C41.2|Bösartige Neubildung des Gesichtsknochens
+C41.2|Bösartige Neubildung des Gesichtsschädels
+C41.2|Bösartige Neubildung des Jochbeins
+C41.2|Bösartige Neubildung des Nasenbeins
+C41.2|Bösartige Neubildung des Oberkieferalveolarfortsatzes
+C41.2|Bösartige Neubildung des Oberkieferalveolarkamms
+C41.2|Bösartige Neubildung des Oberkieferknochens
+C41.2|Bösartige Neubildung des Pflugscharbeins
+C41.2|Bösartige Neubildung des Zungenbeins
+C41.2|Bösartiger odontogener Oberkiefertumor
+C41.2|Bösartiges Ameloblastom des Oberkieferknochens
+C41.2|Intraossäres Karzinom des Oberkieferknochens
+C41.2|Malignes Adamantinom des Oberkiefers
+C41.2|Maxillasarkom
+C41.2|Odontogenes Fibrosarkom des Oberkieferknochens
+C41.2|Odontogenes Karzinom des Oberkieferknochens
+C41.2|Odontogenes Sarkom des Oberkieferknochens
+C41.2|Odontosarkom des Oberkieferknochens
+C41.2|Sarkom der Nasenmuschel
+C41.2|Sarkom des Gesichtsknochens
+C41.2|Sarkom des Oberkiefers
+C41.2|Sarkom des Os nasale
+C41.2|Sarkom des Os zygomaticum
+C41.2|Sarkom des Vomer
 C41.1|Ameloblastisches Fibrosarkom
 C41.1|Ameloblastisches Fibrosarkom des Unterkieferknochens
 C41.1|Ameloblastisches Karzinom
@@ -10114,18 +10114,18 @@ C86.6|Papulosis lymphomatoides
 C86.6|Primär kutanes anaplastisches großzelliges Lymphom
 C86.6|Primär kutanes CD30-positives großzelliges T-Zell-Lymphom
 C86.6|Primäre kutane CD30-positive T-Zell-Proliferation
-C88.00|Bing-von-Neel-Syndrom
-C88.00|Idiopathische Makroglobulinämie
-C88.00|Lymphoplasmozytisches Lymphom mit IgM-Produktion
-C88.00|Makroglobulinämie
-C88.00|Makroglobulinämie Waldenström
-C88.00|Morbus Waldenström
-C88.00|Primäre Makroglobulinämie
-C88.00|Waldenström-Syndrom [Makroglobulinämie]
-C88.01|Lymphoplasmozytisches Lymphom mit IgM-Produktion in kompletter Remission
-C88.01|Makroglobulinämie in kompletter Remission
-C88.01|Makroglobulinämie Waldenström in kompletter Remission
-C88.01|Morbus Waldenström in kompletter Remission
+C88.0|Bing-von-Neel-Syndrom
+C88.0|Idiopathische Makroglobulinämie
+C88.0|Lymphoplasmozytisches Lymphom mit IgM-Produktion
+C88.0|Makroglobulinämie
+C88.0|Makroglobulinämie Waldenström
+C88.0|Morbus Waldenström
+C88.0|Primäre Makroglobulinämie
+C88.0|Waldenström-Syndrom [Makroglobulinämie]
+C88.1|Lymphoplasmozytisches Lymphom mit IgM-Produktion in kompletter Remission
+C88.1|Makroglobulinämie in kompletter Remission
+C88.1|Makroglobulinämie Waldenström in kompletter Remission
+C88.1|Morbus Waldenström in kompletter Remission
 C88.20|Franklin-Krankheit
 C88.20|Franklin-Syndrom
 C88.20|Gamma-Schwerkettenkrankheit
@@ -10155,43 +10155,43 @@ C88.41|Mukoassoziiertes Lymphom in kompletter Remission
 C88.90|Immunproliferative bösartige Neubildung a.n.k.
 C88.90|Immunproliferative Krankheit
 C88.91|Immunproliferative Krankheit in kompletter Remission
-C90.00|Anaplastisches Plasmozytom
-C90.00|Bence-Jones-Plasmozytom
-C90.00|Hupert-Krankheit
-C90.00|IgG [Immunglobulin G]-Plasmozytom
-C90.00|Kahler-Buzzolo-Krankheit
-C90.00|Kahler-Krankheit
-C90.00|Malignes Plasmom
-C90.00|Medulläres Plasmozytom
-C90.00|Monostotisches Plasmazellenmyelom
-C90.00|Morbus Kahler
-C90.00|Multipler Plasmazelltumor
-C90.00|Multiples Myelom
-C90.00|Multiples Plasmazellenmyelom
-C90.00|Multiples Plasmozytom
-C90.00|Myelom
-C90.00|Myelomatose
-C90.00|Myelozytom
-C90.00|Plasmazellmyelom
-C90.00|Reticulosis plasmacellularis
-C90.00|Retikulosarkom mit plasmazellulärer Differenzierung
-C90.01|Hupert-Krankheit in kompletter Remission
-C90.01|IgA [Immunglobulin A]-Plasmozytom in kompletter Remission
-C90.01|IgG [Immunglobulin G]-Plasmozytom in kompletter Remission
-C90.01|Kahler-Buzzolo-Krankheit in kompletter Remission
-C90.01|Kahler-Krankheit in kompletter Remission
-C90.01|Malignes Plasmom in kompletter Remission
-C90.01|Medulläres Plasmozytom in kompletter Remission
-C90.01|Morbus Kahler in kompletter Remission
-C90.01|Multiples Myelom in kompletter Remission
-C90.01|Multiples Plasmazellenmyelom in kompletter Remission
-C90.01|Myelom in kompletter Remission
-C90.01|Myelomatose in kompletter Remission
-C90.01|Myelozytom in kompletter Remission
-C90.01|Plasmazellmyelom in kompletter Remission
-C90.01|Plasmozytom in kompletter Remission
-C90.01|Reticulosis plasmacellularis in kompletter Remission
-C90.01|Retikulosarkom mit plasmazellulärer Differenzierung in kompletter Remission
+C90.0|Anaplastisches Plasmozytom
+C90.0|Bence-Jones-Plasmozytom
+C90.0|Hupert-Krankheit
+C90.0|IgG [Immunglobulin G]-Plasmozytom
+C90.0|Kahler-Buzzolo-Krankheit
+C90.0|Kahler-Krankheit
+C90.0|Malignes Plasmom
+C90.0|Medulläres Plasmozytom
+C90.0|Monostotisches Plasmazellenmyelom
+C90.0|Morbus Kahler
+C90.0|Multipler Plasmazelltumor
+C90.0|Multiples Myelom
+C90.0|Multiples Plasmazellenmyelom
+C90.0|Multiples Plasmozytom
+C90.0|Myelom
+C90.0|Myelomatose
+C90.0|Myelozytom
+C90.0|Plasmazellmyelom
+C90.0|Reticulosis plasmacellularis
+C90.0|Retikulosarkom mit plasmazellulärer Differenzierung
+C90.1|Hupert-Krankheit in kompletter Remission
+C90.1|IgA [Immunglobulin A]-Plasmozytom in kompletter Remission
+C90.1|IgG [Immunglobulin G]-Plasmozytom in kompletter Remission
+C90.1|Kahler-Buzzolo-Krankheit in kompletter Remission
+C90.1|Kahler-Krankheit in kompletter Remission
+C90.1|Malignes Plasmom in kompletter Remission
+C90.1|Medulläres Plasmozytom in kompletter Remission
+C90.1|Morbus Kahler in kompletter Remission
+C90.1|Multiples Myelom in kompletter Remission
+C90.1|Multiples Plasmazellenmyelom in kompletter Remission
+C90.1|Myelom in kompletter Remission
+C90.1|Myelomatose in kompletter Remission
+C90.1|Myelozytom in kompletter Remission
+C90.1|Plasmazellmyelom in kompletter Remission
+C90.1|Plasmozytom in kompletter Remission
+C90.1|Reticulosis plasmacellularis in kompletter Remission
+C90.1|Retikulosarkom mit plasmazellulärer Differenzierung in kompletter Remission
 C90.10|Plasmazellenleukämie
 C90.10|Plasmazelluläre Leukämie
 C90.10|Plasmazytische Leukämie
@@ -10212,19 +10212,19 @@ C90.31|Bösartiger Plasmazelltumor in kompletter Remission
 C90.31|Nierenmyelom in kompletter Remission
 C90.31|Nierenplasmozytom in kompletter Remission
 C90.31|Solitäres Myelom in kompletter Remission
-C91.00|Akute lymphatische Leukämie
-C91.00|Akute lymphoblastische Leukämie
-C91.00|Akute lymphoide Leukämie
-C91.00|Akute lymphozytäre Leukämie
-C91.00|ALL [Akute lymphatische Leukämie]
-C91.00|Lymphoblastenleukämie
-C91.00|Lymphoblastische Leukämie
-C91.01|Akute lymphatische Leukämie in kompletter Remission
-C91.01|Akute lymphoblastische Leukämie in kompletter Remission
-C91.01|Akute lymphoide Leukämie in kompletter Remission
-C91.01|Akute lymphozytäre Leukämie in kompletter Remission
-C91.01|ALL [Akute lymphatische Leukämie] in kompletter Remission
-C91.01|Lymphoblastenleukämie in kompletter Remission
+C91.0|Akute lymphatische Leukämie
+C91.0|Akute lymphoblastische Leukämie
+C91.0|Akute lymphoide Leukämie
+C91.0|Akute lymphozytäre Leukämie
+C91.0|ALL [Akute lymphatische Leukämie]
+C91.0|Lymphoblastenleukämie
+C91.0|Lymphoblastische Leukämie
+C91.1|Akute lymphatische Leukämie in kompletter Remission
+C91.1|Akute lymphoblastische Leukämie in kompletter Remission
+C91.1|Akute lymphoide Leukämie in kompletter Remission
+C91.1|Akute lymphozytäre Leukämie in kompletter Remission
+C91.1|ALL [Akute lymphatische Leukämie] in kompletter Remission
+C91.1|Lymphoblastenleukämie in kompletter Remission
 C91.10|Blastenschub einer lymphatischen Leukämie
 C91.10|Chronische lymphatische Leukämie
 C91.10|Chronische lymphatische Leukämie vom B-Zell-Typ [CLL]
@@ -10290,26 +10290,26 @@ C91.91|Lymphosarkomzellenleukämie in kompletter Remission
 C91.91|Lymphozytäre Leukämie in kompletter Remission
 C91.91|Subakute lymphatische Leukämie in kompletter Remission
 C91.91|Subakute lymphozytäre Leukämie in kompletter Remission
-C92.00|Akute granulozytäre Leukämie
-C92.00|Akute minimal differenzierte myeloische Leukämie
-C92.00|Akute myeloblastische Leukämie
-C92.00|Akute myelogene Leukämie
-C92.00|Akute myeloische Leukämie
-C92.00|Akute myeloische Leukämie mit Ausreifung
-C92.00|Akute Myelose
-C92.00|Akute myelozytäre Leukämie
-C92.00|AML M0
-C92.00|AML M1
-C92.00|AML M2
-C92.00|AML mit t(8;21)
-C92.00|AML [Akute myeloische Leukämie]
-C92.00|AML1/ETO
-C92.00|Granulozytäre Blastzellenleukämie
-C92.00|Primär therapierefraktäre akute myeloische Leukämie
-C92.00|Refraktäre Anämie mit Blastenkrise in Transformation
-C92.00|Refraktäre Anämie mit Blastenüberschuss in Transformation
-C92.01|Akute myeloische Leukämie in kompletter Remission
-C92.01|AML [Akute myeloische Leukämie] in kompletter Remission
+C92.0|Akute granulozytäre Leukämie
+C92.0|Akute minimal differenzierte myeloische Leukämie
+C92.0|Akute myeloblastische Leukämie
+C92.0|Akute myelogene Leukämie
+C92.0|Akute myeloische Leukämie
+C92.0|Akute myeloische Leukämie mit Ausreifung
+C92.0|Akute Myelose
+C92.0|Akute myelozytäre Leukämie
+C92.0|AML M0
+C92.0|AML M1
+C92.0|AML M2
+C92.0|AML mit t(8;21)
+C92.0|AML [Akute myeloische Leukämie]
+C92.0|AML1/ETO
+C92.0|Granulozytäre Blastzellenleukämie
+C92.0|Primär therapierefraktäre akute myeloische Leukämie
+C92.0|Refraktäre Anämie mit Blastenkrise in Transformation
+C92.0|Refraktäre Anämie mit Blastenüberschuss in Transformation
+C92.1|Akute myeloische Leukämie in kompletter Remission
+C92.1|AML [Akute myeloische Leukämie] in kompletter Remission
 C92.10|Chronische granulozytäre Leukämie
 C92.10|Chronische myelogene Leukämie
 C92.10|Chronische myeloische Leukämie, BCR/ABL-positiv
@@ -10388,17 +10388,17 @@ C92.91|Granulozytäre Leukämie in kompletter Remission
 C92.91|Myelogene Leukämie in kompletter Remission
 C92.91|Myeloische Leukämie in kompletter Remission
 C92.91|Myelose in kompletter Remission
-C93.00|Akute Monoblastenleukämie
-C93.00|Akute monoblastische Leukämie
-C93.00|Akute Monozytenleukämie
-C93.00|AML M5
-C93.00|AML M5a
-C93.00|AML M5b
-C93.01|Akute Monoblastenleukämie in kompletter Remission
-C93.01|Akute Monozytenleukämie in kompletter Remission
-C93.01|AML M5 in kompletter Remission
-C93.01|AML M5a in kompletter Remission
-C93.01|AML M5b in kompletter Remission
+C93.0|Akute Monoblastenleukämie
+C93.0|Akute monoblastische Leukämie
+C93.0|Akute Monozytenleukämie
+C93.0|AML M5
+C93.0|AML M5a
+C93.0|AML M5b
+C93.1|Akute Monoblastenleukämie in kompletter Remission
+C93.1|Akute Monozytenleukämie in kompletter Remission
+C93.1|AML M5 in kompletter Remission
+C93.1|AML M5a in kompletter Remission
+C93.1|AML M5b in kompletter Remission
 C93.10|Chronische Monozytenleukämie
 C93.10|Chronische monozytäre Leukämie
 C93.10|Chronische myelomonozytäre Leukämie
@@ -10427,31 +10427,31 @@ C93.90|Subakute monozytäre Leukämie
 C93.91|Monozytenleukämie in kompletter Remission
 C93.91|Monozytoide Leukämie in kompletter Remission
 C93.91|Subakute monozytäre Leukämie in kompletter Remission
-C94.00|Akute Erythroleukämie
-C94.00|Akute Erythrose
-C94.00|Akute Erythrämie
-C94.00|Akute erythrämische Myelose
-C94.00|Akute myeloische Leukämie, M6 (a) (b)
-C94.00|Di-Guglielmo-Krankheit
-C94.00|Di-Guglielmo-Syndrom
-C94.00|Erythroleukoblastose
-C94.00|Erythroleukose
-C94.00|Erythroleukämie
-C94.00|Erythroleukämische Myelose
-C94.00|Erythrozythämie
-C94.00|Erythrämie
-C94.00|Erythrämische Myelose
-C94.01|Akute Erythroleukämie in kompletter Remission
-C94.01|Akute Erythrose in kompletter Remission
-C94.01|Akute Erythrämie in kompletter Remission
-C94.01|Akute erythrämische Myelose in kompletter Remission
-C94.01|Akute myeloische Leukämie, M6 (a) (b) in kompletter Remission
-C94.01|Di-Guglielmo-Krankheit in kompletter Remission
-C94.01|Erythroleukoblastose in kompletter Remission
-C94.01|Erythroleukämie in kompletter Remission
-C94.01|Erythroleukämische Myelose in kompletter Remission
-C94.01|Erythrozythämie in kompletter Remission
-C94.01|Erythrämie in kompletter Remission
+C94.0|Akute Erythroleukämie
+C94.0|Akute Erythrose
+C94.0|Akute Erythrämie
+C94.0|Akute erythrämische Myelose
+C94.0|Akute myeloische Leukämie, M6 (a) (b)
+C94.0|Di-Guglielmo-Krankheit
+C94.0|Di-Guglielmo-Syndrom
+C94.0|Erythroleukoblastose
+C94.0|Erythroleukose
+C94.0|Erythroleukämie
+C94.0|Erythroleukämische Myelose
+C94.0|Erythrozythämie
+C94.0|Erythrämie
+C94.0|Erythrämische Myelose
+C94.1|Akute Erythroleukämie in kompletter Remission
+C94.1|Akute Erythrose in kompletter Remission
+C94.1|Akute Erythrämie in kompletter Remission
+C94.1|Akute erythrämische Myelose in kompletter Remission
+C94.1|Akute myeloische Leukämie, M6 (a) (b) in kompletter Remission
+C94.1|Di-Guglielmo-Krankheit in kompletter Remission
+C94.1|Erythroleukoblastose in kompletter Remission
+C94.1|Erythroleukämie in kompletter Remission
+C94.1|Erythroleukämische Myelose in kompletter Remission
+C94.1|Erythrozythämie in kompletter Remission
+C94.1|Erythrämie in kompletter Remission
 C94.20|Akute Megakaryoblastenleukämie
 C94.20|Akute megakaryozytäre Leukämie
 C94.20|Akute myeloische Leukämie, M7
@@ -10484,24 +10484,24 @@ C94.70|Aggressive NK-Zell-Leukämie
 C94.70|Akute Basophilenleukämie
 C94.71|Aggressive NK-Zell-Leukämie in kompletter Remission
 C94.71|Akute Basophilenleukämie in kompletter Remission
-C95.00|Akute biliniäre Leukämie
-C95.00|Akute gemischt-liniäre Leukämie
-C95.00|Akute Leukämie a.n.k.
-C95.00|Akute unreifzellige Leukämie
-C95.00|Biphänotypische akute Leukämie
-C95.00|Blastenleukämie
-C95.00|Blastzellenleukämie
-C95.00|Stammzellenleukämie
-C95.00|Stammzellenleukämie mit unklarer Linienzuordnung
-C95.00|Undifferenzierte Leukämie
-C95.01|Akute biliniäre Leukämie in kompletter Remission
-C95.01|Akute gemischt-liniäre Leukämie in kompletter Remission
-C95.01|Akute Leukämie in kompletter Remission
-C95.01|Biphänotypische akute Leukämie in kompletter Remission
-C95.01|Blastenleukämie in kompletter Remission
-C95.01|Blastzellenleukämie in kompletter Remission
-C95.01|Stammzellenleukämie in kompletter Remission
-C95.01|Stammzellenleukämie mit unklarer Linienzuordnung in kompletter Remission
+C95.0|Akute biliniäre Leukämie
+C95.0|Akute gemischt-liniäre Leukämie
+C95.0|Akute Leukämie a.n.k.
+C95.0|Akute unreifzellige Leukämie
+C95.0|Biphänotypische akute Leukämie
+C95.0|Blastenleukämie
+C95.0|Blastzellenleukämie
+C95.0|Stammzellenleukämie
+C95.0|Stammzellenleukämie mit unklarer Linienzuordnung
+C95.0|Undifferenzierte Leukämie
+C95.1|Akute biliniäre Leukämie in kompletter Remission
+C95.1|Akute gemischt-liniäre Leukämie in kompletter Remission
+C95.1|Akute Leukämie in kompletter Remission
+C95.1|Biphänotypische akute Leukämie in kompletter Remission
+C95.1|Blastenleukämie in kompletter Remission
+C95.1|Blastzellenleukämie in kompletter Remission
+C95.1|Stammzellenleukämie in kompletter Remission
+C95.1|Stammzellenleukämie mit unklarer Linienzuordnung in kompletter Remission
 C95.10|Chronische Leukämie a.n.k.
 C95.11|Chronische Leukämie in kompletter Remission
 C95.70|Aleukämie
@@ -12380,85 +12380,85 @@ D17.9|Neurofibrolipom
 D17.9|Pleomorphes Lipom
 D17.9|Spindelzelliges Lipom
 D17.9|Weiches Fibrom
-D18.00|Adergeschwulst
-D18.00|Aneurysma spongiosum
-D18.00|Angiom
-D18.00|Angioma
-D18.00|Angiomatöser Nävus
-D18.00|Angiomyoneurom
-D18.00|Arteriovenöses Hämangiom
-D18.00|Blutgefäßgeschwulst
-D18.00|Blutschwamm
-D18.00|Epitheloides Hämangiom
-D18.00|Glomangiom
-D18.00|Glomangiomyom
-D18.00|Glomustumor
-D18.00|Gutartiges Angioendotheliom
-D18.00|Gutartiges Endotheliom eines Blutgefäßes
-D18.00|Gutartiges Hämangioendotheliom
-D18.00|Haemangioma
-D18.00|Haemangioma capillare
-D18.00|Haemangioma intramusculare
-D18.00|Haemangioma racemosum
-D18.00|Haemangioma simplex
-D18.00|Haemangioma venosum
-D18.00|Histiozytoides Hämangiom
-D18.00|Hämangiom
-D18.00|Hämangiomatose, eine Lokalisation betreffend
-D18.00|Hämangiomatöses Nävus
-D18.00|Infantiles Hämangiom
-D18.00|Juveniles Hämangiom
-D18.00|Kapillarhämangiom
-D18.00|Kapillärer Nävus
-D18.00|Kapilläres Hämangiom
-D18.00|Kavernöser Nävus
-D18.00|Kavernöses Hämangiom
-D18.00|Knäueltumor
-D18.00|Masson-Tumor
-D18.00|Plexiformes Angiom
-D18.00|Plexiformes Hämangiom
-D18.00|Rankenangiom
-D18.00|Verruköses keratotisches Hämangiom
-D18.01|Angiokeratoma corporis circumscriptum
-D18.01|Augenlidhämangiom
-D18.01|Barré-Masson-Syndrom
-D18.01|Cavernoma capillare
-D18.01|Haemangioma cavernosum
-D18.01|Haemangioma simplex cavernosum
-D18.01|Hämangiom der Haut
-D18.01|Kavernom
-D18.01|Lidhämangiom
-D18.01|Stirnlappenhämangiom
-D18.02|Angiom der Hirnbasisarterie
-D18.02|Angiom mit intrazerebraler Blutung
-D18.02|Hämangiom des Gehirns
-D18.03|Leberhämangiom
-D18.05|Hämangiom der Nase
-D18.05|Larynxhämangiom
-D18.05|Ohrhämangiom
-D18.05|Uveaangiom
-D18.08|Aderhauthämangiom
-D18.08|Angiom des Bauchraums
-D18.08|Bindehautangiom
-D18.08|Bindehauthämangiom
-D18.08|Generalisierte Skeletthämangiose
-D18.08|Gutartiges Angioendotheliom des Nervensystems
-D18.08|Gutartiges Hämangioendotheliom des Nervensystems
-D18.08|Hämangiom der Blase
-D18.08|Hämangiom der Harnblase
-D18.08|Hämangiom der Retina
-D18.08|Kapilläres Netzhauthämangiom
-D18.08|Kapilläres Orbitahämangiom
-D18.08|Kapilläres Retinahämangiom
-D18.08|Kavernöses Netzhauthämangiom
-D18.08|Kavernöses Orbitahämangiom
-D18.08|Kavernöses Retinahämangiom
-D18.08|Konjunktivaangiom
-D18.08|Konjunktivahämangiom
-D18.08|Nervenhämangiom
-D18.08|Netzhauthämangiom
-D18.08|Nierenangiom
-D18.08|Nierenhämangiom
+D18.0|Adergeschwulst
+D18.0|Aneurysma spongiosum
+D18.0|Angiom
+D18.0|Angioma
+D18.0|Angiomatöser Nävus
+D18.0|Angiomyoneurom
+D18.0|Arteriovenöses Hämangiom
+D18.0|Blutgefäßgeschwulst
+D18.0|Blutschwamm
+D18.0|Epitheloides Hämangiom
+D18.0|Glomangiom
+D18.0|Glomangiomyom
+D18.0|Glomustumor
+D18.0|Gutartiges Angioendotheliom
+D18.0|Gutartiges Endotheliom eines Blutgefäßes
+D18.0|Gutartiges Hämangioendotheliom
+D18.0|Haemangioma
+D18.0|Haemangioma capillare
+D18.0|Haemangioma intramusculare
+D18.0|Haemangioma racemosum
+D18.0|Haemangioma simplex
+D18.0|Haemangioma venosum
+D18.0|Histiozytoides Hämangiom
+D18.0|Hämangiom
+D18.0|Hämangiomatose, eine Lokalisation betreffend
+D18.0|Hämangiomatöses Nävus
+D18.0|Infantiles Hämangiom
+D18.0|Juveniles Hämangiom
+D18.0|Kapillarhämangiom
+D18.0|Kapillärer Nävus
+D18.0|Kapilläres Hämangiom
+D18.0|Kavernöser Nävus
+D18.0|Kavernöses Hämangiom
+D18.0|Knäueltumor
+D18.0|Masson-Tumor
+D18.0|Plexiformes Angiom
+D18.0|Plexiformes Hämangiom
+D18.0|Rankenangiom
+D18.0|Verruköses keratotisches Hämangiom
+D18.1|Angiokeratoma corporis circumscriptum
+D18.1|Augenlidhämangiom
+D18.1|Barré-Masson-Syndrom
+D18.1|Cavernoma capillare
+D18.1|Haemangioma cavernosum
+D18.1|Haemangioma simplex cavernosum
+D18.1|Hämangiom der Haut
+D18.1|Kavernom
+D18.1|Lidhämangiom
+D18.1|Stirnlappenhämangiom
+D18.2|Angiom der Hirnbasisarterie
+D18.2|Angiom mit intrazerebraler Blutung
+D18.2|Hämangiom des Gehirns
+D18.3|Leberhämangiom
+D18.5|Hämangiom der Nase
+D18.5|Larynxhämangiom
+D18.5|Ohrhämangiom
+D18.5|Uveaangiom
+D18.8|Aderhauthämangiom
+D18.8|Angiom des Bauchraums
+D18.8|Bindehautangiom
+D18.8|Bindehauthämangiom
+D18.8|Generalisierte Skeletthämangiose
+D18.8|Gutartiges Angioendotheliom des Nervensystems
+D18.8|Gutartiges Hämangioendotheliom des Nervensystems
+D18.8|Hämangiom der Blase
+D18.8|Hämangiom der Harnblase
+D18.8|Hämangiom der Retina
+D18.8|Kapilläres Netzhauthämangiom
+D18.8|Kapilläres Orbitahämangiom
+D18.8|Kapilläres Retinahämangiom
+D18.8|Kavernöses Netzhauthämangiom
+D18.8|Kavernöses Orbitahämangiom
+D18.8|Kavernöses Retinahämangiom
+D18.8|Konjunktivaangiom
+D18.8|Konjunktivahämangiom
+D18.8|Nervenhämangiom
+D18.8|Netzhauthämangiom
+D18.8|Nierenangiom
+D18.8|Nierenhämangiom
 D18.10|Angeborenes Hygrom
 D18.10|Hygroma colli cysticum
 D18.10|Zystisches Hygrom
@@ -17995,16 +17995,16 @@ E07.9|Schilddrüsenerkrankung
 E07.9|Schilddrüsenfehlfunktion
 E07.9|Thyreoideadysfunktion
 E07.9|Thyreopathie
-E10.01|Coma acidoticum bei Typ-1-Diabetes mellitus
-E10.01|Coma diabeticum bei Typ-1-Diabetes mellitus
-E10.01|Coma hyperglycaemicum diabeticum bei Typ-1-Diabetes mellitus
-E10.01|Diabetes mellitus Typ 1 mit Präkoma
-E10.01|Diabetisches Koma bei Typ-1-Diabetes mellitus
-E10.01|Insulinabhängiger Typ-1-Diabetes mellitus mit Koma
-E10.01|Insulinkoma bei Typ-1-Diabetes mellitus
-E10.01|Kussmaul-Koma bei Typ-1-Diabetes mellitus
-E10.01|Primär insulinabhängiger Diabetes mellitus mit Koma
-E10.01|Typ-1-Diabetes mellitus mit Koma
+E10.1|Coma acidoticum bei Typ-1-Diabetes mellitus
+E10.1|Coma diabeticum bei Typ-1-Diabetes mellitus
+E10.1|Coma hyperglycaemicum diabeticum bei Typ-1-Diabetes mellitus
+E10.1|Diabetes mellitus Typ 1 mit Präkoma
+E10.1|Diabetisches Koma bei Typ-1-Diabetes mellitus
+E10.1|Insulinabhängiger Typ-1-Diabetes mellitus mit Koma
+E10.1|Insulinkoma bei Typ-1-Diabetes mellitus
+E10.1|Kussmaul-Koma bei Typ-1-Diabetes mellitus
+E10.1|Primär insulinabhängiger Diabetes mellitus mit Koma
+E10.1|Typ-1-Diabetes mellitus mit Koma
 E10.11|Diabetes mellitus Typ 1 mit Azetonämie
 E10.11|Diabetes mellitus Typ 1 mit Azidose
 E10.11|Diabetes mellitus Typ 1 mit Ketoazidose
@@ -18058,18 +18058,18 @@ E10.90|Primär insulinabhängiger Diabetes mellitus ohne Komplikation
 E10.90|Primär insulinpflichtiger Diabetes mellitus
 E10.90|Typ-1-Diabetes mellitus - s.a. Diabetes mellitus, Typ-1-
 E10.90|Typ-1-Diabetes mellitus ohne Komplikation
-E11.01|Coma acidoticum bei Typ-2-Diabetes mellitus
-E11.01|Coma diabeticum bei Typ-2-Diabetes mellitus
-E11.01|Coma hyperglycaemicum diabeticum bei Typ-2-Diabetes mellitus
-E11.01|Diabetes mellitus Typ 2 mit Präkoma
-E11.01|Diabetisches Koma bei Typ-2-Diabetes mellitus
-E11.01|Insulinabhängiger Typ-2-Diabetes mellitus mit Koma
-E11.01|Insulinkoma bei Typ-2-Diabetes mellitus
-E11.01|Kussmaul-Atmung bei diabetischem Koma bei Typ-2-Diabetes mellitus
-E11.01|Kussmaul-Koma bei Typ-2-Diabetes mellitus
-E11.01|Nicht primär insulinabhängiger Diabetes mellitus mit Koma
-E11.01|Nichtinsulinabhängiger Typ-2-Diabetes mellitus mit Koma
-E11.01|Typ-2-Diabetes mellitus mit Koma
+E11.1|Coma acidoticum bei Typ-2-Diabetes mellitus
+E11.1|Coma diabeticum bei Typ-2-Diabetes mellitus
+E11.1|Coma hyperglycaemicum diabeticum bei Typ-2-Diabetes mellitus
+E11.1|Diabetes mellitus Typ 2 mit Präkoma
+E11.1|Diabetisches Koma bei Typ-2-Diabetes mellitus
+E11.1|Insulinabhängiger Typ-2-Diabetes mellitus mit Koma
+E11.1|Insulinkoma bei Typ-2-Diabetes mellitus
+E11.1|Kussmaul-Atmung bei diabetischem Koma bei Typ-2-Diabetes mellitus
+E11.1|Kussmaul-Koma bei Typ-2-Diabetes mellitus
+E11.1|Nicht primär insulinabhängiger Diabetes mellitus mit Koma
+E11.1|Nichtinsulinabhängiger Typ-2-Diabetes mellitus mit Koma
+E11.1|Typ-2-Diabetes mellitus mit Koma
 E11.11|Diabetes mellitus Typ 2 mit Azetonämie
 E11.11|Diabetes mellitus Typ 2 mit Azidose
 E11.11|Diabetes mellitus Typ 2 mit Ketoazidose
@@ -18150,18 +18150,18 @@ E13.90|Diabetes mellitus, nicht Typ 1 oder 2
 E13.90|Hepatogener Diabetes mellitus
 E13.90|Pankreopriver Diabetes mellitus
 E13.90|Sekundärer Diabetes mellitus
-E14.01|Coma acidoticum bei Diabetes mellitus
-E14.01|Coma diabeticum
-E14.01|Coma hyperglycaemicum diabeticum
-E14.01|Diabetes mellitus mit Koma
-E14.01|Diabetes mellitus mit Präkoma
-E14.01|Diabetisches Koma
-E14.01|Hyperglykämisches Koma
-E14.01|Hyperosmolares diabetisches Koma
-E14.01|Insulinkoma bei Diabetes mellitus
-E14.01|Kussmaul-Atmung bei diabetischem Koma
-E14.01|Kussmaul-Koma
-E14.01|Praecoma diabeticum
+E14.1|Coma acidoticum bei Diabetes mellitus
+E14.1|Coma diabeticum
+E14.1|Coma hyperglycaemicum diabeticum
+E14.1|Diabetes mellitus mit Koma
+E14.1|Diabetes mellitus mit Präkoma
+E14.1|Diabetisches Koma
+E14.1|Hyperglykämisches Koma
+E14.1|Hyperosmolares diabetisches Koma
+E14.1|Insulinkoma bei Diabetes mellitus
+E14.1|Kussmaul-Atmung bei diabetischem Koma
+E14.1|Kussmaul-Koma
+E14.1|Praecoma diabeticum
 E14.11|Diabetes mellitus mit Azetonämie
 E14.11|Diabetes mellitus mit Azidose
 E14.11|Diabetes mellitus mit Ketoazidose
@@ -18487,28 +18487,28 @@ E24.9|Kortisolhypersekretion
 E24.9|Mondgesicht
 E24.9|Morbus Icenko-Cushing
 E24.9|Vollmondgesicht
-E25.00|Klassische Form des 21-Hydroxylase-Defektes
-E25.00|Klassische Form des 21-Hydroxylase-Mangels
-E25.01|Late-onset-Form des 21-Hydroxylase-Defektes
-E25.01|Late-onset-Form des 21-Hydroxylase-Mangels
-E25.08|11-Hydroxylase-Mangel
-E25.08|3-beta-Hydroxysteroid-Dehydrogenase-Mangel
-E25.09|Angeborene Macrogenitosomia praecox
-E25.09|Angeborene Makrogenitosomie
-E25.09|Angeborene Maskulinisierung
-E25.09|Angeborene Nebennierenhyperplasie mit sexueller Frühreife
-E25.09|Angeborene Nebennierenhyperplasie mit Virilisierung
-E25.09|Angeborene Nebennierenrindenhyperplasie
-E25.09|Angeborene Vermännlichung
-E25.09|Angeborener adrenaler Pseudohermaphroditismus femininus
-E25.09|Angeborener Virilismus
-E25.09|Angeborenes adrenogenitales Salzverlustsyndrom
-E25.09|Angeborenes adrenogenitales Syndrom
-E25.09|Kongenitale Salzverlusthyperplasie der Nebenniere
-E25.09|Kongenitaler Hyperadrenokortizismus
-E25.09|Pseudohermaphroditismus femininus bei angeborener Nebennierenrindenstörung
-E25.09|Pseudohermaphroditismus masculinus bei angeborener Nebennierenrindenstörung
-E25.09|Vorzeitige Pubertät durch angeborene Nebennierenrindenüberfunktion
+E25.0|Klassische Form des 21-Hydroxylase-Defektes
+E25.0|Klassische Form des 21-Hydroxylase-Mangels
+E25.1|Late-onset-Form des 21-Hydroxylase-Defektes
+E25.1|Late-onset-Form des 21-Hydroxylase-Mangels
+E25.8|11-Hydroxylase-Mangel
+E25.8|3-beta-Hydroxysteroid-Dehydrogenase-Mangel
+E25.9|Angeborene Macrogenitosomia praecox
+E25.9|Angeborene Makrogenitosomie
+E25.9|Angeborene Maskulinisierung
+E25.9|Angeborene Nebennierenhyperplasie mit sexueller Frühreife
+E25.9|Angeborene Nebennierenhyperplasie mit Virilisierung
+E25.9|Angeborene Nebennierenrindenhyperplasie
+E25.9|Angeborene Vermännlichung
+E25.9|Angeborener adrenaler Pseudohermaphroditismus femininus
+E25.9|Angeborener Virilismus
+E25.9|Angeborenes adrenogenitales Salzverlustsyndrom
+E25.9|Angeborenes adrenogenitales Syndrom
+E25.9|Kongenitale Salzverlusthyperplasie der Nebenniere
+E25.9|Kongenitaler Hyperadrenokortizismus
+E25.9|Pseudohermaphroditismus femininus bei angeborener Nebennierenrindenstörung
+E25.9|Pseudohermaphroditismus masculinus bei angeborener Nebennierenrindenstörung
+E25.9|Vorzeitige Pubertät durch angeborene Nebennierenrindenüberfunktion
 E25.8|Adrenaler Pseudohermaphroditismus
 E25.8|Adrenaler Pseudohermaphroditismus femininus
 E25.8|Adrenaler Pseudohermaphroditismus masculinus
@@ -19274,16 +19274,16 @@ E65|Panniculus adiposus abdominalis
 E65|Reithosenadipositas
 E65|Umschriebene Fettpolster
 E65|Viszerale Fettablagerung
-E66.00|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 30 bis unter 35
-E66.01|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 35 bis unter 40
-E66.02|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 40 und mehr
-E66.09|Adipositas durch übermäßige Kalorienzufuhr
-E66.09|Adipositas durch übermäßige Kalorienzufuhr bei Kindern und Jugendlichen
-E66.09|Alimentäre Adipositas
-E66.09|Alimentäre Fettsucht
-E66.09|Exogene Fettsucht
-E66.09|Fettsucht durch erhöhte Nahrungsaufnahme
-E66.09|Fettsucht durch Überernährung
+E66.0|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 30 bis unter 35
+E66.1|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 35 bis unter 40
+E66.2|Adipositas durch übermäßige Kalorienzufuhr mit einem Body-Mass-Index [BMI] von 40 und mehr
+E66.9|Adipositas durch übermäßige Kalorienzufuhr
+E66.9|Adipositas durch übermäßige Kalorienzufuhr bei Kindern und Jugendlichen
+E66.9|Alimentäre Adipositas
+E66.9|Alimentäre Fettsucht
+E66.9|Exogene Fettsucht
+E66.9|Fettsucht durch erhöhte Nahrungsaufnahme
+E66.9|Fettsucht durch Überernährung
 E66.10|Arzneimittelinduzierte Adipositas mit einem Body-Mass-Index [BMI] von 30 bis unter 35
 E66.11|Arzneimittelinduzierte Adipositas mit einem Body-Mass-Index [BMI] von 35 bis unter 40
 E66.12|Arzneimittelinduzierte Adipositas mit einem Body-Mass-Index [BMI] von 40 und mehr
@@ -21544,12 +21544,12 @@ F39|Affektive Psychose a.n.k.
 F39|Affektive Reaktion
 F39|Affektive Störung
 F39|Emotionale Störung
-F40.00|Agoraphobie
-F40.00|Agoraphobie ohne Panikstörung
-F40.00|Ochlophobie
-F40.00|Platzangst
-F40.01|Agoraphobie mit Panik
-F40.01|Agoraphobie mit Panikstörung
+F40.0|Agoraphobie
+F40.0|Agoraphobie ohne Panikstörung
+F40.0|Ochlophobie
+F40.0|Platzangst
+F40.1|Agoraphobie mit Panik
+F40.1|Agoraphobie mit Panikstörung
 F40.1|Anthropophobie
 F40.1|Gynäkophobie
 F40.1|Soziale Neurose
@@ -23755,12 +23755,12 @@ G12.9|Spinale muskuläre Atrophie
 G12.9|Spinaler Muskelschwund
 G14|Post-Polio-Syndrom
 G14|Postpoliomyelitis-Syndrom
-G20.00|Primäres Parkinson-Syndrom mit fehlender Beeinträchtigung ohne Wirkungsfluktuation
-G20.00|Primäres Parkinson-Syndrom mit geringer Beeinträchtigung ohne Wirkungsfluktuation
-G20.00|Primäres Parkinson-Syndrom Stadium 0 bis unter 3 nach Hoehn und Yahr ohne Wirkungsfluktuation
-G20.01|Primäres Parkinson-Syndrom mit fehlender Beeinträchtigung mit Wirkungsfluktuation
-G20.01|Primäres Parkinson-Syndrom mit geringer Beeinträchtigung mit Wirkungsfluktuation
-G20.01|Primäres Parkinson-Syndrom Stadium 0 bis unter 3 nach Hoehn und Yahr mit Wirkungsfluktuation
+G20.0|Primäres Parkinson-Syndrom mit fehlender Beeinträchtigung ohne Wirkungsfluktuation
+G20.0|Primäres Parkinson-Syndrom mit geringer Beeinträchtigung ohne Wirkungsfluktuation
+G20.0|Primäres Parkinson-Syndrom Stadium 0 bis unter 3 nach Hoehn und Yahr ohne Wirkungsfluktuation
+G20.1|Primäres Parkinson-Syndrom mit fehlender Beeinträchtigung mit Wirkungsfluktuation
+G20.1|Primäres Parkinson-Syndrom mit geringer Beeinträchtigung mit Wirkungsfluktuation
+G20.1|Primäres Parkinson-Syndrom Stadium 0 bis unter 3 nach Hoehn und Yahr mit Wirkungsfluktuation
 G20.10|Primäres Parkinson-Syndrom mit mäßiger Beeinträchtigung ohne Wirkungsfluktuation
 G20.10|Primäres Parkinson-Syndrom mit schwerer Beeinträchtigung ohne Wirkungsfluktuation
 G20.10|Primäres Parkinson-Syndrom Stadium 3 nach Hoehn und Yahr ohne Wirkungsfluktuation
@@ -24134,19 +24134,19 @@ G37.9|Entmarkungskrankheit des Zentralnervensystems
 G37.9|Gehirnsklerose
 G37.9|Hirnsklerose
 G37.9|Myelindegeneration des Zentralnervensystems
-G40.00|Gutartige atypische Epilepsie
-G40.00|Pseudo-Lennox-Syndrom
-G40.01|Bioelektrischer Status epilepticus im Schlaf
-G40.01|CSWS [Continuous spikes and waves during slow-wave sleep]
-G40.01|ESES [Electrical status epilepticus during slow-wave sleep]
-G40.02|Benigne Partialepilepsie mit affektiver Symptomatik
-G40.02|Benigne psychomotorische Epilepsie
-G40.08|Benigne Epilepsie im Säuglingsalter [Watanabe]
-G40.08|Benigne Säuglingsepilepsie mit komplexfokalem Anfall
-G40.08|Epilepsie im Kindesalter mit okzipitalen Paroxysmen im EEG
-G40.08|Fokal beginnender epileptischer Anfall
-G40.08|Gutartige Epilepsie im Kindesalter mit zentrotemporalen Spikes im EEG
-G40.09|Idiopathische lokalisationsbezogene Epilepsie
+G40.0|Gutartige atypische Epilepsie
+G40.0|Pseudo-Lennox-Syndrom
+G40.1|Bioelektrischer Status epilepticus im Schlaf
+G40.1|CSWS [Continuous spikes and waves during slow-wave sleep]
+G40.1|ESES [Electrical status epilepticus during slow-wave sleep]
+G40.2|Benigne Partialepilepsie mit affektiver Symptomatik
+G40.2|Benigne psychomotorische Epilepsie
+G40.8|Benigne Epilepsie im Säuglingsalter [Watanabe]
+G40.8|Benigne Säuglingsepilepsie mit komplexfokalem Anfall
+G40.8|Epilepsie im Kindesalter mit okzipitalen Paroxysmen im EEG
+G40.8|Fokal beginnender epileptischer Anfall
+G40.8|Gutartige Epilepsie im Kindesalter mit zentrotemporalen Spikes im EEG
+G40.9|Idiopathische lokalisationsbezogene Epilepsie
 G40.1|Bravais-Jackson-Anfall
 G40.1|Bravais-Jackson-Epilepsie
 G40.1|Einfacher fokaler Anfall mit Entwicklung zu sekundär generalisiertem Anfall
@@ -24421,19 +24421,19 @@ G44.8|Kopfschmerzsyndrom
 G44.8|Sluder-Neuralgie
 G44.8|Sluder-Syndrom
 G44.8|Sphenopalatinale Neuralgie
-G45.02|Drop attack
-G45.09|Arteria-basilaris-Syndrom
-G45.09|Arteria-vertebralis-Syndrom
-G45.09|Basilaris-Symptomatik
-G45.09|Basilarisinsuffizienz
-G45.09|Basiläre DBS [Durchblutungsstörung]
-G45.09|Basiläre Durchblutungsstörung
-G45.09|Insuffizienz der Arteria basilaris
-G45.09|Insuffizienz der Arteria vertebralis
-G45.09|VBI [Vertebrobasiläre Insuffizienz]
-G45.09|Vertebrobasiläre DBS [Durchblutungsstörung]
-G45.09|Vertebrobasiläre Durchblutungsstörung
-G45.09|Vertebrobasiläre Insuffizienz
+G45.2|Drop attack
+G45.9|Arteria-basilaris-Syndrom
+G45.9|Arteria-vertebralis-Syndrom
+G45.9|Basilaris-Symptomatik
+G45.9|Basilarisinsuffizienz
+G45.9|Basiläre DBS [Durchblutungsstörung]
+G45.9|Basiläre Durchblutungsstörung
+G45.9|Insuffizienz der Arteria basilaris
+G45.9|Insuffizienz der Arteria vertebralis
+G45.9|VBI [Vertebrobasiläre Insuffizienz]
+G45.9|Vertebrobasiläre DBS [Durchblutungsstörung]
+G45.9|Vertebrobasiläre Durchblutungsstörung
+G45.9|Vertebrobasiläre Insuffizienz
 G45.19|Arteria-carotis-interna-Syndrom
 G45.19|Insuffizienz der Arteria carotis
 G45.29|Bilaterale Syndrome der präzerebralen Arterien
@@ -25288,10 +25288,10 @@ G81.9|Hemiparalyse
 G81.9|Hemiparese
 G81.9|Hemiplegia
 G81.9|Hemiplegie
-G82.00|Akute nichttraumatische schlaffe Paraplegie
-G82.01|Akute nichttraumatische schlaffe Paraparese
-G82.02|Schlaffe Paraplegie
-G82.03|Schlaffe Paraparese
+G82.0|Akute nichttraumatische schlaffe Paraplegie
+G82.1|Akute nichttraumatische schlaffe Paraparese
+G82.2|Schlaffe Paraplegie
+G82.3|Schlaffe Paraparese
 G82.10|Akute nichttraumatische spastische Paraplegie
 G82.11|Akute nichttraumatische spastische Paraparese
 G82.12|Spastische Paraplegie
@@ -25420,16 +25420,16 @@ G83.9|Spastische Parese
 G83.9|Teilparese
 G83.9|Unvollständige Paralyse
 G83.9|Vollständige Paralyse
-G90.00|Charcot-Weiss-Baker-Syndrom
-G90.00|Hypersensibilität des Karotissinus
-G90.00|Hypersensitiver Karotissinus
-G90.00|Karotissinus-Syndrom
-G90.00|Sensibilisierung des Sinus caroticus
-G90.00|Synkope bei Druck auf den Sinus caroticus
-G90.08|Autonome Faziozephalgie
-G90.08|Faziozephalgie
-G90.08|Idiopathische autonome Insuffizienz
-G90.08|Karotidodynie
+G90.0|Charcot-Weiss-Baker-Syndrom
+G90.0|Hypersensibilität des Karotissinus
+G90.0|Hypersensitiver Karotissinus
+G90.0|Karotissinus-Syndrom
+G90.0|Sensibilisierung des Sinus caroticus
+G90.0|Synkope bei Druck auf den Sinus caroticus
+G90.8|Autonome Faziozephalgie
+G90.8|Faziozephalgie
+G90.8|Idiopathische autonome Insuffizienz
+G90.8|Karotidodynie
 G90.1|Dysautonomie
 G90.1|Familiäre Dysautonomie
 G90.1|Riley-Day-Syndrom
@@ -29778,8 +29778,8 @@ I09.9|Rheumatische Karditis
 I09.9|Rheumatisches Herzversagen
 I09.9|Ruhendes rheumatisches Fieber mit Karditis
 I09.9|Ruhendes rheumatisches Fieber mit Pankarditis
-I10.00|Benigne Hypertonie
-I10.01|Benigne essentielle Hypertonie mit hypertensiver Krise
+I10.0|Benigne Hypertonie
+I10.1|Benigne essentielle Hypertonie mit hypertensiver Krise
 I10.10|Maligne Hypertonie
 I10.11|Maligne Hypertonie mit hypertensiver Krise
 I10.90|Akzelerierte Hypertonie
@@ -29820,14 +29820,14 @@ I10.91|Blutdruckkrise
 I10.91|Hypertensive Krise
 I10.91|Hypertensiver Notfall
 I10.91|Hypertone Krise
-I11.00|Herzdekompensation bei Hypertonie
-I11.00|Herzinsuffizienz bei Hypertonie
-I11.00|Hypertensive Herzinsuffizienz durch Stauung
-I11.00|Hypertensive Herzkrankheit mit Herzinsuffizienz
-I11.00|Hypertensive Linksherzinsuffizienz
-I11.00|Hypertensives Herzversagen
-I11.00|Hypertensives Linksherzversagen
-I11.01|Hypertensive Herzkrankheit mit Herzinsuffizienz mit hypertensiver Krise
+I11.0|Herzdekompensation bei Hypertonie
+I11.0|Herzinsuffizienz bei Hypertonie
+I11.0|Hypertensive Herzinsuffizienz durch Stauung
+I11.0|Hypertensive Herzkrankheit mit Herzinsuffizienz
+I11.0|Hypertensive Linksherzinsuffizienz
+I11.0|Hypertensives Herzversagen
+I11.0|Hypertensives Linksherzversagen
+I11.1|Hypertensive Herzkrankheit mit Herzinsuffizienz mit hypertensiver Krise
 I11.90|Benigne hypertensive Herzkrankheit
 I11.90|Benigne Hypertonie bei Herzkrankheit
 I11.90|Bluthochdruck mit Herzbeteiligung
@@ -29846,24 +29846,24 @@ I11.90|Kardiovaskuläre Hypertonie
 I11.90|Maligne hypertensive Herzkrankheit
 I11.90|Maligne Hypertonie mit Herzbeteiligung
 I11.91|Hypertensive Herzkrankheit ohne Herzinsuffizienz mit hypertensiver Krise
-I12.00|Arteriosklerotische Nephritis mit Niereninsuffizienz
-I12.00|Arteriosklerotische Niereninsuffizienz
-I12.00|Chronische arteriosklerotische Nephritis mit Niereninsuffizienz
-I12.00|Fahr-Volhard-Krankheit mit Niereninsuffizienz
-I12.00|Hypertensive Niereninsuffizienz
-I12.00|Hypertensive Nierenkrankheit mit Niereninsuffizienz
-I12.00|Hypertensives Nierenversagen
-I12.00|Hypertonie bei Schrumpfniere mit Niereninsuffizienz
-I12.00|Hypertonie mit Niereninsuffizienz
-I12.00|Hypertonische Urämie
-I12.00|Hypertonisches terminales Nierenversagen
-I12.00|Interstitielle arteriosklerotische Nephritis mit Niereninsuffizienz
-I12.00|Nephroangiosklerose mit Niereninsuffizienz
-I12.00|Nephrosklerose mit Niereninsuffizienz
-I12.00|Nierenarteriosklerose mit Niereninsuffizienz
-I12.00|Nierenversagen bei Hypertonie
-I12.00|Renale Hypertonie mit Niereninsuffizienz
-I12.01|Hypertensive Nierenkrankheit mit Niereninsuffizienz mit hypertensiver Krise
+I12.0|Arteriosklerotische Nephritis mit Niereninsuffizienz
+I12.0|Arteriosklerotische Niereninsuffizienz
+I12.0|Chronische arteriosklerotische Nephritis mit Niereninsuffizienz
+I12.0|Fahr-Volhard-Krankheit mit Niereninsuffizienz
+I12.0|Hypertensive Niereninsuffizienz
+I12.0|Hypertensive Nierenkrankheit mit Niereninsuffizienz
+I12.0|Hypertensives Nierenversagen
+I12.0|Hypertonie bei Schrumpfniere mit Niereninsuffizienz
+I12.0|Hypertonie mit Niereninsuffizienz
+I12.0|Hypertonische Urämie
+I12.0|Hypertonisches terminales Nierenversagen
+I12.0|Interstitielle arteriosklerotische Nephritis mit Niereninsuffizienz
+I12.0|Nephroangiosklerose mit Niereninsuffizienz
+I12.0|Nephrosklerose mit Niereninsuffizienz
+I12.0|Nierenarteriosklerose mit Niereninsuffizienz
+I12.0|Nierenversagen bei Hypertonie
+I12.0|Renale Hypertonie mit Niereninsuffizienz
+I12.1|Hypertensive Nierenkrankheit mit Niereninsuffizienz mit hypertensiver Krise
 I12.90|Angionephrosklerose
 I12.90|Arterioläre hyaline Schrumpfniere
 I12.90|Arterioläre hyperplastische Schrumpfniere
@@ -29899,11 +29899,11 @@ I12.90|Renale vaskuläre Insuffizienz
 I12.90|Schrumpfniere mit Hypertonie
 I12.90|Vaskuläre Schrumpfniere
 I12.91|Hypertensive Nierenkrankheit ohne Niereninsuffizienz mit hypertensiver Krise
-I13.00|Hypertensive Herz- und Nierenkrankheit mit Herzinsuffizienz
-I13.00|Hypertensive Herzinsuffizienz mit Nierenkrankheit
-I13.00|Hypertensive Stauungsinsuffizienz des Herzens mit Nierenkrankheit
-I13.00|Renale Hypertonie mit Herzinsuffizienz
-I13.01|Hypertensive Herz- und Nierenkrankheit mit Herzinsuffizienz mit hypertensiver Krise
+I13.0|Hypertensive Herz- und Nierenkrankheit mit Herzinsuffizienz
+I13.0|Hypertensive Herzinsuffizienz mit Nierenkrankheit
+I13.0|Hypertensive Stauungsinsuffizienz des Herzens mit Nierenkrankheit
+I13.0|Renale Hypertonie mit Herzinsuffizienz
+I13.1|Hypertensive Herz- und Nierenkrankheit mit Herzinsuffizienz mit hypertensiver Krise
 I13.10|Hypertensive Herz- und Nierenkrankheit mit Niereninsuffizienz
 I13.10|Kardiorenale Hypertonie mit Niereninsuffizienz
 I13.10|Nierenversagen bei hypertonischer Herzkrankheit
@@ -29937,10 +29937,10 @@ I13.90|Renale kardiovaskuläre Krankheit
 I13.90|Renale kardiovaskuläre Sklerose
 I13.90|Schrumpfniere mit hypertensiver Herzkrankheit
 I13.90|Vaskulärer kardiorenaler Schaden
-I15.00|Hypertonie durch arterielle renale Störung
-I15.00|Renovaskuläre Hypertonie
-I15.00|Sekundäre Hypertonie durch renovaskuläre Störung
-I15.01|Renovaskuläre Hypertonie mit hypertensiver Krise
+I15.0|Hypertonie durch arterielle renale Störung
+I15.0|Renovaskuläre Hypertonie
+I15.0|Sekundäre Hypertonie durch renovaskuläre Störung
+I15.1|Renovaskuläre Hypertonie mit hypertensiver Krise
 I15.10|Benigne renale Hypertonie
 I15.10|Hypertonie durch renale Störungen a.n.k.
 I15.10|Maligne renale Hypertonie
@@ -30990,40 +30990,40 @@ I49.9|Kardiale Rhythmusstörung
 I49.9|Respiratorische Arrhythmie
 I49.9|Rhythmusstörung
 I49.9|Tachykarde Herzrhythmusstörung
-I50.00|Primäre Rechtsherzinsuffizienz
-I50.01|Bernheim-Syndrom
-I50.01|Biventrikuläre Herzinsuffizienz
-I50.01|Dekompensierte globale Herzinsuffizienz
-I50.01|Dekompensierte kardiale Stauungsinsuffizienz
-I50.01|Dekompensierte Rechtsherzinsuffizienz
-I50.01|Globale Herzinsuffizienz
-I50.01|Globales Herzversagen
-I50.01|Herzinsuffizienz mit Globaldekompensation
-I50.01|Herzinsuffizienz mit peripherem Ödem
-I50.01|Herzstauung
-I50.01|Herzwassersucht
-I50.01|Herzödem
-I50.01|Kardiale Anasarka
-I50.01|Kardiale Globalinsuffizienz
-I50.01|Kardiale Stase
-I50.01|Kardiale Stauung
-I50.01|Kardiale Stauungsinsuffizienz
-I50.01|Kardialer Aszites
-I50.01|Kardialer Hydrops
-I50.01|Kardiales peripheres Ödem
-I50.01|Kardiovaskuläres Ödem bei Herzinsuffizienz
-I50.01|Kongestive Herzkrankheit
-I50.01|Kongestive Rechtsherzinsuffizienz
-I50.01|Kongestives Herzversagen
-I50.01|Myokardiales Versagen mit Stauungserscheinungen
-I50.01|Myokardschwäche mit peripherem Ödem
-I50.01|Rechtsherzinsuffizienz
-I50.01|Rechtsherzversagen
-I50.01|Rechtsherzversagen als Folge einer Linksherzinsuffizienz
-I50.01|Sekundäre Rechtsherzinsuffizienz nach Linksherzinsuffizienz
-I50.01|Stauungsherzversagen
-I50.01|Stauungsinsuffizienz
-I50.01|Stauungsinsuffizienz des Herzens
+I50.0|Primäre Rechtsherzinsuffizienz
+I50.1|Bernheim-Syndrom
+I50.1|Biventrikuläre Herzinsuffizienz
+I50.1|Dekompensierte globale Herzinsuffizienz
+I50.1|Dekompensierte kardiale Stauungsinsuffizienz
+I50.1|Dekompensierte Rechtsherzinsuffizienz
+I50.1|Globale Herzinsuffizienz
+I50.1|Globales Herzversagen
+I50.1|Herzinsuffizienz mit Globaldekompensation
+I50.1|Herzinsuffizienz mit peripherem Ödem
+I50.1|Herzstauung
+I50.1|Herzwassersucht
+I50.1|Herzödem
+I50.1|Kardiale Anasarka
+I50.1|Kardiale Globalinsuffizienz
+I50.1|Kardiale Stase
+I50.1|Kardiale Stauung
+I50.1|Kardiale Stauungsinsuffizienz
+I50.1|Kardialer Aszites
+I50.1|Kardialer Hydrops
+I50.1|Kardiales peripheres Ödem
+I50.1|Kardiovaskuläres Ödem bei Herzinsuffizienz
+I50.1|Kongestive Herzkrankheit
+I50.1|Kongestive Rechtsherzinsuffizienz
+I50.1|Kongestives Herzversagen
+I50.1|Myokardiales Versagen mit Stauungserscheinungen
+I50.1|Myokardschwäche mit peripherem Ödem
+I50.1|Rechtsherzinsuffizienz
+I50.1|Rechtsherzversagen
+I50.1|Rechtsherzversagen als Folge einer Linksherzinsuffizienz
+I50.1|Sekundäre Rechtsherzinsuffizienz nach Linksherzinsuffizienz
+I50.1|Stauungsherzversagen
+I50.1|Stauungsinsuffizienz
+I50.1|Stauungsinsuffizienz des Herzens
 I50.11|Asymptomatische linksventrikuläre Dysfunktion
 I50.11|Linksherzinsuffizienz ohne Beschwerden
 I50.11|Linksherzinsuffizienz, NYHA-Stadium I
@@ -31446,19 +31446,19 @@ I61.9|Zerebrale Massenblutung
 I61.9|Zerebrospinale Blutung
 I61.9|Zerebrospinale Hämorrhagie
 I61.9|Zerebrovaskuläre Blutung
-I62.00|Akute nichttraumatische subdurale Blutung
-I62.00|Akute nichttraumatische subdurale Hämorrhagie
-I62.01|Subakute nichttraumatische subdurale Blutung
-I62.02|Chronisches subdurales Hämatom
-I62.09|Durablutung
-I62.09|Durahämatom
-I62.09|Nichttraumatische Subduralblutung
-I62.09|Nichttraumatisches subdurales Hämatom
-I62.09|Subduralblutung
-I62.09|Subdurale Hämorrhagie
-I62.09|Subduralhämatom
-I62.09|Subtentoriale Blutung
-I62.09|Subtentoriale Hämorrhagie
+I62.0|Akute nichttraumatische subdurale Blutung
+I62.0|Akute nichttraumatische subdurale Hämorrhagie
+I62.1|Subakute nichttraumatische subdurale Blutung
+I62.2|Chronisches subdurales Hämatom
+I62.9|Durablutung
+I62.9|Durahämatom
+I62.9|Nichttraumatische Subduralblutung
+I62.9|Nichttraumatisches subdurales Hämatom
+I62.9|Subduralblutung
+I62.9|Subdurale Hämorrhagie
+I62.9|Subduralhämatom
+I62.9|Subtentoriale Blutung
+I62.9|Subtentoriale Hämorrhagie
 I62.1|Nichttraumatische epidurale Blutung
 I62.1|Nichttraumatische epidurale Hämorrhagie
 I62.1|Nichttraumatische extradurale Blutung
@@ -32167,28 +32167,28 @@ I70.9|Senile Endarteriitis
 I70.9|Vaskuläre Degeneration
 I70.9|Vasosklerose
 I70.9|Zentrale Arteriosklerose
-I71.00|Aneurysma dissecans aortae
-I71.00|Aortendissektion - s.a. Aneurysma dissecans aortae
-I71.00|Disseziierendes Aortenaneurysma
-I71.00|Erdheim-Gsell-Krankheit
-I71.00|Gsell-Erdheim-Syndrom
-I71.00|Hämatom der Aorta dissecans
-I71.00|Medianecrosis aortae
-I71.00|Zystische Medianekrose der Aorta
-I71.01|Aneurysma dissecans der Aorta ascendens
-I71.01|Dissektion der Aorta thoracica
-I71.01|Thorakales Aneurysma dissecans aortae Typ A
-I71.01|Thorakales Aneurysma dissecans aortae Typ B
-I71.02|Aneurysma dissecans der Aorta abdominalis
-I71.02|Dissektion der abdominalen Aorta
-I71.02|Dissektion der Aorta abdominalis
-I71.03|Thorakoabdominales Aneurysma dissecans aortae Typ A
-I71.03|Thorakoabdominales Aneurysma dissecans aortae Typ B
-I71.04|Aortendissektion mit Ruptur
-I71.04|Rupturiertes Aneurysma dissecans aortae
-I71.05|Rupturierte Dissektion der Aorta thoracica
-I71.06|Rupturierte Dissektion der Aorta abdominalis
-I71.07|Rupturierte Dissektion der thorakoabdominalen Aorta
+I71.0|Aneurysma dissecans aortae
+I71.0|Aortendissektion - s.a. Aneurysma dissecans aortae
+I71.0|Disseziierendes Aortenaneurysma
+I71.0|Erdheim-Gsell-Krankheit
+I71.0|Gsell-Erdheim-Syndrom
+I71.0|Hämatom der Aorta dissecans
+I71.0|Medianecrosis aortae
+I71.0|Zystische Medianekrose der Aorta
+I71.1|Aneurysma dissecans der Aorta ascendens
+I71.1|Dissektion der Aorta thoracica
+I71.1|Thorakales Aneurysma dissecans aortae Typ A
+I71.1|Thorakales Aneurysma dissecans aortae Typ B
+I71.2|Aneurysma dissecans der Aorta abdominalis
+I71.2|Dissektion der abdominalen Aorta
+I71.2|Dissektion der Aorta abdominalis
+I71.3|Thorakoabdominales Aneurysma dissecans aortae Typ A
+I71.3|Thorakoabdominales Aneurysma dissecans aortae Typ B
+I71.4|Aortendissektion mit Ruptur
+I71.4|Rupturiertes Aneurysma dissecans aortae
+I71.5|Rupturierte Dissektion der Aorta thoracica
+I71.6|Rupturierte Dissektion der Aorta abdominalis
+I71.7|Rupturierte Dissektion der thorakoabdominalen Aorta
 I71.1|Aortenbogenruptur
 I71.1|Ruptur der Aorta ascendens
 I71.1|Ruptur der Aorta descendens thoracalis
@@ -33072,15 +33072,15 @@ I86.8|Venendilatation
 I86.8|Venenerweiterung
 I86.8|Venolendilatation a.n.k.
 I86.8|Venöses Aneurysma
-I87.00|Postphlebitisches Syndrom
-I87.00|Postphlebitisches Syndrom ohne Ulzeration
-I87.00|Postthrombotisches Syndrom
-I87.00|Postthrombotisches Syndrom ohne Ulzeration
-I87.00|PTS [Postthrombotisches Syndrom]
-I87.01|Postphlebitische Ulzeration
-I87.01|Postphlebitische Ulzeration der Beine
-I87.01|Postphlebitisches Syndrom mit Ulzeration
-I87.01|Postthrombotisches Syndrom mit Ulzeration
+I87.0|Postphlebitisches Syndrom
+I87.0|Postphlebitisches Syndrom ohne Ulzeration
+I87.0|Postthrombotisches Syndrom
+I87.0|Postthrombotisches Syndrom ohne Ulzeration
+I87.0|PTS [Postthrombotisches Syndrom]
+I87.1|Postphlebitische Ulzeration
+I87.1|Postphlebitische Ulzeration der Beine
+I87.1|Postphlebitisches Syndrom mit Ulzeration
+I87.1|Postthrombotisches Syndrom mit Ulzeration
 I87.1|Beinödem durch Venenobstruktion
 I87.1|Kompression der Vena cava inferior
 I87.1|Kompression der Vena cava superior
@@ -34614,40 +34614,40 @@ J37.1|Chronische Tracheitis mit Laryngitis
 J37.1|Hypertrophische Laryngotracheitis
 J37.1|Laryngotracheitis sicca
 J37.1|Pharyngolaryngotracheitis sicca
-J38.00|Glottislähmung
-J38.00|Glottisparalyse
-J38.00|Glottisparese
-J38.00|Kehlkopflähmung
-J38.00|Laryngoparalyse
-J38.00|Larynxlähmung
-J38.00|Larynxparalyse
-J38.00|Larynxparese
-J38.00|Ortner-I-Syndrom
-J38.00|Paralyse des Nervus laryngeus recurrens
-J38.00|Paralyse des Nervus laryngeus superior
-J38.00|Postikuslähmung
-J38.00|Postikusparese
-J38.00|Rekurrenslähmung
-J38.00|Rekurrensparese
-J38.00|Stimmbandlähmung
-J38.00|Stimmbandparalyse
-J38.00|Stimmbandparese
-J38.00|Stimmlippenlähmung
-J38.00|Stimmlippenparalyse
-J38.00|Vollständige Kehlkopflähmung
-J38.00|Vollständige Larynxlähmung
-J38.01|Einseitige partielle Kehlkopflähmung
-J38.01|Einseitige partielle Larynxlähmung
-J38.01|Einseitige partielle Lähmung einer Stimmlippe
-J38.01|Einseitige partielle Lähmung eines Stimmbandes
-J38.02|Einseitige komplette Kehlkopflähmung
-J38.02|Einseitige komplette Larynxlähmung
-J38.02|Einseitige komplette Lähmung einer Stimmlippe
-J38.02|Einseitige komplette Lähmung eines Stimmbandes
-J38.03|Beidseitige partielle Kehlkopflähmung
-J38.03|Beidseitige partielle Larynxlähmung
-J38.03|Beidseitige partielle Lähmung der Stimmbänder
-J38.03|Beidseitige partielle Lähmung der Stimmlippen
+J38.0|Glottislähmung
+J38.0|Glottisparalyse
+J38.0|Glottisparese
+J38.0|Kehlkopflähmung
+J38.0|Laryngoparalyse
+J38.0|Larynxlähmung
+J38.0|Larynxparalyse
+J38.0|Larynxparese
+J38.0|Ortner-I-Syndrom
+J38.0|Paralyse des Nervus laryngeus recurrens
+J38.0|Paralyse des Nervus laryngeus superior
+J38.0|Postikuslähmung
+J38.0|Postikusparese
+J38.0|Rekurrenslähmung
+J38.0|Rekurrensparese
+J38.0|Stimmbandlähmung
+J38.0|Stimmbandparalyse
+J38.0|Stimmbandparese
+J38.0|Stimmlippenlähmung
+J38.0|Stimmlippenparalyse
+J38.0|Vollständige Kehlkopflähmung
+J38.0|Vollständige Larynxlähmung
+J38.1|Einseitige partielle Kehlkopflähmung
+J38.1|Einseitige partielle Larynxlähmung
+J38.1|Einseitige partielle Lähmung einer Stimmlippe
+J38.1|Einseitige partielle Lähmung eines Stimmbandes
+J38.2|Einseitige komplette Kehlkopflähmung
+J38.2|Einseitige komplette Larynxlähmung
+J38.2|Einseitige komplette Lähmung einer Stimmlippe
+J38.2|Einseitige komplette Lähmung eines Stimmbandes
+J38.3|Beidseitige partielle Kehlkopflähmung
+J38.3|Beidseitige partielle Larynxlähmung
+J38.3|Beidseitige partielle Lähmung der Stimmbänder
+J38.3|Beidseitige partielle Lähmung der Stimmlippen
 J38.1|Kehlkopfpolyp
 J38.1|Larynxpolyp
 J38.1|Stimmbandpolyp
@@ -35058,16 +35058,16 @@ J43.9|Pulmonales Emphysem
 J43.9|Rupturierte Lungenbläschen
 J43.9|Seniles Emphysem
 J43.9|Vesikuläres Emphysem
-J44.00|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 < 35% des Sollwertes
-J44.01|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 35% und < 50% des Sollwertes
-J44.02|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 50% und < 70% des Sollwertes
-J44.03|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 70% des Sollwertes
-J44.09|Chronisch-obstruktive Bronchitis mit akuter Infektion der unteren Atemwege
-J44.09|Chronisch-obstruktive Tracheobronchitis mit akuter Infektion der unteren Atemwege
-J44.09|Chronische asthmatische Bronchitis mit akuter Infektion der unteren Atemwege
-J44.09|Chronische emphysematöse Bronchitis mit akuter Infektion der unteren Atemwege
-J44.09|Chronische Emphysembronchitis mit akuter Infektion der unteren Atemwege
-J44.09|Obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege
+J44.0|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 < 35% des Sollwertes
+J44.1|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 35% und < 50% des Sollwertes
+J44.2|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 50% und < 70% des Sollwertes
+J44.3|Chronische obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege und mit FEV1 >= 70% des Sollwertes
+J44.9|Chronisch-obstruktive Bronchitis mit akuter Infektion der unteren Atemwege
+J44.9|Chronisch-obstruktive Tracheobronchitis mit akuter Infektion der unteren Atemwege
+J44.9|Chronische asthmatische Bronchitis mit akuter Infektion der unteren Atemwege
+J44.9|Chronische emphysematöse Bronchitis mit akuter Infektion der unteren Atemwege
+J44.9|Chronische Emphysembronchitis mit akuter Infektion der unteren Atemwege
+J44.9|Obstruktive Lungenkrankheit mit akuter Infektion der unteren Atemwege
 J44.10|Chronische obstruktive Lungenkrankheit mit akuter Exazerbation und mit FEV1 < 35% des Sollwertes
 J44.11|Chronische obstruktive Lungenkrankheit mit akuter Exazerbation und mit FEV1 >= 35% und < 50% des Sollwertes
 J44.12|Chronische obstruktive Lungenkrankheit mit akuter Exazerbation und mit FEV1 >= 50% und < 70% des Sollwertes
@@ -35936,16 +35936,16 @@ J95.88|Postnarkotische Ateminsuffizienz
 J95.88|Postoperative Pneumonitis
 J95.9|Postoperative respiratorische Komplikation
 J95.9|Respiratorische Komplikation nach chirurgischem Eingriff
-J96.00|Akute hypoxische respiratorische Insuffizienz
-J96.00|Akute respiratorische Insuffizienz, Typ I
-J96.00|Akute respiratorische Partialinsuffizienz
-J96.01|Akute hyperkapnische respiratorische Insuffizienz
-J96.01|Akute respiratorische Globalinsuffizienz
-J96.01|Akute respiratorische Insuffizienz, Typ II
-J96.09|Akute Ateminsuffizienz
-J96.09|Akute respiratorische Dyspnoe
-J96.09|Akute respiratorische Insuffizienz
-J96.09|Akutes Lungenversagen
+J96.0|Akute hypoxische respiratorische Insuffizienz
+J96.0|Akute respiratorische Insuffizienz, Typ I
+J96.0|Akute respiratorische Partialinsuffizienz
+J96.1|Akute hyperkapnische respiratorische Insuffizienz
+J96.1|Akute respiratorische Globalinsuffizienz
+J96.1|Akute respiratorische Insuffizienz, Typ II
+J96.9|Akute Ateminsuffizienz
+J96.9|Akute respiratorische Dyspnoe
+J96.9|Akute respiratorische Insuffizienz
+J96.9|Akutes Lungenversagen
 J96.10| Chronische hypoxische respiratorische Insuffizienz
 J96.10|Chronische respiratorische Insuffizienz, Typ I
 J96.10|Chronische respiratorische Partialinsuffizienz
@@ -37950,8 +37950,8 @@ K38.8|Intussuszeption der Appendix
 K38.8|Obliteration des Appendixlumens
 K38.9|Appendikopathie
 K38.9|Appendixkrankheit
-K40.00|Doppelseitige Hernia inguinalis mit Einklemmung ohne Gangrän
-K40.01|Rezidivierende doppelseitige Hernia inguinalis mit Einklemmung ohne Gangrän
+K40.0|Doppelseitige Hernia inguinalis mit Einklemmung ohne Gangrän
+K40.1|Rezidivierende doppelseitige Hernia inguinalis mit Einklemmung ohne Gangrän
 K40.10|Doppelseitige Hernia inguinalis mit Gangrän
 K40.11|Rezidivierende doppelseitige Hernia inguinalis mit Gangrän
 K40.20|Beidseitige Inguinalhernie
@@ -38803,18 +38803,18 @@ K56.7|Präileus
 K56.7|Rektumverschluss
 K56.7|Subileus
 K56.7|Zäkumverschluss
-K57.00|Dünndarmdivertikulose mit Abszess
-K57.00|Dünndarmdivertikulose mit Perforation
-K57.00|Dünndarmdivertikulose mit Peritonitis
-K57.01|Dünndarmdivertikulose mit Abszess mit Blutung
-K57.01|Dünndarmdivertikulose mit Perforation mit Blutung
-K57.01|Dünndarmdivertikulose mit Peritonitis mit Blutung
-K57.02|Dünndarmdivertikulitis mit Abszess
-K57.02|Dünndarmdivertikulitis mit Perforation
-K57.02|Dünndarmdivertikulitis mit Peritonitis
-K57.03|Dünndarmdivertikulitis mit Abszess mit Blutung
-K57.03|Dünndarmdivertikulitis mit Perforation mit Blutung
-K57.03|Dünndarmdivertikulitis mit Peritonitis mit Blutung
+K57.0|Dünndarmdivertikulose mit Abszess
+K57.0|Dünndarmdivertikulose mit Perforation
+K57.0|Dünndarmdivertikulose mit Peritonitis
+K57.1|Dünndarmdivertikulose mit Abszess mit Blutung
+K57.1|Dünndarmdivertikulose mit Perforation mit Blutung
+K57.1|Dünndarmdivertikulose mit Peritonitis mit Blutung
+K57.2|Dünndarmdivertikulitis mit Abszess
+K57.2|Dünndarmdivertikulitis mit Perforation
+K57.2|Dünndarmdivertikulitis mit Peritonitis
+K57.3|Dünndarmdivertikulitis mit Abszess mit Blutung
+K57.3|Dünndarmdivertikulitis mit Perforation mit Blutung
+K57.3|Dünndarmdivertikulitis mit Peritonitis mit Blutung
 K57.10|Duodenaldivertikel
 K57.10|Duodenaldivertikulose
 K57.10|Dünndarmdivertikel
@@ -39930,17 +39930,17 @@ K76.9|Leberstörung
 K76.9|Leberzellschaden
 K76.9|Nichttraumatischer Leberschaden
 K76.9|Organische Leberkrankheit
-K80.00|Cholelithiasis mit akuter Cholezystitis
-K80.00|Cholezystolithiasis mit akuter Cholezystitis
-K80.00|Eingeklemmter Gallenstein im Ductus cysticus mit akuter Cholezystitis
-K80.00|Eingeklemmter Gallenstein in der Gallenblase mit akuter Cholezystitis
-K80.00|Gallenblasenstein mit akuter Cholezystitis
-K80.00|Rezidivierende Gallenblasenkolik mit akuter Cholezystitis
-K80.01|Cholelithiasis mit akuter Cholezystitis mit Gallenwegsobstruktion
-K80.01|Cholezystolithiasis mit akuter Cholezystitis mit Gallenwegsobstruktion
-K80.01|Eingeklemmter Gallenstein im Ductus cysticus mit akuter Cholezystitis mit Gallenwegsobstruktion
-K80.01|Eingeklemmter Gallenstein in der Gallenblase mit akuter Cholezystitis mit Gallenwegsobstruktion
-K80.01|Rezidivierende Gallenblasenkolik mit akuter Cholezystitis mit Gallenwegsobstruktion
+K80.0|Cholelithiasis mit akuter Cholezystitis
+K80.0|Cholezystolithiasis mit akuter Cholezystitis
+K80.0|Eingeklemmter Gallenstein im Ductus cysticus mit akuter Cholezystitis
+K80.0|Eingeklemmter Gallenstein in der Gallenblase mit akuter Cholezystitis
+K80.0|Gallenblasenstein mit akuter Cholezystitis
+K80.0|Rezidivierende Gallenblasenkolik mit akuter Cholezystitis
+K80.1|Cholelithiasis mit akuter Cholezystitis mit Gallenwegsobstruktion
+K80.1|Cholezystolithiasis mit akuter Cholezystitis mit Gallenwegsobstruktion
+K80.1|Eingeklemmter Gallenstein im Ductus cysticus mit akuter Cholezystitis mit Gallenwegsobstruktion
+K80.1|Eingeklemmter Gallenstein in der Gallenblase mit akuter Cholezystitis mit Gallenwegsobstruktion
+K80.1|Rezidivierende Gallenblasenkolik mit akuter Cholezystitis mit Gallenwegsobstruktion
 K80.10|Cholelithiasis mit Cholezystitis
 K80.10|Cholelithiasis mit chronischer Cholezystitis
 K80.10|Cholezystitis mit Stein
@@ -40332,8 +40332,8 @@ K83.9|Gallenwegsstörung
 K83.9|Hepatobiliäre Krankheit
 K83.9|Krankheit des Ductus choledochus
 K83.9|Krankheit des Ductus hepaticus
-K85.00|Idiopathische akute Pankreatitis
-K85.01|Idiopathische akute Pankreatitis mit Organkomplikation
+K85.0|Idiopathische akute Pankreatitis
+K85.1|Idiopathische akute Pankreatitis mit Organkomplikation
 K85.10|Biliäre akute Pankreatitis
 K85.10|Biliäre Pankreaskopfpankreatitis
 K85.10|Gallenstein-Pankreatitis
@@ -40905,72 +40905,72 @@ L02.9|Septischer Abszess
 L02.9|Septisches Geschwür
 L02.9|Subkutaner Abszess
 L02.9|Wundabszess
-L03.01|Akute Paronychie eines Fingers
-L03.01|Chronische Paronychie eines Fingers
-L03.01|Daumennagelabszess
-L03.01|Daumenpanaritium
-L03.01|Daumenphlegmone
-L03.01|Eitrige Nagelbettentzündung eines Fingers
-L03.01|Eitrige Nagelwallentzündung eines Fingers
-L03.01|Fingernagelabszess
-L03.01|Fingernagelsepsis
-L03.01|Fingeronychie
-L03.01|Fingeronychie mit Lymphangitis
-L03.01|Fingerpanaritium
-L03.01|Fingerpanaritium mit Lymphangitis
-L03.01|Fingerparonychie
-L03.01|Fingerparonychie mit Lymphangitis
-L03.01|Fingerphlegmone
-L03.01|Fingersepsis mit Lymphangitis
-L03.01|Fingerumlauf
-L03.01|Fingerumlauf mit Lymphangitis
-L03.01|Nagelbetteiterung eines Fingers
-L03.01|Nagelbettentzündung eines Fingers
-L03.01|Nagelbettgeschwür eines Fingers
-L03.01|Nagelbettpanaritium eines Fingers
-L03.01|Nagelbettumlauf eines Fingers
-L03.01|Nagelentzündung eines Fingers
-L03.01|Nagelfalzentzündung eines Fingers
-L03.01|Nagelfalzinfektion eines Fingers
-L03.01|Nagelgeschwür eines Fingers
-L03.01|Nagelinfektion eines Fingers
-L03.01|Nagelwallentzündung eines Fingers
-L03.01|Niednagel eines Fingers
-L03.01|Niednagel eines Fingers mit Lymphangitis
-L03.01|Onychitis eines Fingers mit Lymphangitis
-L03.01|Perionychie eines Fingers
-L03.01|Perionychie eines Fingers mit Lymphangitis
-L03.01|Periunguales Panaritium eines Fingers
-L03.01|Subunguales Panaritium eines Fingers
-L03.02|Akute Paronychie einer Zehe
-L03.02|Chronische Paronychie einer Zehe
-L03.02|Eitrige Nagelbettentzündung einer Zehe
-L03.02|Eitrige Nagelwallentzündung einer Zehe
-L03.02|Nagelbetteiterung einer Zehe
-L03.02|Nagelbettentzündung einer Zehe
-L03.02|Nagelbettgeschwür einer Zehe
-L03.02|Nagelbettpanaritium einer Zehe
-L03.02|Nagelbettumlauf einer Zehe
-L03.02|Nagelentzündung einer Zehe
-L03.02|Nagelfalzentzündung einer Zehe
-L03.02|Nagelfalzinfektion einer Zehe
-L03.02|Nagelgeschwür einer Zehe
-L03.02|Nagelinfektion einer Zehe
-L03.02|Nagelwallentzündung einer Zehe
-L03.02|Niednagel einer Zehe
-L03.02|Paronychie einer Zehe
-L03.02|Paronychie einer Zehe mit Lymphangitis
-L03.02|Perionychie einer Zehe
-L03.02|Perionychie einer Zehe mit Lymphangitis
-L03.02|Periunguales Panaritium einer Zehe
-L03.02|Subunguales Panaritium einer Zehe
-L03.02|Umlauf einer Zehe
-L03.02|Zehennagelabszess
-L03.02|Zehenonychie
-L03.02|Zehenonychie mit Lymphangitis
-L03.02|Zehenpanaritium
-L03.02|Zehenphlegmone
-L03.02|Zehensepsis mit Lymphangitis
+L03.1|Akute Paronychie eines Fingers
+L03.1|Chronische Paronychie eines Fingers
+L03.1|Daumennagelabszess
+L03.1|Daumenpanaritium
+L03.1|Daumenphlegmone
+L03.1|Eitrige Nagelbettentzündung eines Fingers
+L03.1|Eitrige Nagelwallentzündung eines Fingers
+L03.1|Fingernagelabszess
+L03.1|Fingernagelsepsis
+L03.1|Fingeronychie
+L03.1|Fingeronychie mit Lymphangitis
+L03.1|Fingerpanaritium
+L03.1|Fingerpanaritium mit Lymphangitis
+L03.1|Fingerparonychie
+L03.1|Fingerparonychie mit Lymphangitis
+L03.1|Fingerphlegmone
+L03.1|Fingersepsis mit Lymphangitis
+L03.1|Fingerumlauf
+L03.1|Fingerumlauf mit Lymphangitis
+L03.1|Nagelbetteiterung eines Fingers
+L03.1|Nagelbettentzündung eines Fingers
+L03.1|Nagelbettgeschwür eines Fingers
+L03.1|Nagelbettpanaritium eines Fingers
+L03.1|Nagelbettumlauf eines Fingers
+L03.1|Nagelentzündung eines Fingers
+L03.1|Nagelfalzentzündung eines Fingers
+L03.1|Nagelfalzinfektion eines Fingers
+L03.1|Nagelgeschwür eines Fingers
+L03.1|Nagelinfektion eines Fingers
+L03.1|Nagelwallentzündung eines Fingers
+L03.1|Niednagel eines Fingers
+L03.1|Niednagel eines Fingers mit Lymphangitis
+L03.1|Onychitis eines Fingers mit Lymphangitis
+L03.1|Perionychie eines Fingers
+L03.1|Perionychie eines Fingers mit Lymphangitis
+L03.1|Periunguales Panaritium eines Fingers
+L03.1|Subunguales Panaritium eines Fingers
+L03.2|Akute Paronychie einer Zehe
+L03.2|Chronische Paronychie einer Zehe
+L03.2|Eitrige Nagelbettentzündung einer Zehe
+L03.2|Eitrige Nagelwallentzündung einer Zehe
+L03.2|Nagelbetteiterung einer Zehe
+L03.2|Nagelbettentzündung einer Zehe
+L03.2|Nagelbettgeschwür einer Zehe
+L03.2|Nagelbettpanaritium einer Zehe
+L03.2|Nagelbettumlauf einer Zehe
+L03.2|Nagelentzündung einer Zehe
+L03.2|Nagelfalzentzündung einer Zehe
+L03.2|Nagelfalzinfektion einer Zehe
+L03.2|Nagelgeschwür einer Zehe
+L03.2|Nagelinfektion einer Zehe
+L03.2|Nagelwallentzündung einer Zehe
+L03.2|Niednagel einer Zehe
+L03.2|Paronychie einer Zehe
+L03.2|Paronychie einer Zehe mit Lymphangitis
+L03.2|Perionychie einer Zehe
+L03.2|Perionychie einer Zehe mit Lymphangitis
+L03.2|Periunguales Panaritium einer Zehe
+L03.2|Subunguales Panaritium einer Zehe
+L03.2|Umlauf einer Zehe
+L03.2|Zehennagelabszess
+L03.2|Zehenonychie
+L03.2|Zehenonychie mit Lymphangitis
+L03.2|Zehenpanaritium
+L03.2|Zehenphlegmone
+L03.2|Zehensepsis mit Lymphangitis
 L03.10|Achselhöhlenphlegmone
 L03.10|Armphlegmone
 L03.10|Armsepsis mit Lymphangitis
@@ -42678,17 +42678,17 @@ L88|Dermatitis ulcerosa
 L88|Gangränöse Pyodermie
 L88|Phagedänische Pyodermie
 L88|Pyoderma gangraenosum
-L89.00|Dekubitus 1. Grades am Kopf
-L89.01|Dekubitus 1. Grades an der oberen Extremität
-L89.02|Dekubitus 1. Grades am Dornfortsatz
-L89.03|Dekubitus 1. Grades am Beckenkamm
-L89.04|Dekubitus 1. Grades am Kreuzbein
-L89.04|Dekubitus 1. Grades am Steißbein
-L89.05|Dekubitus 1. Grades am Sitzbein
-L89.06|Dekubitus 1. Grades am Trochanter
-L89.07|Dekubitus 1. Grades an der Ferse
-L89.09|Dekubitus 1. Grades
-L89.09|Druckzone mit nicht wegdrückbarer Rötung bei intakter Haut
+L89.0|Dekubitus 1. Grades am Kopf
+L89.1|Dekubitus 1. Grades an der oberen Extremität
+L89.2|Dekubitus 1. Grades am Dornfortsatz
+L89.3|Dekubitus 1. Grades am Beckenkamm
+L89.4|Dekubitus 1. Grades am Kreuzbein
+L89.4|Dekubitus 1. Grades am Steißbein
+L89.5|Dekubitus 1. Grades am Sitzbein
+L89.6|Dekubitus 1. Grades am Trochanter
+L89.7|Dekubitus 1. Grades an der Ferse
+L89.9|Dekubitus 1. Grades
+L89.9|Druckzone mit nicht wegdrückbarer Rötung bei intakter Haut
 L89.10|Dekubitus 2. Grades am Kopf
 L89.11|Dekubitus 2. Grades an der oberen Extremität
 L89.12|Dekubitus 2. Grades am Dornfortsatz
@@ -43079,7 +43079,7 @@ L98.9|Hautläsion
 L98.9|Hautschädigung
 L98.9|Hautstörung
 L98.9|Unterhautkrankheit
-M00.09|Arthritis durch Staphylokokken
+M00.9|Arthritis durch Staphylokokken
 M00.19|Arthritis durch Pneumokokken
 M00.29|Arthritis durch Streptokokken a.n.k.
 M00.90|Eitrige Polyarthritis
@@ -43112,7 +43112,7 @@ M00.99|Purulente Arthritis
 M00.99|Pyarthros
 M00.99|Pyogene Arthritis
 M00.99|Septische Arthritis
-M02.09|Arthritis nach intestinalem Bypass
+M02.9|Arthritis nach intestinalem Bypass
 M02.19|Postdysenterische Arthritis
 M02.19|Postenteritische Arthritis
 M02.19|Postenteritische Arthropathie
@@ -43142,8 +43142,8 @@ M02.39|Urethro-okulo-synoviales Syndrom [Reiter-Syndrom]
 M02.99|Infektarthritis [Reaktive Arthritis]
 M02.99|Reaktive Arthritis
 M02.99|Reaktive Arthropathie
-M05.00|Chronische Polyarthritis mit Lymphosplenomegalie und Leukopenie
-M05.00|Felty-Syndrom [Polyarthritis, Splenomegalie und Leukopenie]
+M05.0|Chronische Polyarthritis mit Lymphosplenomegalie und Leukopenie
+M05.0|Felty-Syndrom [Polyarthritis, Splenomegalie und Leukopenie]
 M05.20|Chronische Polyarthritis mit Vaskulitis
 M05.29|Rheumatoide Vaskulitis
 M05.30|Chronische Polyarthritis mit Systembeteiligung a.n.k.
@@ -43151,7 +43151,7 @@ M05.30|Chronische Polyarthritis mit Viszeralbeteiligung a.n.k.
 M05.30|Chronische Polyarthropathie mit Systembeteiligung a.n.k.
 M05.30|Chronische Polyarthropathie mit Viszeralbeteiligung a.n.k.
 M05.90|Seropositive chronische Polyarthritis
-M06.00|Seronegative chronische Polyarthritis
+M06.0|Seronegative chronische Polyarthritis
 M06.10|Adulte Form der Still-Krankheit
 M06.10|Adulte Form des Still-Syndroms
 M06.20|Chronische Polyarthritis mit Bursitis
@@ -43174,9 +43174,9 @@ M06.99|Arthritis rheumatica
 M06.99|Rheumatische Arthritis
 M06.99|Rheumatische Polyarthritis
 M06.99|Rheumatoide Arthritis
-M08.00|Juvenile chronische Polyarthritis vom adulten Typ
-M08.00|Juvenile chronische Polyarthritis vom Erwachsenentyp mit Rheumafaktor-Nachweis
-M08.00|Juvenile chronische Polyarthritis vom Erwachsenentyp ohne Rheumafaktor-Nachweis
+M08.0|Juvenile chronische Polyarthritis vom adulten Typ
+M08.0|Juvenile chronische Polyarthritis vom Erwachsenentyp mit Rheumafaktor-Nachweis
+M08.0|Juvenile chronische Polyarthritis vom Erwachsenentyp ohne Rheumafaktor-Nachweis
 M08.19|Juvenile Spondylitis ankylosans
 M08.29|Chauffard-Still-Syndrom
 M08.29|Juvenile chronische Arthritis, systemisch beginnende Form
@@ -43193,28 +43193,28 @@ M08.49|Juvenile chronische Arthritis, oligoartikulär beginnende Form
 M08.79|Vaskulitis bei juveniler Arthritis
 M08.99|Juvenile Arthritis
 M08.99|Juvenile chronische Arthritis
-M10.09|Arthritis urica
-M10.09|Genuine Gicht
-M10.09|Gichtarthritis
-M10.09|Gichtarthropathie
-M10.09|Gichtbursitis
-M10.09|Gichtische Arthritis
-M10.09|Gichtische Arthropathie
-M10.09|Gichtische Gelenkentzündung
-M10.09|Gichtische Synovitis
-M10.09|Gichtknoten
-M10.09|Gichttophus a.n.k.
-M10.09|Harnsäureblasenstein
-M10.09|Harnsäurekonkrement
-M10.09|Harnsäurestein
-M10.09|Idiopathische Gicht
-M10.09|Primäre Gicht
-M10.09|Spondylitis bei Gicht
-M10.09|Synovitis bei Gicht
-M10.09|Tophus arthriticus
-M10.09|Uratstein
-M10.09|Uratverstopfung
-M10.09|Vermehrte Harnsäurekristalle
+M10.9|Arthritis urica
+M10.9|Genuine Gicht
+M10.9|Gichtarthritis
+M10.9|Gichtarthropathie
+M10.9|Gichtbursitis
+M10.9|Gichtische Arthritis
+M10.9|Gichtische Arthropathie
+M10.9|Gichtische Gelenkentzündung
+M10.9|Gichtische Synovitis
+M10.9|Gichtknoten
+M10.9|Gichttophus a.n.k.
+M10.9|Harnsäureblasenstein
+M10.9|Harnsäurekonkrement
+M10.9|Harnsäurestein
+M10.9|Idiopathische Gicht
+M10.9|Primäre Gicht
+M10.9|Spondylitis bei Gicht
+M10.9|Synovitis bei Gicht
+M10.9|Tophus arthriticus
+M10.9|Uratstein
+M10.9|Uratverstopfung
+M10.9|Vermehrte Harnsäurekristalle
 M10.19|Bleigicht
 M10.29|Arzneimittelinduzierte Gicht
 M10.39|Gicht durch Nierenfunktionsstörung
@@ -43232,10 +43232,10 @@ M10.99|Harnsäurediathese
 M10.99|Harnsäurestein-Diathese
 M10.99|Uratische Diathese
 M10.99|Urikopathie
-M11.09|Apatit-Rheumatismus
-M11.09|Arthropathie durch Apatitkristalle
-M11.09|Arthropathie durch Hydroxylapatitkristalle
-M11.09|Hydroxylapatit-Rheumatismus
+M11.9|Apatit-Rheumatismus
+M11.9|Arthropathie durch Apatitkristalle
+M11.9|Arthropathie durch Hydroxylapatitkristalle
+M11.9|Hydroxylapatit-Rheumatismus
 M11.19|Familiäre Chondrokalzinose
 M11.19|Kalziumpyrophosphat-Arthropathie
 M11.29|Chondrocalcinosis - s.a. Chondrokalzinose
@@ -43247,10 +43247,10 @@ M11.89|Kristall-Arthropathie durch Kalziumphosphat
 M11.89|Kristall-Arthropathie durch Pyrophosphat
 M11.99|Kristall-Arthropathie
 M11.99|Kristallinduzierte Arthritis
-M12.09|Chronische postrheumatische Arthritis [Jaccoud-Arthritis]
-M12.09|Chronische postrheumatische Arthropathie [Jaccoud-Arthropathie]
-M12.09|Jaccoud-Arthritis
-M12.09|Jaccoud-Arthropathie
+M12.9|Chronische postrheumatische Arthritis [Jaccoud-Arthritis]
+M12.9|Chronische postrheumatische Arthropathie [Jaccoud-Arthropathie]
+M12.9|Jaccoud-Arthritis
+M12.9|Jaccoud-Arthropathie
 M12.19|Kaschin-Beck-Krankheit
 M12.19|Kaschin-Beck-Syndrom
 M12.19|Osteoarthritis deformans endemica
@@ -43443,7 +43443,7 @@ M18.5|Unilaterale sekundäre Rhizarthrose
 M18.9|Arthrose des Karpometakarpalgelenks I
 M18.9|Daumensattelgelenkarthrose
 M18.9|Rhizarthrose
-M19.09|Primäre Arthrose a.n.k.
+M19.9|Primäre Arthrose a.n.k.
 M19.19|Posttraumatische Arthrose a.n.k.
 M19.29|Sekundäre Arthrose a.n.k.
 M19.89|Aktivierte Arthrose
@@ -43528,17 +43528,17 @@ M20.5|Zehenkontraktur
 M20.6|Erworbene Zehenverformung
 M20.6|Zehendeformität a.n.k.
 M20.6|Zehenfehlstellung
-M21.02|Cubitus valgus
-M21.05|Coxa valga
-M21.05|Coxa valga antetorta
-M21.06|Erworbene X-Bein-Stellung
-M21.06|Genu valgum
-M21.06|X-Bein-Stellung
-M21.07|Erworbener Knickfuß
-M21.07|Erworbener Pes valgus
-M21.07|Fußeversion a.n.k.
-M21.07|Valgusdeformität des Fußes a.n.k.
-M21.09|Valgusdeformität
+M21.2|Cubitus valgus
+M21.5|Coxa valga
+M21.5|Coxa valga antetorta
+M21.6|Erworbene X-Bein-Stellung
+M21.6|Genu valgum
+M21.6|X-Bein-Stellung
+M21.7|Erworbener Knickfuß
+M21.7|Erworbener Pes valgus
+M21.7|Fußeversion a.n.k.
+M21.7|Valgusdeformität des Fußes a.n.k.
+M21.9|Valgusdeformität
 M21.12|Cubitus varus
 M21.15|Coxa vara
 M21.16|Erworbene O-Beinstellung
@@ -43678,8 +43678,8 @@ M22.9|Krankheit der Kniescheibe
 M22.9|Patellaaffektion
 M22.9|Patellakrankheit
 M22.9|Patellastörung
-M23.09|Meniskusganglion
-M23.09|Meniskuszyste
+M23.9|Meniskusganglion
+M23.9|Meniskuszyste
 M23.19|Kongenitaler Scheibenmeniskus
 M23.19|Scheibenmeniskus
 M23.29|Alte Meniskusdistorsion
@@ -43770,17 +43770,17 @@ M23.99|Reizknie
 M23.99|Reizzustand des Kniegelenks
 M23.99|Rezidivierende Binnenschädigung des Kniegelenks
 M23.99|Rezidivierende Knieschädigung
-M24.09|Arthrolith
-M24.09|Corpus liberum
-M24.09|Freier Gelenkkörper
-M24.09|Freier Knorpel eines Gelenks
-M24.09|Gelenkchondromatose
-M24.09|Gelenkmaus
-M24.09|Reichel-Jones-Henderson-Syndrom
-M24.09|Reichel-Krankheit
-M24.09|Reiskörperchen
-M24.09|Reiskörperchen eines Gelenks
-M24.09|Synoviale Osteochondromatose
+M24.9|Arthrolith
+M24.9|Corpus liberum
+M24.9|Freier Gelenkkörper
+M24.9|Freier Knorpel eines Gelenks
+M24.9|Gelenkchondromatose
+M24.9|Gelenkmaus
+M24.9|Reichel-Jones-Henderson-Syndrom
+M24.9|Reichel-Krankheit
+M24.9|Reiskörperchen
+M24.9|Reiskörperchen eines Gelenks
+M24.9|Synoviale Osteochondromatose
 M24.11|Alte Meniskusruptur an der Schulter
 M24.11|Binnenschädigung des Schultergelenks
 M24.11|Gelenkknorpeldegeneration im Schultergelenk a.n.k.
@@ -43885,14 +43885,14 @@ M24.92|Rezidivierende Ellenbogenschädigung
 M24.92|Schädigung des inneren Ellenbogens
 M24.99|Binnenschaden eines Gelenks
 M24.99|Gelenkschädigung
-M25.06|Hämarthros des Kniegelenks
-M25.06|Nichttraumatische Blutung des Kniegelenks
-M25.06|Nichttraumatische Hämorrhagie des Kniegelenks
-M25.09|Blutiger Gelenkerguss
-M25.09|Gelenkblutung
-M25.09|Hämarthros
-M25.09|Nichttraumatische Gelenkhämorrhagie
-M25.09|Nichttraumatischer Hämarthros
+M25.6|Hämarthros des Kniegelenks
+M25.6|Nichttraumatische Blutung des Kniegelenks
+M25.6|Nichttraumatische Hämorrhagie des Kniegelenks
+M25.9|Blutiger Gelenkerguss
+M25.9|Gelenkblutung
+M25.9|Hämarthros
+M25.9|Nichttraumatische Gelenkhämorrhagie
+M25.9|Nichttraumatischer Hämarthros
 M25.19|Gelenkfistel
 M25.29|Paralytische Gelenkrelaxation
 M25.29|Paralytisches Schlottergelenk
@@ -44151,12 +44151,12 @@ M35.9|Systemische Autoimmunkrankheit a.n.k.
 M35.9|Systemische Krankheit des Bindegewebes
 M35.9|Vaskuläre Kollagenkrankheit
 M35.9|Vaskuläre Kollagenose
-M40.02|Kyphotische Fehlhaltung der Halswirbelsäule
-M40.09|Haltungskyphose
-M40.09|Haltungskyphose beim Jugendlichen
-M40.09|Kyphose als Haltungsschaden
-M40.09|Kyphotische Haltungsstörung beim Jugendlichen
-M40.09|Rundrücken als Haltungsschaden
+M40.2|Kyphotische Fehlhaltung der Halswirbelsäule
+M40.9|Haltungskyphose
+M40.9|Haltungskyphose beim Jugendlichen
+M40.9|Kyphose als Haltungsschaden
+M40.9|Kyphotische Haltungsstörung beim Jugendlichen
+M40.9|Rundrücken als Haltungsschaden
 M40.19|Gibbusbildung
 M40.19|Sekundäre Kyphose a.n.k.
 M40.22|Kyphotische Fehlstellung der Halswirbelsäule
@@ -44187,8 +44187,8 @@ M40.57|Lordotischer Knick L5/S1
 M40.59|Hohlkreuz
 M40.59|Lordose
 M40.59|Satteldeformität des Rückens
-M41.09|Idiopathische Skoliose beim Kind
-M41.09|Säuglingsskoliose
+M41.9|Idiopathische Skoliose beim Kind
+M41.9|Säuglingsskoliose
 M41.19|Adoleszenten-Skoliose
 M41.19|Idiopathische Skoliose beim Jugendlichen
 M41.19|Juvenile Skoliose
@@ -44257,18 +44257,18 @@ M41.99|Skoliotische Fehlhaltung
 M41.99|Skoliotische Haltungsstörung
 M41.99|Statische Skoliose
 M41.99|WS-Skoliose
-M42.09|Adoleszenten-Kyphose
-M42.09|Calvé-Krankheit
-M42.09|Calvé-Syndrom
-M42.09|Juvenile Wirbelkörperosteochondrose
-M42.09|Juvenile Wirbelsäulenosteochondrose
-M42.09|Morbus Scheuermann
-M42.09|Scheuermann-Krankheit
-M42.09|Scheuermann-Osteochondrose
-M42.09|Scheuermann-Syndrom
-M42.09|Schmorl-Knorpelknötchen bei Scheuermann-Krankheit
-M42.09|Vertebra plana
-M42.09|Vertebrale Epiphysitis
+M42.9|Adoleszenten-Kyphose
+M42.9|Calvé-Krankheit
+M42.9|Calvé-Syndrom
+M42.9|Juvenile Wirbelkörperosteochondrose
+M42.9|Juvenile Wirbelsäulenosteochondrose
+M42.9|Morbus Scheuermann
+M42.9|Scheuermann-Krankheit
+M42.9|Scheuermann-Osteochondrose
+M42.9|Scheuermann-Syndrom
+M42.9|Schmorl-Knorpelknötchen bei Scheuermann-Krankheit
+M42.9|Vertebra plana
+M42.9|Vertebrale Epiphysitis
 M42.19|Osteochondrose der Wirbelsäule beim Erwachsenen
 M42.92|Ausgeprägte Osteochondrose der Halswirbelsäule
 M42.92|HWS-Osteochondrose
@@ -44290,11 +44290,11 @@ M42.99|Ausgeprägte Osteochondrose der Wirbelsäule mit Foraminaeinengungen
 M42.99|Massive Osteochondrose der Wirbelsäule
 M42.99|Osteochondrose der Wirbelsäule
 M42.99|WS-Osteochondrose
-M43.06|Spondylolyse im LWS-Bereich
-M43.07|Spondylolyse der Lenden- und Sakralwirbel
-M43.07|Spondylolyse im Lumbosakralbereich
-M43.09|Erworbene Spondylolyse
-M43.09|Spondylolyse
+M43.6|Spondylolyse im LWS-Bereich
+M43.7|Spondylolyse der Lenden- und Sakralwirbel
+M43.7|Spondylolyse im Lumbosakralbereich
+M43.9|Erworbene Spondylolyse
+M43.9|Spondylolyse
 M43.12|Gefügestörung im HWS-Bereich
 M43.16|Gefügelockerung L4/L5 mit Pseudospondylolisthesis
 M43.16|Gefügestörung im LWS-Bereich
@@ -44361,32 +44361,32 @@ M43.99|Wirbelsäulenkontraktur
 M43.99|Wirbelsäulenverbiegung
 M43.99|Wirbelsäulenverkrümmung
 M43.99|WS-Fehlstatik
-M45.00|Chronische Polyarthritis der Wirbelsäule
-M45.09|Ankylosierende Arthritis der Wirbelsäule
-M45.09|Marie-Pierre-Krankheit
-M45.09|Marie-Strümpell-Spondylitis
-M45.09|Marie-von-Strümpell-Arthritis der Wirbelsäule
-M45.09|Marie-von-Strümpell-Krankheit
-M45.09|Morbus von Bechterew
-M45.09|Primäre progressive Wirbelsäulenarthritis
-M45.09|Rheumatoide Spondylitis
-M45.09|Rheumatoide Wirbelsäulenarthritis
-M45.09|Spondylarthritis ankylopoetica
-M45.09|Spondylitis ankylopoetica
-M45.09|Spondylitis ankylosans
-M45.09|Spondylitis atrophica ligamentosa
-M45.09|Spondylitis bei chronischer Polyarthritis
-M45.09|Spondylitis rhizomélique
-M45.09|Spondylosis rhizomélique
-M45.09|Von-Bechterew-Krankheit
-M45.09|Von-Bechterew-Syndrom
-M45.09|Von-Bechterew-von-Strümpell-Marie-Krankheit
-M45.09|Von-Bechterew-von-Strümpell-Marie-Syndrom
-M46.09|Enthesiopathie der Wirbelsäule
-M46.09|Insertionsstörung der Wirbelsäule
-M46.09|Läsion der Bänderinsertionsstellen der Wirbelsäule
-M46.09|Läsion der Muskelinsertionsstellen der Wirbelsäule
-M46.09|Spinale Enthesiopathie
+M45.0|Chronische Polyarthritis der Wirbelsäule
+M45.9|Ankylosierende Arthritis der Wirbelsäule
+M45.9|Marie-Pierre-Krankheit
+M45.9|Marie-Strümpell-Spondylitis
+M45.9|Marie-von-Strümpell-Arthritis der Wirbelsäule
+M45.9|Marie-von-Strümpell-Krankheit
+M45.9|Morbus von Bechterew
+M45.9|Primäre progressive Wirbelsäulenarthritis
+M45.9|Rheumatoide Spondylitis
+M45.9|Rheumatoide Wirbelsäulenarthritis
+M45.9|Spondylarthritis ankylopoetica
+M45.9|Spondylitis ankylopoetica
+M45.9|Spondylitis ankylosans
+M45.9|Spondylitis atrophica ligamentosa
+M45.9|Spondylitis bei chronischer Polyarthritis
+M45.9|Spondylitis rhizomélique
+M45.9|Spondylosis rhizomélique
+M45.9|Von-Bechterew-Krankheit
+M45.9|Von-Bechterew-Syndrom
+M45.9|Von-Bechterew-von-Strümpell-Marie-Krankheit
+M45.9|Von-Bechterew-von-Strümpell-Marie-Syndrom
+M46.9|Enthesiopathie der Wirbelsäule
+M46.9|Insertionsstörung der Wirbelsäule
+M46.9|Läsion der Bänderinsertionsstellen der Wirbelsäule
+M46.9|Läsion der Muskelinsertionsstellen der Wirbelsäule
+M46.9|Spinale Enthesiopathie
 M46.1|Entzündliche Veränderung des Iliosakralgelenks
 M46.1|Entzündung des Iliosakralgelenks
 M46.1|Iliosakrale Spondylitis a.n.k.
@@ -44535,15 +44535,15 @@ M47.99|Wirbelgelenkarthrose
 M47.99|Wirbelsäulenarthrose
 M47.99|Wirbelsäulendegeneration
 M47.99|Wirbelsäulenosteoarthrose
-M48.02|Zervikale Spinalkanalstenose
-M48.02|Zervikale Spinalstenose
-M48.06|Lumbale Markraumstenose
-M48.06|Lumbale Spinalkanalstenose
-M48.06|Lumbale Spinalstenose
-M48.08|Kaudastenose
-M48.09|Degenerative Spinalkanalstenose
-M48.09|Spinalkanalstenose
-M48.09|Spinalstenose
+M48.2|Zervikale Spinalkanalstenose
+M48.2|Zervikale Spinalstenose
+M48.6|Lumbale Markraumstenose
+M48.6|Lumbale Spinalkanalstenose
+M48.6|Lumbale Spinalstenose
+M48.8|Kaudastenose
+M48.9|Degenerative Spinalkanalstenose
+M48.9|Spinalkanalstenose
+M48.9|Spinalstenose
 M48.19|Ankylosierende Hyperostose der Wirbelsäule
 M48.19|Diffuse idiopathische Skeletthyperostose
 M48.19|Forestier-Ott-Krankheit
@@ -44732,9 +44732,9 @@ M53.99|Wirbelsäulenkrankheit
 M53.99|Wirbelsäulenstörung
 M53.99|Wirbelsäulensyndrom
 M53.99|WS-Syndrom
-M54.02|Pannikulitis der Nackenregion
-M54.08|Pannikulitis der Kreuzbeingegend
-M54.09|Pannikulitis der Rückenregion
+M54.2|Pannikulitis der Nackenregion
+M54.8|Pannikulitis der Kreuzbeingegend
+M54.9|Pannikulitis der Rückenregion
 M54.10|Chronisches HWS-BWS-LWS-Syndrom
 M54.10|Chronisches HWS-LWS-Syndrom
 M54.10|HWS-BWS-LWS-Syndrom
@@ -44916,20 +44916,20 @@ M54.99|Haltungsabhängige Rückenschmerzen
 M54.99|Rezidivierende Dorsalgie
 M54.99|Rückenschmerzen
 M54.99|Wirbelsäulenschmerzen
-M60.05|Abszess des Musculus iliopsoas
-M60.05|Nichttuberkulöser Iliopsoasabszess
-M60.05|Nichttuberkulöser Psoasabszess
-M60.05|Psoasphlegmone
-M60.09|Eitrige Myositis
-M60.09|Infektiöse Myositis
-M60.09|Muskelabszess
-M60.09|Muskeleiterung
-M60.09|Muskelinfektion a.n.k.
-M60.09|Myositis purulenta
-M60.09|Myositis universalis acuta infectiosa
-M60.09|Pyomyositis
-M60.09|Tropische Pyomyositis
-M60.09|Virusmyositis
+M60.5|Abszess des Musculus iliopsoas
+M60.5|Nichttuberkulöser Iliopsoasabszess
+M60.5|Nichttuberkulöser Psoasabszess
+M60.5|Psoasphlegmone
+M60.9|Eitrige Myositis
+M60.9|Infektiöse Myositis
+M60.9|Muskelabszess
+M60.9|Muskeleiterung
+M60.9|Muskelinfektion a.n.k.
+M60.9|Myositis purulenta
+M60.9|Myositis universalis acuta infectiosa
+M60.9|Pyomyositis
+M60.9|Tropische Pyomyositis
+M60.9|Virusmyositis
 M60.19|Interstitielle Myositis
 M60.29|Fremdkörpergranulom im Weichteilgewebe a.n.k.
 M60.29|Granulom durch Talkum
@@ -44945,7 +44945,7 @@ M60.99|Entzündliche Muskelkrankheit
 M60.99|Muskelentzündung
 M60.99|Myofasziitis
 M60.99|Myositis
-M61.09|Traumatische Myositis ossificans
+M61.9|Traumatische Myositis ossificans
 M61.10|Polymyositis ossificans generalisata
 M61.10|Polymyositis ossificans progressiva
 M61.19|Fibrodysplasia ossificans progressiva
@@ -44968,10 +44968,10 @@ M61.59|Reiterknochen-Ossifikation
 M61.59|Reitknochen
 M61.99|Muskelkalzifikation
 M61.99|Muskelossifikation
-M62.08|Hängebauch bei Rektusdiastase
-M62.08|Rektusdiastase
-M62.09|Muskeldiastase
-M62.09|Myodiastase
+M62.8|Hängebauch bei Rektusdiastase
+M62.8|Rektusdiastase
+M62.9|Muskeldiastase
+M62.9|Myodiastase
 M62.19|Alter Muskelriss
 M62.19|Nichttraumatische Muskelruptur
 M62.19|Nichttraumatischer Muskelriss
@@ -45062,8 +45062,8 @@ M62.99|Muskelinsuffizienz
 M62.99|Muskelkrankheit
 M62.99|Muskelstörung
 M62.99|Muskuläre Dysbalance
-M65.09|Sehnenabszess
-M65.09|Sehnenscheidenabszess
+M65.9|Sehnenabszess
+M65.9|Sehnenscheidenabszess
 M65.19|Infektiöse Synovitis a.n.k.
 M65.19|Infektiöse Tenosynovitis a.n.k.
 M65.19|Sehneninfektion
@@ -45213,8 +45213,8 @@ M70.9|Tenosynovitis durch Überbeanspruchung
 M70.9|Überlastungsschaden des Handgelenks
 M70.9|Überlastungsschaden des Unterarms
 M70.9|Überlastungsschaden einer Extremität
-M71.09|Bursaabszess
-M71.09|Schleimbeutelabszess
+M71.9|Bursaabszess
+M71.9|Schleimbeutelabszess
 M71.19|Infektiöse Bursitis a.n.k.
 M71.2|Baker-Zyste
 M71.2|Baker-Zyste des Knies
@@ -45469,20 +45469,20 @@ M77.9|Tendomyopathie
 M77.9|Tendopathie
 M77.9|Tendoperiostopathie
 M77.9|Überanstrengungsperiostose
-M79.09|Akuter Gelenkrheumatismus
-M79.09|Akuter Rheumatismus
-M79.09|Chronischer Rheumatismus
-M79.09|Extraartikulärer Rheumatismus
-M79.09|Gelenkrheumatismus
-M79.09|Neuralgischer Rheumatismus
-M79.09|Rheuma
-M79.09|Rheumatische Beschwerden
-M79.09|Rheumatische Erkrankung
-M79.09|Rheumatische Schmerzen
-M79.09|Rheumatismus
-M79.09|Subakuter Gelenkrheumatismus
-M79.09|Subakuter Rheumatismus
-M79.09|Weichteilrheumatismus
+M79.9|Akuter Gelenkrheumatismus
+M79.9|Akuter Rheumatismus
+M79.9|Chronischer Rheumatismus
+M79.9|Extraartikulärer Rheumatismus
+M79.9|Gelenkrheumatismus
+M79.9|Neuralgischer Rheumatismus
+M79.9|Rheuma
+M79.9|Rheumatische Beschwerden
+M79.9|Rheumatische Erkrankung
+M79.9|Rheumatische Schmerzen
+M79.9|Rheumatismus
+M79.9|Subakuter Gelenkrheumatismus
+M79.9|Subakuter Rheumatismus
+M79.9|Weichteilrheumatismus
 M79.18|Interkostale Myalgie
 M79.18|Myalgie im Brustbereich
 M79.18|Myalgie im Hals-Nacken-Bereich
@@ -45568,7 +45568,7 @@ M79.96|Nichttraumatischer prätibialer Weichteildefekt
 M79.99|Krankheit des Weichteilgewebes
 M79.99|Störung des Muskel-Skelett-Systems
 M79.99|Störung des Weichteilgewebes
-M80.09|Postmenopausale Osteoporose mit pathologischer Fraktur
+M80.9|Postmenopausale Osteoporose mit pathologischer Fraktur
 M80.19|Pathologische Fraktur bei Osteoporose nach Ovarektomie
 M80.29|Fraktur durch Inaktivitätsosteoporose
 M80.29|Inaktivitätsosteoporose mit pathologischer Fraktur
@@ -45584,8 +45584,8 @@ M80.98|Schwere Osteoporose mit Wirbelsinterung
 M80.99|Osteoporose mit Fraktur
 M80.99|Osteoporose mit pathologischer Fraktur
 M80.99|Osteoporose mit vertebralem Kollaps
-M81.09|Involutionsosteoporose
-M81.09|Postmenopausale Osteoporose
+M81.9|Involutionsosteoporose
+M81.9|Postmenopausale Osteoporose
 M81.19|Osteoporose nach Ovarektomie
 M81.29|Inaktivitätsosteoporose
 M81.29|Knochenatrophie durch Inaktivität a.n.k.
@@ -45612,7 +45612,7 @@ M81.99|Knochenschwund
 M81.99|Osteopenie
 M81.99|Osteoporose
 M81.99|Präklinische Osteoporose
-M83.09|Osteomalazie im Wochenbett
+M83.9|Osteomalazie im Wochenbett
 M83.19|Senile Osteomalazie
 M83.29|Osteomalazie durch Malabsorption im Erwachsenenalter
 M83.39|Osteomalazie durch Fehlernährung im Erwachsenenalter
@@ -45641,8 +45641,8 @@ M83.99|Osteomalazie im Erwachsenenalter
 M83.99|Rachitis beim Erwachsenen
 M83.99|Rachitis tarda
 M83.99|Spätrachitis
-M84.09|Frakturheilung in Fehlstellung
-M84.09|Schlechte Stellung von Frakturenden
+M84.9|Frakturheilung in Fehlstellung
+M84.9|Schlechte Stellung von Frakturenden
 M84.18|Xiphoid-Pseudarthrose
 M84.19|Falschgelenk
 M84.19|Nichtvereinigung der Frakturenden
@@ -45659,12 +45659,12 @@ M84.88|Diastase der Schädelknochen
 M84.89|Enostose
 M84.99|Störung der Knochenkontinuität
 M84.99|Veränderung der Knochenkontinuität
-M85.09|Fibröse Dysplasie
-M85.09|Fibröse Knochendysplasie a.n.k.
-M85.09|Monostotische fibröse Dysplasie
-M85.09|Monostotische Jaffé-Lichtenstein-Krankheit
-M85.09|Monostotisches Jaffé-Lichtenstein-Syndrom
-M85.09|Ostitis fibrosa circumscripta
+M85.9|Fibröse Dysplasie
+M85.9|Fibröse Knochendysplasie a.n.k.
+M85.9|Monostotische fibröse Dysplasie
+M85.9|Monostotische Jaffé-Lichtenstein-Krankheit
+M85.9|Monostotisches Jaffé-Lichtenstein-Syndrom
+M85.9|Ostitis fibrosa circumscripta
 M85.19|Skelettfluorose
 M85.2|Hyperostose des Schädels
 M85.2|Hyperostosis corticalis des Schädels
@@ -45700,8 +45700,8 @@ M85.89|Melorheostose der Knochen
 M85.89|Osteosis eburnisata monomelica
 M85.99|Störung der Knochendichte
 M85.99|Störung der Knochenstruktur
-M86.09|Akute hämatogene Osteomyelitis
-M86.09|Akute septische Osteomyelitis
+M86.9|Akute hämatogene Osteomyelitis
+M86.9|Akute septische Osteomyelitis
 M86.19|Akute Osteomyelitis
 M86.19|Akute Osteomyelitis bei Periostitis
 M86.19|Periostaler Abszess mit akuter Osteomyelitis
@@ -45766,12 +45766,12 @@ M86.99|Septische Osteomyelitis
 M86.99|Subperiostaler Knochenabszess
 M86.99|Suppurative Osteomyelitis
 M86.99|Umschriebene Periostitis
-M87.05|Aseptische Knochennekrose des medialen Femurkondylus
-M87.05|Aseptische Osteonekrose des medialen Femurkondylus
-M87.05|Femurrollennekrose
-M87.05|Morbus Ahlbäck [Aseptische Osteonekrose des medialen Femurkondylus]
-M87.09|Avaskuläre idiopathische Knochennekrose
-M87.09|Idiopathische aseptische Knochennekrose
+M87.5|Aseptische Knochennekrose des medialen Femurkondylus
+M87.5|Aseptische Osteonekrose des medialen Femurkondylus
+M87.5|Femurrollennekrose
+M87.5|Morbus Ahlbäck [Aseptische Osteonekrose des medialen Femurkondylus]
+M87.9|Avaskuläre idiopathische Knochennekrose
+M87.9|Idiopathische aseptische Knochennekrose
 M87.19|Knochennekrose durch Arzneimittel
 M87.29|Knochennekrose durch vorangegangenes Trauma
 M87.29|Köhler-Mouchet-Syndrom
@@ -45797,21 +45797,21 @@ M88.99|Osteodystrophia fibrosa localisata
 M88.99|Ostitis deformans
 M88.99|Paget-Krankheit des Knochens
 M88.99|Paget-Syndrom
-M89.09|Algodystrophie
-M89.09|Algoneurodystrophie
-M89.09|Chronic regional pain syndrome [CRPS] Typ I
-M89.09|Kienböck-Meisel-Krankheit
-M89.09|Leriche-Krankheit
-M89.09|Morbus Sudeck [Neurogene posttraumatische Knochenatrophie]
-M89.09|Neurodystrophie
-M89.09|Neurogene posttraumatische Knochenatrophie
-M89.09|Reflexdystrophie
-M89.09|Schulter-Hand-Syndrom
-M89.09|Sudeck-Atrophie
-M89.09|Sudeck-Knochenatrophie
-M89.09|Sudeck-Krankheit
-M89.09|Sudeck-Syndrom
-M89.09|Sympathische Reflexdystrophie
+M89.9|Algodystrophie
+M89.9|Algoneurodystrophie
+M89.9|Chronic regional pain syndrome [CRPS] Typ I
+M89.9|Kienböck-Meisel-Krankheit
+M89.9|Leriche-Krankheit
+M89.9|Morbus Sudeck [Neurogene posttraumatische Knochenatrophie]
+M89.9|Neurodystrophie
+M89.9|Neurogene posttraumatische Knochenatrophie
+M89.9|Reflexdystrophie
+M89.9|Schulter-Hand-Syndrom
+M89.9|Sudeck-Atrophie
+M89.9|Sudeck-Knochenatrophie
+M89.9|Sudeck-Krankheit
+M89.9|Sudeck-Syndrom
+M89.9|Sympathische Reflexdystrophie
 M89.19|Harris-Wachstumslinie
 M89.19|Stillstand des Epiphysenwachstums
 M89.29|Entwicklungsstillstand der Knochen
@@ -46216,10 +46216,10 @@ M96.88|Gelenkinstabilität nach Entfernen einer Gelenkprothese
 M96.9|Komplikation des Muskel-Skelett-Systems nach chirurgischem Eingriff
 M96.9|Komplikation des Muskel-Skelett-Systems nach medizinischen Maßnahmen
 M96.9|Störung des Muskel-Skelett-Systems nach medizinischen Maßnahmen
-M99.09|Segmentale Dysfunktion
-M99.09|Segmentale Funktionsstörung
-M99.09|Somatische Dysfunktion
-M99.09|Somatische Funktionsstörung
+M99.9|Segmentale Dysfunktion
+M99.9|Segmentale Funktionsstörung
+M99.9|Somatische Dysfunktion
+M99.9|Somatische Funktionsstörung
 M99.19|Subluxation der Wirbelsäule
 M99.29|Subluxationsstenose des Spinalkanals
 M99.39|Knöcherne Stenose des Spinalkanals
@@ -52270,27 +52270,27 @@ O43.9|Plazentaaffektion
 O43.9|Plazentakrankheit a.n.k.
 O43.9|Plazentakrankheit als Entbindungskomplikation
 O43.9|Plazentastörung
-O44.00|Entbindungskomplikation durch falschen Sitz der Plazenta
-O44.00|Falscher Sitz der Plazenta
-O44.00|Fehllage der Plazenta
-O44.00|Gravidität mit Komplikation durch Lageanomalie der Plazenta
-O44.00|Lageanomalie der Plazenta
-O44.00|Lageanomalie der Plazenta als Entbindungskomplikation ohne Blutung
-O44.00|Schwangerschaft mit Komplikation durch Lageanomalie der Plazenta
-O44.00|Tiefer Plazentasitz
-O44.00|Tiefer Plazentasitz ohne Blutung
-O44.00|Tiefer Sitz der Plazenta als Entbindungskomplikation ohne Blutung
-O44.00|Tiefsitzende Plazenta
-O44.00|Zervixplazenta
-O44.01|Placenta lateralis
-O44.01|Placenta praevia
-O44.01|Placenta praevia marginalis
-O44.01|Placenta praevia marginalis anterior
-O44.01|Placenta praevia marginalis posterior
-O44.01|Placenta praevia ohne Blutung
-O44.01|Placenta praevia partialis
-O44.01|Placenta praevia totalis
-O44.01|Schnittentbindung bei Placenta praevia ohne Blutung
+O44.0|Entbindungskomplikation durch falschen Sitz der Plazenta
+O44.0|Falscher Sitz der Plazenta
+O44.0|Fehllage der Plazenta
+O44.0|Gravidität mit Komplikation durch Lageanomalie der Plazenta
+O44.0|Lageanomalie der Plazenta
+O44.0|Lageanomalie der Plazenta als Entbindungskomplikation ohne Blutung
+O44.0|Schwangerschaft mit Komplikation durch Lageanomalie der Plazenta
+O44.0|Tiefer Plazentasitz
+O44.0|Tiefer Plazentasitz ohne Blutung
+O44.0|Tiefer Sitz der Plazenta als Entbindungskomplikation ohne Blutung
+O44.0|Tiefsitzende Plazenta
+O44.0|Zervixplazenta
+O44.1|Placenta lateralis
+O44.1|Placenta praevia
+O44.1|Placenta praevia marginalis
+O44.1|Placenta praevia marginalis anterior
+O44.1|Placenta praevia marginalis posterior
+O44.1|Placenta praevia ohne Blutung
+O44.1|Placenta praevia partialis
+O44.1|Placenta praevia totalis
+O44.1|Schnittentbindung bei Placenta praevia ohne Blutung
 O44.10|Entbindungskomplikation durch tiefen Sitz der Plazenta mit Blutung
 O44.10|Tiefer Plazentasitz mit Blutung
 O44.11|Entbindungskomplikation durch Placenta praevia mit Blutung
@@ -53532,27 +53532,27 @@ O90.8|Verzögerte Uterusrückbildung im Wochenbett
 O90.9|Krankheit im Wochenbett
 O90.9|Puerperale Krankheit a.n.k.
 O90.9|Wochenbettkomplikation
-O91.00|Abszess der Areola mammae im Wochenbett
-O91.00|Brustwarzenabszess im Wochenbett
-O91.00|Brustwarzeninfektion im Wochenbett
-O91.00|Brustwarzeninfektion in der Schwangerschaft
-O91.00|Gestationsbedingte Brustwarzenentzündung
-O91.00|Gestationsbedingte Thelitis
-O91.00|Mamillenabszess im Wochenbett
-O91.00|Mamillenabszess in der Schwangerschaft
-O91.00|Mamilleninfektion in der Schwangerschaft
-O91.00|Postpartale Entzündung der Areola mammae
-O91.00|Postpartale Infektion der Brustwarze
-O91.00|Postpartale Mamillitis
-O91.00|Postpartale Thelitis
-O91.00|Postpartaler Abszess der Areola mammae
-O91.00|Postpartaler Abszess der Brustwarze
-O91.00|Puerperale Entzündung der Areola mammae
-O91.00|Puerperale Mamillitis
-O91.00|Puerperale Thelitis
-O91.00|Schwangerschaftsbedingter Brustwarzenabszess
-O91.00|Thelitis im Wochenbett
-O91.01|Gestationsbedingte Brustwarzeninfektion mit Schwierigkeiten beim Anlegen
+O91.0|Abszess der Areola mammae im Wochenbett
+O91.0|Brustwarzenabszess im Wochenbett
+O91.0|Brustwarzeninfektion im Wochenbett
+O91.0|Brustwarzeninfektion in der Schwangerschaft
+O91.0|Gestationsbedingte Brustwarzenentzündung
+O91.0|Gestationsbedingte Thelitis
+O91.0|Mamillenabszess im Wochenbett
+O91.0|Mamillenabszess in der Schwangerschaft
+O91.0|Mamilleninfektion in der Schwangerschaft
+O91.0|Postpartale Entzündung der Areola mammae
+O91.0|Postpartale Infektion der Brustwarze
+O91.0|Postpartale Mamillitis
+O91.0|Postpartale Thelitis
+O91.0|Postpartaler Abszess der Areola mammae
+O91.0|Postpartaler Abszess der Brustwarze
+O91.0|Puerperale Entzündung der Areola mammae
+O91.0|Puerperale Mamillitis
+O91.0|Puerperale Thelitis
+O91.0|Schwangerschaftsbedingter Brustwarzenabszess
+O91.0|Thelitis im Wochenbett
+O91.1|Gestationsbedingte Brustwarzeninfektion mit Schwierigkeiten beim Anlegen
 O91.10|Brustdrüsenabszess im Wochenbett
 O91.10|Brustdrüsenfistel durch Mastitis im Wochenbett
 O91.10|Eitrige gestationsbedingte Lymphadenitis der Mamma
@@ -53631,12 +53631,12 @@ O91.20|Schwangerschaftsbedingte Mastitis
 O91.20|Schwangerschaftsbedingte parenchymatöse Mastitis
 O91.20|Stauungsmastitis
 O91.21|Gestationsbedingte nichteitrige Mastitis mit Schwierigkeiten beim Anlegen
-O92.00|Gestationsbedingte Brustwarzeninversion
-O92.00|Gestationsbedingte Brustwarzenretraktion
-O92.00|Hohlwarze bei Gestation
-O92.00|Postpartale Brustwarzeninversion
-O92.00|Postpartale Brustwarzenretraktion
-O92.01|Hohlwarze bei Gestation mit Schwierigkeiten beim Anlegen
+O92.0|Gestationsbedingte Brustwarzeninversion
+O92.0|Gestationsbedingte Brustwarzenretraktion
+O92.0|Hohlwarze bei Gestation
+O92.0|Postpartale Brustwarzeninversion
+O92.0|Postpartale Brustwarzenretraktion
+O92.1|Hohlwarze bei Gestation mit Schwierigkeiten beim Anlegen
 O92.10|Brustwarzenfissur im Wochenbett
 O92.10|Brustwarzenrhagade in der Schwangerschaft
 O92.10|Fissur der Brustwarze im Wochenbett
@@ -54406,12 +54406,12 @@ P05.9|Unzureichende Fetusentwicklung
 P05.9|Unzureichendes fetales Wachstum a.n.k.
 P05.9|Wachstumshemmung beim Fetus
 P05.9|Wachstumsstillstand beim Fetus
-P07.00|Frühgeborenes unter 500 Gramm
-P07.00|Geburtsgewicht unter 500 Gramm
-P07.01|Frühgeborenes zwischen 500 und 749 Gramm
-P07.01|Geburtsgewicht 500 bis unter 750 Gramm
-P07.02|Frühgeborenes zwischen 750 und 999 Gramm
-P07.02|Geburtsgewicht 750 bis unter 1000 Gramm
+P07.0|Frühgeborenes unter 500 Gramm
+P07.0|Geburtsgewicht unter 500 Gramm
+P07.1|Frühgeborenes zwischen 500 und 749 Gramm
+P07.1|Geburtsgewicht 500 bis unter 750 Gramm
+P07.2|Frühgeborenes zwischen 750 und 999 Gramm
+P07.2|Geburtsgewicht 750 bis unter 1000 Gramm
 P07.10|Frühgeborenes zwischen 1000 und 1249 Gramm
 P07.10|Geburtsgewicht 1000 bis unter 1250 Gramm
 P07.11|Frühgeborenes zwischen 1250 und 1499 Gramm
@@ -57022,10 +57022,10 @@ Q27.9|Anomalie des peripheren Gefäßsystems
 Q27.9|Anomalie peripherer Arterien
 Q27.9|Anomalie peripherer Venen
 Q27.9|Kongenitaler vaskulärer Defekt
-Q28.00|Angeborenes nichtrupturiertes arteriovenöses Aneurysma extrakranieller hirnversorgender Gefäße
-Q28.00|Arteriovenöses Aneurysma extrakranieller hirnversorgender Gefäße
-Q28.01|Angeborene arteriovenöse Fistel präzerebraler Gefäße
-Q28.09|Arteriovenöse Fehlbildung extrakranieller hirnversorgender Gefäße
+Q28.0|Angeborenes nichtrupturiertes arteriovenöses Aneurysma extrakranieller hirnversorgender Gefäße
+Q28.0|Arteriovenöses Aneurysma extrakranieller hirnversorgender Gefäße
+Q28.1|Angeborene arteriovenöse Fistel präzerebraler Gefäße
+Q28.9|Arteriovenöse Fehlbildung extrakranieller hirnversorgender Gefäße
 Q28.10|Angeborenes Aneurysma eines extrakraniellen hirnversorgenden Gefäßes
 Q28.10|Angeborenes nichtrupturiertes Aneurysma eines extrakraniellen hirnversorgenden Gefäßes
 Q28.11|Angeborene Fistel eines präzerebralen Gefäßes
@@ -63285,17 +63285,17 @@ R99|Tod unbekannter Ursache
 R99|Unbekannte Todesursache
 R99|Ungenaue Todesursache
 R99|Zerebraler Tod
-S00.00|Oberflächliche Verletzung der Regio occipitalis
-S00.00|Oberflächliche Verletzung der Regio parietalis
-S00.00|Oberflächliche Verletzung des behaarten Kopfes
-S00.05|Galeablutung
-S00.05|Galeahämatom
-S00.05|Kopfschwartenblutung
-S00.05|Kopfschwartenhämatom
-S00.05|Prellung der behaarten Kopfhaut
-S00.05|Prellung der Hinterhauptgegend
-S00.05|Prellung der Regio parietalis
-S00.05|Prellung der Schädelkalotte
+S00.0|Oberflächliche Verletzung der Regio occipitalis
+S00.0|Oberflächliche Verletzung der Regio parietalis
+S00.0|Oberflächliche Verletzung des behaarten Kopfes
+S00.5|Galeablutung
+S00.5|Galeahämatom
+S00.5|Kopfschwartenblutung
+S00.5|Kopfschwartenhämatom
+S00.5|Prellung der behaarten Kopfhaut
+S00.5|Prellung der Hinterhauptgegend
+S00.5|Prellung der Regio parietalis
+S00.5|Prellung der Schädelkalotte
 S00.1|Augenbrauenprellung
 S00.1|Augenlidprellung
 S00.1|Augenwinkelprellung
@@ -64025,9 +64025,9 @@ S10.80|Oberflächliche Verletzung des Kehldeckels
 S10.85|Prellung der Supraklavikulargrube
 S10.90|Oberflächliche Verletzung des Halses
 S10.95|Halsprellung
-S11.01|Offene Kehlkopfwunde
-S11.01|Offene Larynxwunde
-S11.02|Offene Trachealwunde
+S11.1|Offene Kehlkopfwunde
+S11.1|Offene Larynxwunde
+S11.2|Offene Trachealwunde
 S11.1|Offene Schilddrüsenwunde
 S11.1|Offene Thyreoideawunde
 S11.1|Offene Wunde mit Beteiligung der Schilddrüse
@@ -64167,11 +64167,11 @@ S14.5|Verletzung der sympathischen Halsnerven
 S14.5|Verletzung der zervikalen sympathischen Nerven
 S14.5|Verletzung des Halssympathikus
 S14.6|Nervenverletzung am Hals
-S15.00|Kopfschlagaderverletzung
-S15.00|Verletzung der Arteria carotis
-S15.01|Verletzung der Arteria carotis communis
-S15.02|Verletzung der Arteria carotis externa
-S15.03|Verletzung der Arteria carotis interna
+S15.0|Kopfschlagaderverletzung
+S15.0|Verletzung der Arteria carotis
+S15.1|Verletzung der Arteria carotis communis
+S15.2|Verletzung der Arteria carotis externa
+S15.3|Verletzung der Arteria carotis interna
 S15.1|Verletzung der Arteria vertebralis
 S15.2|Verletzung der Vena jugularis externa
 S15.2|Verletzung der äußeren Drosselvene
@@ -64254,24 +64254,24 @@ S21.9|Offene Thoraxwunde
 S21.9|Offene Wunde der Rippengegend
 S21.9|Offene Wunde der Thoraxwand
 S21.9|Offene Wunde der äußeren Brustwand
-S22.00|Brustwirbelfraktur
-S22.00|Dorsale Wirbelfraktur
-S22.00|Fraktur eines thorakalen Dornfortsatzes
-S22.00|Fraktur eines thorakalen Querfortsatzes
-S22.00|Fraktur eines thorakalen Wirbelbogens
-S22.00|Fraktur eines Thorakalwirbels
-S22.01|Brustwirbelfraktur T1
-S22.01|Brustwirbelfraktur T2
-S22.02|Brustwirbelfraktur T3
-S22.02|Brustwirbelfraktur T4
-S22.03|Brustwirbelfraktur T5
-S22.03|Brustwirbelfraktur T6
-S22.04|Brustwirbelfraktur T7
-S22.04|Brustwirbelfraktur T8
-S22.05|Brustwirbelfraktur T10
-S22.05|Brustwirbelfraktur T9
-S22.06|Brustwirbelfraktur T11
-S22.06|Brustwirbelfraktur T12
+S22.0|Brustwirbelfraktur
+S22.0|Dorsale Wirbelfraktur
+S22.0|Fraktur eines thorakalen Dornfortsatzes
+S22.0|Fraktur eines thorakalen Querfortsatzes
+S22.0|Fraktur eines thorakalen Wirbelbogens
+S22.0|Fraktur eines Thorakalwirbels
+S22.1|Brustwirbelfraktur T1
+S22.1|Brustwirbelfraktur T2
+S22.2|Brustwirbelfraktur T3
+S22.2|Brustwirbelfraktur T4
+S22.3|Brustwirbelfraktur T5
+S22.3|Brustwirbelfraktur T6
+S22.4|Brustwirbelfraktur T7
+S22.4|Brustwirbelfraktur T8
+S22.5|Brustwirbelfraktur T10
+S22.5|Brustwirbelfraktur T9
+S22.6|Brustwirbelfraktur T11
+S22.6|Brustwirbelfraktur T12
 S22.1|Multiple dorsale Wirbelfrakturen
 S22.1|Multiple Frakturen der Brustwirbelsäule
 S22.2|Fraktur des Manubrium sterni
@@ -64630,21 +64630,21 @@ S31.80|Offene Analwunde
 S31.80|Offene Wunde des Abdomens
 S31.80|Offene Wunde des Analsphinkters
 S31.80|Offene Wunde des Septum rectovaginale
-S32.00|Fraktur der Lendenwirbelsäule
-S32.00|Fraktur eines lumbosakralen Dornfortsatzes
-S32.00|Fraktur eines lumbosakralen Querfortsatzes
-S32.00|Fraktur eines lumbosakralen Wirbelbogens
-S32.00|Fraktur eines Lumbosakralwirbels
-S32.00|Kompressionsfraktur des Lendenwirbels
-S32.00|Lendenwirbelfraktur
-S32.00|LWS-Fraktur
-S32.00|Offene Lendenwirbelsäulenfraktur
-S32.00|Offene Lendenwirbelsäulenluxation
-S32.01|Lendenwirbelfraktur L1
-S32.02|Lendenwirbelfraktur L2
-S32.03|Lendenwirbelfraktur L3
-S32.04|Lendenwirbelfraktur L4
-S32.05|Lendenwirbelfraktur L5
+S32.0|Fraktur der Lendenwirbelsäule
+S32.0|Fraktur eines lumbosakralen Dornfortsatzes
+S32.0|Fraktur eines lumbosakralen Querfortsatzes
+S32.0|Fraktur eines lumbosakralen Wirbelbogens
+S32.0|Fraktur eines Lumbosakralwirbels
+S32.0|Kompressionsfraktur des Lendenwirbels
+S32.0|Lendenwirbelfraktur
+S32.0|LWS-Fraktur
+S32.0|Offene Lendenwirbelsäulenfraktur
+S32.0|Offene Lendenwirbelsäulenluxation
+S32.1|Lendenwirbelfraktur L1
+S32.2|Lendenwirbelfraktur L2
+S32.3|Lendenwirbelfraktur L3
+S32.4|Lendenwirbelfraktur L4
+S32.5|Lendenwirbelfraktur L5
 S32.1|Fraktur des Os sacrum
 S32.1|Kreuzbeinfraktur
 S32.2|Fraktur des Os coccygis
@@ -64807,14 +64807,14 @@ S35.9|Verletzung eines Blutgefäßes der Milz
 S35.9|Verletzung eines Blutgefäßes des Abdomens
 S35.9|Verletzung eines Blutgefäßes des Beckens
 S35.9|Verletzung eines mesenterialen Blutgefäßes
-S36.00|Milzverletzung
-S36.01|Milzhämatom
-S36.02|Kapselriss der Milz ohne größeren Einriss des Parenchyms
-S36.03|Rissverletzung der Milz mit Beteiligung des Parenchyms
-S36.04|Massive Parenchymruptur der Milz
-S36.08|Milzriss
-S36.08|Milzruptur
-S36.08|Traumatische Milzruptur
+S36.0|Milzverletzung
+S36.1|Milzhämatom
+S36.2|Kapselriss der Milz ohne größeren Einriss des Parenchyms
+S36.3|Rissverletzung der Milz mit Beteiligung des Parenchyms
+S36.4|Massive Parenchymruptur der Milz
+S36.8|Milzriss
+S36.8|Milzruptur
+S36.8|Traumatische Milzruptur
 S36.10|Leberverletzung
 S36.11|Leberhämatom
 S36.11|Leberprellung
@@ -64878,33 +64878,33 @@ S36.9|Traumatische Darmruptur
 S36.9|Traumatische Intestinalperforation
 S36.9|Traumatische Intestinalruptur
 S36.9|Verletzung intraabdominaler Organe
-S37.00|Geschlossene Nierenverletzung
-S37.00|Nierenläsion
-S37.00|Nierenpoltrauma
-S37.00|Nierentrauma
-S37.00|Nierenverletzung
-S37.01|Commotio renis
-S37.01|Nierenhämatom
-S37.01|Nierenkontusion
-S37.01|Nierenprellung
-S37.01|Nierenquetschung
-S37.01|Perirenales Hämatom
-S37.01|Renales Hämatom
-S37.02|Nierenbeckenruptur
-S37.02|Nierenstielabriss
-S37.02|Nierenstielverletzung
-S37.02|Riss der Nierenkapsel
-S37.02|Rissverletzung der Niere mit Kapselriss
-S37.02|Rissverletzung der Niere mit Verletzung der Nierenkapsel
-S37.02|Rissverletzung der Niere mit Verletzung des Nierenbeckens
-S37.03|Nierenberstung
-S37.03|Nierenparenchymriss
-S37.03|Nierenparenchymruptur
-S37.03|Nierenperforation
-S37.03|Nierenquerruptur
-S37.03|Nierenrindenriss
-S37.03|Nierenruptur
-S37.03|Traumatische Nierenruptur
+S37.0|Geschlossene Nierenverletzung
+S37.0|Nierenläsion
+S37.0|Nierenpoltrauma
+S37.0|Nierentrauma
+S37.0|Nierenverletzung
+S37.1|Commotio renis
+S37.1|Nierenhämatom
+S37.1|Nierenkontusion
+S37.1|Nierenprellung
+S37.1|Nierenquetschung
+S37.1|Perirenales Hämatom
+S37.1|Renales Hämatom
+S37.2|Nierenbeckenruptur
+S37.2|Nierenstielabriss
+S37.2|Nierenstielverletzung
+S37.2|Riss der Nierenkapsel
+S37.2|Rissverletzung der Niere mit Kapselriss
+S37.2|Rissverletzung der Niere mit Verletzung der Nierenkapsel
+S37.2|Rissverletzung der Niere mit Verletzung des Nierenbeckens
+S37.3|Nierenberstung
+S37.3|Nierenparenchymriss
+S37.3|Nierenparenchymruptur
+S37.3|Nierenperforation
+S37.3|Nierenquerruptur
+S37.3|Nierenrindenriss
+S37.3|Nierenruptur
+S37.3|Traumatische Nierenruptur
 S37.1|Geschlossene Harnleiterverletzung
 S37.1|Geschlossene Ureterverletzung
 S37.1|Harnleiterabriss
@@ -65089,13 +65089,13 @@ S41.80|Offene Wunde der Achselhöhle
 S41.80|Offene Wunde der Schulterblattregion
 S41.80|Offene Wunde der Schultergegend
 S41.80|Offene Wunde des Schultergürtels
-S42.00|Klavikulabruch
-S42.00|Klavikulafraktur
-S42.00|Schlüsselbeinbruch
-S42.00|Schlüsselbeinfraktur
-S42.01|Klavikulafraktur im medialen Drittel
-S42.02|Klavikulafraktur im mittleren Drittel
-S42.03|Klavikulafraktur im lateralen Drittel
+S42.0|Klavikulabruch
+S42.0|Klavikulafraktur
+S42.0|Schlüsselbeinbruch
+S42.0|Schlüsselbeinfraktur
+S42.1|Klavikulafraktur im medialen Drittel
+S42.2|Klavikulafraktur im mittleren Drittel
+S42.3|Klavikulafraktur im lateralen Drittel
 S42.10|Schulterblattfraktur
 S42.10|Skapulafraktur
 S42.11|Fraktur des Korpus der Skapula
@@ -65152,23 +65152,23 @@ S42.7|Multiple Oberarmfrakturen
 S42.9|Schulterfraktur
 S42.9|Schultergürtelfraktur
 S42.9|Schulterluxationsfraktur
-S43.00|Dislokation der Cavitas glenoidalis
-S43.00|Dislokation des Glenohumeralgelenks
-S43.00|Dislokation des Processus coracoideus
-S43.00|Dislokation des proximalen Endes des Humerus
-S43.00|Dislokation des Rabenschnabelfortsatzes
-S43.00|Frische Schulterschädigung
-S43.00|Infrakorakoidale Dislokation
-S43.00|Komplizierte Schulterluxation
-S43.00|Luxatio humeri
-S43.00|Proximale Humerusluxation
-S43.00|Schultergelenkdislokation
-S43.00|Schultergelenkluxation
-S43.00|Schulterluxation
-S43.00|Subglenoidale Dislokation
-S43.01|Bankart-Läsion
-S43.02|Luxation des Humerus nach hinten
-S43.03|Luxation des Humerus nach unten
+S43.0|Dislokation der Cavitas glenoidalis
+S43.0|Dislokation des Glenohumeralgelenks
+S43.0|Dislokation des Processus coracoideus
+S43.0|Dislokation des proximalen Endes des Humerus
+S43.0|Dislokation des Rabenschnabelfortsatzes
+S43.0|Frische Schulterschädigung
+S43.0|Infrakorakoidale Dislokation
+S43.0|Komplizierte Schulterluxation
+S43.0|Luxatio humeri
+S43.0|Proximale Humerusluxation
+S43.0|Schultergelenkdislokation
+S43.0|Schultergelenkluxation
+S43.0|Schulterluxation
+S43.0|Subglenoidale Dislokation
+S43.1|Bankart-Läsion
+S43.2|Luxation des Humerus nach hinten
+S43.3|Luxation des Humerus nach unten
 S43.1|Akromioklavikularluxation
 S43.1|Dislokation des Akromioklavikulargelenks
 S43.1|Klavikuladislokation
@@ -65262,12 +65262,12 @@ S51.0|Offene Ellenbogenwunde
 S51.7|Multiple offene Unterarmwunden
 S51.9|Offene Wunde des Unterarms
 S51.9|Unterarmdécollement
-S52.00|Ellenbogenfraktur
-S52.00|Proximale Ulnafraktur
-S52.01|Olekranonfraktur
-S52.02|Fraktur des Kronenfortsatzes der Ulna
-S52.02|Fraktur des Processus coronoideus ulnae
-S52.09|Fraktur der oberen Ulnaepiphyse
+S52.0|Ellenbogenfraktur
+S52.0|Proximale Ulnafraktur
+S52.1|Olekranonfraktur
+S52.2|Fraktur des Kronenfortsatzes der Ulna
+S52.2|Fraktur des Processus coronoideus ulnae
+S52.9|Fraktur der oberen Ulnaepiphyse
 S52.10|Fraktur der oberen Radiusepiphyse
 S52.10|Proximale Radiusfraktur
 S52.11|Radiusköpfchenfraktur
@@ -65446,21 +65446,21 @@ S62.8|Multiple Handfrakturen
 S62.8|Offene Handfraktur
 S62.8|Offene Handgelenkfraktur
 S62.8|Trümmerfraktur der Hand
-S63.00|Dislokation der Handwurzelknochen
-S63.00|Dislokation der Karpalknochen
-S63.00|Dislokation des Os naviculare manus
-S63.00|Dislokation des Os scaphoideum
-S63.00|Handgelenkdislokation
-S63.00|Handgelenkluxation
-S63.00|Kahnbeindislokation der Hand
-S63.00|Proximale Metakarpalknochendislokation
-S63.01|Distale Dislokation des Radioulnargelenks
-S63.02|Dislokation des Radiokarpalgelenks
-S63.02|Distale Radiusdislokation
-S63.03|Dislokation des Mediokarpalgelenks
-S63.03|Dislokation des Mittelhandgelenks
-S63.04|Dislokation des Karpometakarpalgelenks
-S63.08|Distale Ulnadislokation
+S63.0|Dislokation der Handwurzelknochen
+S63.0|Dislokation der Karpalknochen
+S63.0|Dislokation des Os naviculare manus
+S63.0|Dislokation des Os scaphoideum
+S63.0|Handgelenkdislokation
+S63.0|Handgelenkluxation
+S63.0|Kahnbeindislokation der Hand
+S63.0|Proximale Metakarpalknochendislokation
+S63.1|Distale Dislokation des Radioulnargelenks
+S63.2|Dislokation des Radiokarpalgelenks
+S63.2|Distale Radiusdislokation
+S63.3|Dislokation des Mediokarpalgelenks
+S63.3|Dislokation des Mittelhandgelenks
+S63.4|Dislokation des Karpometakarpalgelenks
+S63.8|Distale Ulnadislokation
 S63.10|Baseballfinger
 S63.10|Daumendislokation
 S63.10|Dislokation einer Phalanx der Hand
@@ -65579,27 +65579,27 @@ S71.0|Offene Wunde der Hüfte
 S71.1|Offene Oberschenkelwunde
 S71.7|Multiple offene Wunden an Hüfte und Oberschenkel
 S71.80|Offene Wunde des Beckengürtels a.n.k.
-S72.00|Femurhalsfraktur
-S72.00|Oberschenkelhalsbruch
-S72.00|Oberschenkelhalsfraktur
-S72.00|Schenkelhalsbruch
-S72.00|Schenkelhalsfraktur
-S72.01|Mediale Schenkelhalsfraktur
-S72.02|Fraktur der oberen Femurepiphyse
-S72.02|Fraktur des Femurepiphysenkopfes
-S72.03|Subkapitale Schenkelhalsfraktur
-S72.04|Transzervikale Femurfraktur
-S72.04|Transzervikale Schenkelhalsfraktur
-S72.04|Transzervikaler Schenkelhalsbruch
-S72.05|Basizervikale Femurfraktur
-S72.05|Zervikotrochantäre Schenkelhalsfraktur
-S72.08|Femurkopffraktur
-S72.08|Fraktur des Caput femoris
-S72.08|Hüftfraktur
-S72.08|Hüftkopfbruch
-S72.08|Hüftkopffraktur
-S72.08|Laterale Schenkelhalsfraktur
-S72.08|Pipkin-Fraktur
+S72.0|Femurhalsfraktur
+S72.0|Oberschenkelhalsbruch
+S72.0|Oberschenkelhalsfraktur
+S72.0|Schenkelhalsbruch
+S72.0|Schenkelhalsfraktur
+S72.1|Mediale Schenkelhalsfraktur
+S72.2|Fraktur der oberen Femurepiphyse
+S72.2|Fraktur des Femurepiphysenkopfes
+S72.3|Subkapitale Schenkelhalsfraktur
+S72.4|Transzervikale Femurfraktur
+S72.4|Transzervikale Schenkelhalsfraktur
+S72.4|Transzervikaler Schenkelhalsbruch
+S72.5|Basizervikale Femurfraktur
+S72.5|Zervikotrochantäre Schenkelhalsfraktur
+S72.8|Femurkopffraktur
+S72.8|Fraktur des Caput femoris
+S72.8|Hüftfraktur
+S72.8|Hüftkopfbruch
+S72.8|Hüftkopffraktur
+S72.8|Laterale Schenkelhalsfraktur
+S72.8|Pipkin-Fraktur
 S72.10|Fraktur des Trochanter major
 S72.10|Fraktur des Trochanter minor
 S72.10|Intratrochantäre Femurfraktur
@@ -65631,14 +65631,14 @@ S72.9|Oberschenkelbruch
 S72.9|Oberschenkelfraktur
 S72.9|Oberschenkeltrümmerbruch
 S72.9|Oberschenkeltrümmerfraktur
-S73.00|Hüftdislokation
-S73.00|Hüftgelenkluxation
-S73.00|Hüftgelenkpfannendislokation
-S73.00|Hüftluxation
-S73.00|Proximale Femurdislokation
-S73.00|Proximale Oberschenkeldislokation
-S73.01|Hüftluxation nach posterior
-S73.02|Hüftluxation nach anterior
+S73.0|Hüftdislokation
+S73.0|Hüftgelenkluxation
+S73.0|Hüftgelenkpfannendislokation
+S73.0|Hüftluxation
+S73.0|Proximale Femurdislokation
+S73.0|Proximale Oberschenkeldislokation
+S73.1|Hüftluxation nach posterior
+S73.2|Hüftluxation nach anterior
 S73.10|Hüftdistorsion
 S73.10|Hüftverstauchung
 S73.11|Iliofemorale Distorsion
@@ -66168,7 +66168,7 @@ T01.9|Multiple Risswunden
 T01.9|Multiple Schnittwunden
 T01.9|Multiple Stichwunden
 T01.9|Multiple Tierbisse
-T02.00|Multiple Frakturen an Hals und Kopf
+T02.0|Multiple Frakturen an Hals und Kopf
 T02.10|Multiple Frakturen an Thorax und Becken
 T02.10|Multiple Frakturen an Thorax und Lumbosakralgegend
 T02.10|Multiple Rumpffrakturen
@@ -66271,13 +66271,13 @@ T08.0|Wirbelkörperbruch
 T08.0|Wirbelkörperfraktur
 T08.0|Wirbelkörperkompressionsfraktur
 T08.0|Wirbelsäulenfraktur
-T09.00|Oberflächliche Verletzung des Rumpfes a.n.k.
-T09.05|Rumpfkontusion
-T09.05|Rumpfprellung
-T09.05|Rückenprellung
-T09.05|Wirbelsäulenprellung
-T09.05|Wirbelsäulenprellung des Rumpfes
-T09.05|WS-Prellung
+T09.0|Oberflächliche Verletzung des Rumpfes a.n.k.
+T09.5|Rumpfkontusion
+T09.5|Rumpfprellung
+T09.5|Rückenprellung
+T09.5|Wirbelsäulenprellung
+T09.5|Wirbelsäulenprellung des Rumpfes
+T09.5|WS-Prellung
 T09.1|Große Weichteilverletzung des Rumpfes
 T09.1|Offene Wunde des Rumpfes a.n.k.
 T09.2|Dislokation der Wirbelsäule
@@ -66314,10 +66314,10 @@ T10.0|Geschlossen gebrochener Arm
 T10.0|Geschlossene Armfraktur
 T10.1|Offen gebrochener Arm
 T10.1|Offene Armfraktur
-T11.00|Oberflächliche Verletzung der oberen Extremität a.n.k.
-T11.05|Armprellung
-T11.05|Kontusion der oberen Extremität
-T11.05|Prellung der oberen Extremität
+T11.0|Oberflächliche Verletzung der oberen Extremität a.n.k.
+T11.5|Armprellung
+T11.5|Kontusion der oberen Extremität
+T11.5|Prellung der oberen Extremität
 T11.1|Große Weichteilverletzung des Arms
 T11.1|Offene Wunde der oberen Extremität a.n.k.
 T11.1|Offene Wunde der oberen Gliedmaßen a.n.k.
@@ -66343,9 +66343,9 @@ T12.0|Geschlossen gebrochenes Bein
 T12.0|Geschlossene Beinfraktur
 T12.1|Offen gebrochenes Bein
 T12.1|Offene Beinfraktur
-T13.05|Beinprellung
-T13.05|Kontusion der unteren Extremität
-T13.05|Prellung der unteren Extremität
+T13.5|Beinprellung
+T13.5|Kontusion der unteren Extremität
+T13.5|Prellung der unteren Extremität
 T13.1|Große Weichteilverletzung des Beins
 T13.1|Offene Wunde der unteren Extremität a.n.k.
 T13.1|Offene Wunde der unteren Gliedmaßen a.n.k.
@@ -66365,58 +66365,58 @@ T13.8|Haartourniquet beim Neugeborenen
 T13.8|Haartourniquet beim Säugling
 T13.9|Beinverletzung
 T13.9|Verletzung der unteren Extremität
-T14.00|Geschlossene Verletzung
-T14.00|Hautwunde
-T14.00|Oberflächliche Extremitätenverletzung
-T14.00|Oberflächliche Hautverletzung a.n.k.
-T14.00|Oberflächliche subkutane Verletzung a.n.k.
-T14.00|Oberflächliche Verletzung
-T14.00|Subkutane Verletzung a.n.k.
-T14.00|Wundlaufen der Haut
-T14.00|Äußere Verletzung
-T14.01|Abschürfung
-T14.01|Exkoriation
-T14.01|Hautabschürfung
-T14.01|Schürfwunde
-T14.01|Traumatische Exkoriation
-T14.03|Flohbiss
-T14.03|Flohstich
-T14.03|Insektenbiss
-T14.03|Insektenstich
-T14.03|Mückenstich
-T14.03|Spinnenbiss
-T14.03|Ungiftiger Spinnenbiss
-T14.03|Zecken am Körper
-T14.03|Zeckenbiss
-T14.03|Zeckenstich - s.a. Zeckenbiss
-T14.04|Fremdkörper in Haut und Unterhaut
-T14.04|Hautfremdkörper
-T14.04|Oberflächlicher Fremdkörper ohne offene Wunde
-T14.04|Splitterinkorporation
-T14.05|Blutbeule
-T14.05|Bluterguss
-T14.05|Contusio
-T14.05|Hautprellung a.n.k.
-T14.05|Hämatom
-T14.05|Hämatom der Haut
-T14.05|Hämatom ohne Hautverletzung
-T14.05|Knochenkontusion
-T14.05|Knochenprellung a.n.k.
-T14.05|Kontusion - s.a. Contusio oder s.a. Prellung
-T14.05|Prellung
-T14.05|Prellung ohne Hautverletzung
-T14.05|Quetschung
-T14.05|Quetschwunde
-T14.05|Subkutane Prellung a.n.k.
-T14.05|Subperiostale Prellung a.n.k.
-T14.05|Subunguales Hämatom
-T14.05|Traumatisches Hämatom
-T14.08|Katzenkratzer
-T14.08|Kratzspuren
-T14.08|Kratzwunde
-T14.08|Serom
-T14.08|Surfer-Knoten
-T14.08|Surfer-Schwielen
+T14.0|Geschlossene Verletzung
+T14.0|Hautwunde
+T14.0|Oberflächliche Extremitätenverletzung
+T14.0|Oberflächliche Hautverletzung a.n.k.
+T14.0|Oberflächliche subkutane Verletzung a.n.k.
+T14.0|Oberflächliche Verletzung
+T14.0|Subkutane Verletzung a.n.k.
+T14.0|Wundlaufen der Haut
+T14.0|Äußere Verletzung
+T14.1|Abschürfung
+T14.1|Exkoriation
+T14.1|Hautabschürfung
+T14.1|Schürfwunde
+T14.1|Traumatische Exkoriation
+T14.3|Flohbiss
+T14.3|Flohstich
+T14.3|Insektenbiss
+T14.3|Insektenstich
+T14.3|Mückenstich
+T14.3|Spinnenbiss
+T14.3|Ungiftiger Spinnenbiss
+T14.3|Zecken am Körper
+T14.3|Zeckenbiss
+T14.3|Zeckenstich - s.a. Zeckenbiss
+T14.4|Fremdkörper in Haut und Unterhaut
+T14.4|Hautfremdkörper
+T14.4|Oberflächlicher Fremdkörper ohne offene Wunde
+T14.4|Splitterinkorporation
+T14.5|Blutbeule
+T14.5|Bluterguss
+T14.5|Contusio
+T14.5|Hautprellung a.n.k.
+T14.5|Hämatom
+T14.5|Hämatom der Haut
+T14.5|Hämatom ohne Hautverletzung
+T14.5|Knochenkontusion
+T14.5|Knochenprellung a.n.k.
+T14.5|Kontusion - s.a. Contusio oder s.a. Prellung
+T14.5|Prellung
+T14.5|Prellung ohne Hautverletzung
+T14.5|Quetschung
+T14.5|Quetschwunde
+T14.5|Subkutane Prellung a.n.k.
+T14.5|Subperiostale Prellung a.n.k.
+T14.5|Subunguales Hämatom
+T14.5|Traumatisches Hämatom
+T14.8|Katzenkratzer
+T14.8|Kratzspuren
+T14.8|Kratzwunde
+T14.8|Serom
+T14.8|Surfer-Knoten
+T14.8|Surfer-Schwielen
 T14.1|Ausschusswunde
 T14.1|Biss durch Menschen
 T14.1|Bissverletzung
@@ -66834,44 +66834,44 @@ T20.61|Halsverätzung Grad 2b
 T20.61|Kopfverätzung Grad 2b
 T20.7|Halsverätzung 3. Grades
 T20.7|Kopfverätzung 3. Grades
-T21.00|Rumpfverbrennung
-T21.01|Brustdrüsenverbrennung
-T21.01|Mammaverbrennung
-T21.02|Brustwandverbrennung
-T21.02|Verbrennung der Rippengegend
-T21.02|Verbrennung der Thoraxwand
-T21.02|Verbrennung des äußeren Thorax
-T21.03|Bauchdeckenverbrennung
-T21.03|Bauchwandverbrennung
-T21.03|Flankenverbrennung
-T21.03|Leistenverbrennung
-T21.03|Verbrennung der Darmbeingegend
-T21.03|Verbrennung des Epigastrium
-T21.04|Anusverbrennung
-T21.04|Gesäßverbrennung
-T21.04|Rückenverbrennung
-T21.04|Verbrennung der Interskapularregion
-T21.04|Verbrennung der Kreuzbeingegend
-T21.04|Verbrennung der Lendengegend
-T21.04|Verbrennung der Lumbosakralgegend
-T21.05|Hodenverbrennung
-T21.05|Klitorisverbrennung
-T21.05|Penisverbrennung
-T21.05|Perineumverbrennung
-T21.05|Skrotumverbrennung
-T21.05|Testisverbrennung
-T21.05|Verbrennung der großen Schamlippen
-T21.05|Verbrennung der kleinen Schamlippen
-T21.05|Verbrennung der Labia majora pudendi
-T21.05|Verbrennung der Labia minora pudendi
-T21.05|Verbrennung der Pudendalregion
-T21.05|Verbrennung der Schamgegend
-T21.05|Verbrennung der äußeren Urogenitalorgane
-T21.05|Verbrennung des Präputiums
-T21.05|Vulvaverbrennung
-T21.09|Beckenverbrennung
-T21.09|Nebenhodenverbrennung
-T21.09|Verbrennung der Tunica vaginalis testis
+T21.0|Rumpfverbrennung
+T21.1|Brustdrüsenverbrennung
+T21.1|Mammaverbrennung
+T21.2|Brustwandverbrennung
+T21.2|Verbrennung der Rippengegend
+T21.2|Verbrennung der Thoraxwand
+T21.2|Verbrennung des äußeren Thorax
+T21.3|Bauchdeckenverbrennung
+T21.3|Bauchwandverbrennung
+T21.3|Flankenverbrennung
+T21.3|Leistenverbrennung
+T21.3|Verbrennung der Darmbeingegend
+T21.3|Verbrennung des Epigastrium
+T21.4|Anusverbrennung
+T21.4|Gesäßverbrennung
+T21.4|Rückenverbrennung
+T21.4|Verbrennung der Interskapularregion
+T21.4|Verbrennung der Kreuzbeingegend
+T21.4|Verbrennung der Lendengegend
+T21.4|Verbrennung der Lumbosakralgegend
+T21.5|Hodenverbrennung
+T21.5|Klitorisverbrennung
+T21.5|Penisverbrennung
+T21.5|Perineumverbrennung
+T21.5|Skrotumverbrennung
+T21.5|Testisverbrennung
+T21.5|Verbrennung der großen Schamlippen
+T21.5|Verbrennung der kleinen Schamlippen
+T21.5|Verbrennung der Labia majora pudendi
+T21.5|Verbrennung der Labia minora pudendi
+T21.5|Verbrennung der Pudendalregion
+T21.5|Verbrennung der Schamgegend
+T21.5|Verbrennung der äußeren Urogenitalorgane
+T21.5|Verbrennung des Präputiums
+T21.5|Vulvaverbrennung
+T21.9|Beckenverbrennung
+T21.9|Nebenhodenverbrennung
+T21.9|Verbrennung der Tunica vaginalis testis
 T21.10|Rumpfverbrennung 1. Grades
 T21.11|Brustdrüsenverbrennung 1. Grades
 T21.11|Mammaverbrennung 1. Grades
@@ -67107,12 +67107,12 @@ T21.95|Vaginalverätzung Grad 2b
 T21.95|Verätzung der Labia majora pudendi Grad 2b
 T21.95|Verätzung der Labia minora pudendi Grad 2b
 T21.95|Vulvaverätzung Grad 2b
-T22.00|Verbrennung der oberen Extremität
-T22.02|Armverbrennung
-T22.02|Schulterverbrennung
-T22.02|Verbrennung der Schulterblattgegend
-T22.02|Verbrennung der Skapularregion
-T22.03|Achselhöhlenverbrennung
+T22.0|Verbrennung der oberen Extremität
+T22.2|Armverbrennung
+T22.2|Schulterverbrennung
+T22.2|Verbrennung der Schulterblattgegend
+T22.2|Verbrennung der Skapularregion
+T22.3|Achselhöhlenverbrennung
 T22.11|Ellenbogenverbrennung 1. Grades
 T22.11|Unterarmverbrennung 1. Grades
 T22.12|Armverbrennung 1. Grades
@@ -69327,18 +69327,18 @@ T85.9|Komplikation durch respiratorisches Transplantat
 T85.9|Komplikation durch Shunt
 T85.9|Komplikation durch Transplantat a.n.k.
 T85.9|Komplikation durch ösophageale Anti-Refluxvorrichtung
-T86.00|Knochenmarktransplantatabstoßung
-T86.00|Knochenmarktransplantatversagen
-T86.01|Akute Graft-versus-host-Krankheit, Grad I
-T86.01|Akute Graft-versus-host-Krankheit, Grad II
-T86.02|Akute Graft-versus-host-Krankheit, Grad III
-T86.02|Akute Graft-versus-host-Krankheit, Grad IV
-T86.03|Chronische Graft-versus-host-Krankheit, begrenzte Form
-T86.04|Chronische Graft-versus-host-Krankheit, ausgeprägte Form
-T86.09|Graft-versus-host-Krankheit
-T86.09|Graft-versus-host-Reaktion
-T86.09|GvH-Krankheit - s.a. Graft-versus-host-Krankheit
-T86.09|GvH-Reaktion
+T86.0|Knochenmarktransplantatabstoßung
+T86.0|Knochenmarktransplantatversagen
+T86.1|Akute Graft-versus-host-Krankheit, Grad I
+T86.1|Akute Graft-versus-host-Krankheit, Grad II
+T86.2|Akute Graft-versus-host-Krankheit, Grad III
+T86.2|Akute Graft-versus-host-Krankheit, Grad IV
+T86.3|Chronische Graft-versus-host-Krankheit, begrenzte Form
+T86.4|Chronische Graft-versus-host-Krankheit, ausgeprägte Form
+T86.9|Graft-versus-host-Krankheit
+T86.9|Graft-versus-host-Reaktion
+T86.9|GvH-Krankheit - s.a. Graft-versus-host-Krankheit
+T86.9|GvH-Reaktion
 T86.10|Abstoßungskrise nach Nierentransplantation
 T86.10|Akute Funktionsverschlechterung eines Nierentransplantates
 T86.10|Akute Nierentransplantatabstoßung
@@ -69784,10 +69784,10 @@ T88.9|Wirkung einer medizinischen Behandlung
 T88.9|Zwischenfall a.n.k.
 T88.9|Zwischenfall bei lokaler Anwendung a.n.k.
 T88.9|Zwischenfall bei medizinischer Behandlung
-T89.03|Sekundärheilung einer Wunde nach Trauma
-T89.03|Verzögerte Behandlung einer offenen Wunde
-T89.03|Verzögerte Wundheilung einer offenen Wunde
-T89.03|Wunddehiszenz nach Trauma
+T89.3|Sekundärheilung einer Wunde nach Trauma
+T89.3|Verzögerte Behandlung einer offenen Wunde
+T89.3|Verzögerte Wundheilung einer offenen Wunde
+T89.3|Wunddehiszenz nach Trauma
 T90.0|Folgen einer Gesichtsprellung
 T90.0|Folgen einer Kopfprellung
 T90.0|Folgen einer oberflächlichen Gesichtsverletzung
@@ -69969,8 +69969,8 @@ T98.3|Postoperative Folgen einer Amputation a.n.k.
 T98.3|Reanimationsfolgen
 U04.9|SARS [Schweres akutes respiratorisches Syndrom]
 U04.9|Schweres akutes respiratorisches Syndrom [SARS]
-U50.00|Barthel-Index 100 Punkte
-U50.01|Motorischer FIM [Functional Independence Measure] 85-91 Punkte
+U50.0|Barthel-Index 100 Punkte
+U50.1|Motorischer FIM [Functional Independence Measure] 85-91 Punkte
 U50.10|Barthel-Index 80-95 Punkte
 U50.11|Motorischer FIM [Functional Independence Measure] 69-84 Punkte
 U50.20|Barthel-Index 60-75 Punkte
@@ -69981,9 +69981,9 @@ U50.40|Barthel-Index 20-35 Punkte
 U50.41|Motorischer FIM [Functional Independence Measure] 31-42 Punkte
 U50.50|Barthel-Index 0-15 Punkte
 U50.51|Motorischer FIM [Functional Independence Measure] 13-30 Punkte
-U51.00|Erweiterter Barthel-Index 70-90 Punkte
-U51.01|Kognitiver FIM [Functional Independence Measure] 30-35 Punkte
-U51.02|MMSE [Mini-Mental State Examination] 24-30 Punkte
+U51.0|Erweiterter Barthel-Index 70-90 Punkte
+U51.1|Kognitiver FIM [Functional Independence Measure] 30-35 Punkte
+U51.2|MMSE [Mini-Mental State Examination] 24-30 Punkte
 U51.10|Erweiterter Barthel-Index 20-65 Punkte
 U51.11|Kognitiver FIM [Functional Independence Measure] 11-29 Punkte
 U51.12|MMSE [Mini-Mental State Examination] 17-23 Punkte
@@ -70858,11 +70858,11 @@ Z39.2|Postpartale Untersuchung der Mutter
 Z39.2|Postpartaler Zustandsbefund a.n.k.
 Z39.2|Routinemäßige postpartale Nachuntersuchung der Mutter
 Z39.2|Routinemäßige postpartale Untersuchung
-Z40.00|Prophylaktische Mastektomie
-Z40.01|Prophylaktische Ovarektomie
-Z40.08|Aufnahme wegen prophylaktischer Organentfernung
-Z40.08|Prophylaktische Operation wegen Neoplasma
-Z40.08|Prophylaktische Organentfernung wegen Neoplasiebehandlung
+Z40.0|Prophylaktische Mastektomie
+Z40.1|Prophylaktische Ovarektomie
+Z40.8|Aufnahme wegen prophylaktischer Organentfernung
+Z40.8|Prophylaktische Operation wegen Neoplasma
+Z40.8|Prophylaktische Organentfernung wegen Neoplasiebehandlung
 Z40.9|Prophylaktische Operation
 Z41.1|Kosmetische Brustauffüllung
 Z41.1|Kosmetische Brustreduzierung
@@ -70926,20 +70926,20 @@ Z44.9|Anpassung einer Ektoprothese
 Z44.9|Anpassung einer Prothese
 Z44.9|Handhabung einer Ektoprothese
 Z44.9|Handhabung einer Prothese
-Z45.00|Aggregatwechsel eines Herzschrittmachers
-Z45.00|Anpassung eines Herzschrittmachers
-Z45.00|Handhabung eines Herzschrittmachers a.n.k.
-Z45.00|Kontrolle der Batterie eines Herzschrittmachers
-Z45.00|Kontrolle eines Herzschrittmachers
-Z45.00|Versorgung mit einem Herzschrittmacher
-Z45.00|Wechsel eines Schrittmachers
-Z45.01|Anpassung eines implantierten Kardiodefibrillators
-Z45.02|Anpassung einer extrakorporalen Pumpe
-Z45.02|Anpassung einer intrakorporalen Pumpe
-Z45.02|Anpassung einer parakorporalen Pumpe
-Z45.02|Anpassung eines herzunterstützenden Systems
-Z45.02|Anpassung eines Kunstherzens
-Z45.02|Handhabung eines herzunterstützenden Systems
+Z45.0|Aggregatwechsel eines Herzschrittmachers
+Z45.0|Anpassung eines Herzschrittmachers
+Z45.0|Handhabung eines Herzschrittmachers a.n.k.
+Z45.0|Kontrolle der Batterie eines Herzschrittmachers
+Z45.0|Kontrolle eines Herzschrittmachers
+Z45.0|Versorgung mit einem Herzschrittmacher
+Z45.0|Wechsel eines Schrittmachers
+Z45.1|Anpassung eines implantierten Kardiodefibrillators
+Z45.2|Anpassung einer extrakorporalen Pumpe
+Z45.2|Anpassung einer intrakorporalen Pumpe
+Z45.2|Anpassung einer parakorporalen Pumpe
+Z45.2|Anpassung eines herzunterstützenden Systems
+Z45.2|Anpassung eines Kunstherzens
+Z45.2|Handhabung eines herzunterstützenden Systems
 Z45.1|Handhabung einer Infusionspumpe
 Z45.20|Handhabung eines Port-Systems
 Z45.29|Entfernung eines Gefäßzugangs
@@ -71073,10 +71073,10 @@ Z51.83|Methadonsubstitution
 Z51.83|Opiatsubstitution
 Z51.9|Nachbehandlung
 Z51.9|Therapie
-Z52.00|Blutspender
-Z52.01|Stammzellenspender
-Z52.08|Lymphozytenspender
-Z52.08|Thrombozytenspender
+Z52.0|Blutspender
+Z52.1|Stammzellenspender
+Z52.8|Lymphozytenspender
+Z52.8|Thrombozytenspender
 Z52.1|Hautspender
 Z52.2|Knochenspender
 Z52.3|Knochenmarkspender

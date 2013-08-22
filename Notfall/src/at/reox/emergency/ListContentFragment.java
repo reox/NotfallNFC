@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import at.reox.emergency.tools.EmergencyData;
+import at.reox.emergency.tools.Utility;
 
 public class ListContentFragment extends Fragment {
     private String mText;
@@ -79,22 +80,30 @@ public class ListContentFragment extends Fragment {
 	    // Load Specific views
 	    if (mText.equals("Sanitäter") || mText.equals("Notarzt")) {
 		// Load Diseases
-		l.addView(inflater.inflate(R.layout.fragment_dislist, null), icounter++, p);
-		ListView lv = (ListView) l.findViewById(R.id.list_dislist);
-		SimpleAdapter simpleAdpt = new SimpleAdapter(l.getContext(), d.getDiseases(),
-		    android.R.layout.simple_list_item_2, new String[] { "value", "key" },
-		    new int[] { android.R.id.text1, android.R.id.text2 });
+		View ll = inflater.inflate(R.layout.fragment_dislist, null);
+		ListView lv = (ListView) ll.findViewById(R.id.list_dislist);
+		SimpleAdapter simpleAdpt = new SimpleAdapter(l.getContext(), d.getDiseases(l
+		    .getContext()), android.R.layout.simple_list_item_2, new String[] { "value",
+		    "key" }, new int[] { android.R.id.text1, android.R.id.text2 });
 		lv.setAdapter(simpleAdpt);
+		lv.setClickable(false);
+		lv.setScrollContainer(false);
+		Utility.setListViewHeightBasedOnChildren(lv);
+
+		l.addView(ll, icounter++, p);
 
 	    }
 	    if (mText.equals("Notarzt")) {
 		// Load Medication
 		l.addView(inflater.inflate(R.layout.fragment_medlist, null), icounter++, p);
 		ListView lv = (ListView) l.findViewById(R.id.list_medlist);
-		SimpleAdapter simpleAdpt = new SimpleAdapter(l.getContext(), d.getMedication(),
-		    android.R.layout.simple_list_item_2, new String[] { "value", "key" },
-		    new int[] { android.R.id.text1, android.R.id.text2 });
+		SimpleAdapter simpleAdpt = new SimpleAdapter(l.getContext(), d.getMedication(l
+		    .getContext()), android.R.layout.simple_list_item_2, new String[] { "value",
+		    "key" }, new int[] { android.R.id.text1, android.R.id.text2 });
 		lv.setAdapter(simpleAdpt);
+		lv.setClickable(false);
+		lv.setScrollContainer(false);
+		Utility.setListViewHeightBasedOnChildren(lv);
 
 	    }
 	    if (mText.equals("Identifizierung") || mText.equals("Notarzt")) {

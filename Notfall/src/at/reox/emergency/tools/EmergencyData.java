@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import android.content.Context;
 import android.util.Log;
+import at.reox.emergency.DatabaseHelper;
 
 public class EmergencyData {
 
@@ -121,7 +123,7 @@ public class EmergencyData {
     }
 
     // TODO
-    public List<Map<String, String>> getMedication() {
+    public List<Map<String, String>> getMedication(Context context) {
 	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 	for (String s : PZN) {
 	    data.add(createItem(s, "foobar"));
@@ -130,13 +132,12 @@ public class EmergencyData {
 	return data;
     }
 
-    // TODO
-    public List<Map<String, String>> getDiseases() {
+    public List<Map<String, String>> getDiseases(Context context) {
+	DatabaseHelper dh = new DatabaseHelper(context);
 	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 	for (String s : ICD) {
-	    data.add(createItem(s, "foobar"));
+	    data.add(createItem(s, dh.getICDName(s)));
 	}
-
 	return data;
     }
 
@@ -484,12 +485,17 @@ public class EmergencyData {
 
 		for (int s = 0; s < (len / 3); s++) {
 		    char a = chars[b.get()];
-		    byte c1 = b.get();
-		    byte c2 = b.get();
+		    int c1 = b.get();
+		    int c2 = b.get();
 
-		    String icd = a + "" + ((int) c1);
+		    String icd = a + "";
+		    if (c1 < 10) {
+			icd += "0" + c1;
+		    } else {
+			icd += c1 + "";
+		    }
 		    if (c2 != 0x7F) {
-			icd += "." + ((int) c2);
+			icd += "." + c2;
 		    }
 		    addICD(icd);
 		}
