@@ -269,8 +269,6 @@ public class MainActivity extends Activity {
 		editor.commit();
 	    }
 
-	    Log.d(TAG, EmergencyData.getHex(d.getBinaryData()));
-
 	    Intent i = new Intent(this, NFCWriteActivity.class);
 	    i.putExtra("binarydata", d.getBinaryData());
 	    startActivity(i);

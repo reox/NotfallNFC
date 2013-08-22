@@ -360,8 +360,10 @@ public class EmergencyData {
 	// we have one byte for that...
 	// 4 bit for the bloodgroup, 2 bit each for rhesus and kell.
 	// if one of these is 0, its unknown.
-	Log.d(TAG, "Calculating Bloodgroup: "
-	    + getHex(new byte[] { (byte) ((bloodgroup << 4) | (rhesus << 2) | kell) }));
+	Log.d(
+	    TAG,
+	    "Calculating Bloodgroup: "
+		+ Integer.toHexString((bloodgroup << 4) | (rhesus << 2) | kell));
 	b.put((byte) ((bloodgroup << 4) | (rhesus << 2) | kell));
 
 	// Extra Data
@@ -531,20 +533,6 @@ public class EmergencyData {
 
 	return this;
 
-    }
-
-    final protected static char[] hexArray = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-	'A', 'B', 'C', 'D', 'E', 'F' };
-
-    public static String getHex(byte[] bytes) {
-	char[] hexChars = new char[bytes.length * 2];
-	int v;
-	for (int j = 0; j < bytes.length; j++) {
-	    v = bytes[j] & 0xFF;
-	    hexChars[j * 2] = hexArray[v >>> 4];
-	    hexChars[(j * 2) + 1] = hexArray[v & 0x0F];
-	}
-	return new String(hexChars);
     }
 
     private int charToPos(char x) {
