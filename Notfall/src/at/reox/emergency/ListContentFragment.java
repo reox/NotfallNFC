@@ -1,6 +1,7 @@
 package at.reox.emergency;
 
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -109,7 +110,7 @@ public class ListContentFragment extends Fragment {
 
 	    TextView update = new TextView(l.getContext());
 	    update.setText("Tag vom: "
-		+ new SimpleDateFormat("dd.MM.yyyy (H:mm)").format(d.getUpdate()));
+		+ new SimpleDateFormat("dd.MM.yyyy (H:mm)", Locale.GERMANY).format(d.getUpdate()));
 	    l.addView(update);
 
 	} else {

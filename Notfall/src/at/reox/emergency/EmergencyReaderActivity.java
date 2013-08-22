@@ -19,6 +19,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 import at.reox.emergency.tools.EmergencyData;
 import at.reox.emergency.tools.EmergencyDataParseException;
 import at.reox.emergency.tools.NfcUtils;
@@ -106,24 +107,25 @@ public class EmergencyReaderActivity extends Activity {
 
     private class ReadNFC extends AsyncTask<Tag, Void, Void> {
 
+	private Exception e;
+
 	@Override
 	protected Void doInBackground(Tag... arg0) {
 	    byte[] realData;
 	    try {
 		realData = NfcUtils.read(arg0[0]);
-		Log.d(TAG, "Found a tag and read: " + NfcUtils.printHexString(realData));
 		((EmergencyApplication) getApplication()).loadTag(new EmergencyData()
 		    .readBinaryData(realData));
 
 	    } catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		this.e = e;
+		cancel(true);
 	    } catch (FormatException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		this.e = e;
+		cancel(true);
 	    } catch (EmergencyDataParseException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		this.e = e;
+		cancel(true);
 	    }
 
 	    return null;
@@ -137,6 +139,14 @@ public class EmergencyReaderActivity extends Activity {
 	@Override
 	protected void onPostExecute(Void v) {
 	    replaceFragment(currentTag);
+	}
+
+	@Override
+	protected void onCancelled() {
+	    Toast.makeText(EmergencyReaderActivity.this,
+		"Karte konnte nicht gelesen werden: " + e.getMessage(), Toast.LENGTH_LONG).show();
+	    replaceFragment("place");
+
 	}
     }
 
