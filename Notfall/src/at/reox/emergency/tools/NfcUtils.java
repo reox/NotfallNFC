@@ -13,29 +13,34 @@ public class NfcUtils {
     private static final String TAG = "NfcUtils";
 
     public static byte[] read(Tag tag) throws IOException, FormatException {
-	byte[] data = new byte[64 * 4]; // FIXME should be generic for other kinds of tags
-	Arrays.fill(data, (byte) 0x0);
 	if (tag == null) {
-	    return data;
+	    return null;
 	}
 	NfcV nfc = NfcV.get(tag);
-	byte[] ID = tag.getId();
 
 	nfc.connect();
 
-	byte[] arrByte = new byte[11];
+	byte[] cmd = new byte[2];
+	cmd[0] = (byte) 0x02; // flag
+	cmd[1] = (byte) 0x2B; // command
+	byte[] infoRmation = nfc.transceive(cmd);
+	int blockNumber = infoRmation[12] + 1;
+	int oneBlockSize = infoRmation[13] + 1;
+	byte[] data = new byte[blockNumber * oneBlockSize];
+
+	Arrays.fill(data, (byte) 0x0);
+
+	byte[] arrByte = new byte[3];
 	// Flags
-	arrByte[0] = 0x22; // 0x20 = Addressed Mode, 0x02 = Fast Mode
+	arrByte[0] = 0x02; // 0x20 = Addressed Mode, 0x02 = Fast Mode
 	// Command
 	arrByte[1] = 0x20; // read single block
 	// ID
-	System.arraycopy(ID, 0, arrByte, 2, 8);
-
-	for (int i = 0; i < 64; i++) {
+	for (int i = 0; i < blockNumber; i++) {
 	    // block number
-	    arrByte[10] = (byte) (i);
+	    arrByte[2] = (byte) (i);
 	    byte[] result = nfc.transceive(arrByte);
-	    System.arraycopy(result, 1, data, i * 4, 4);
+	    System.arraycopy(result, 1, data, i * oneBlockSize, oneBlockSize);
 	}
 
 	nfc.close();
@@ -77,49 +82,45 @@ public class NfcUtils {
 
 	Log.d(TAG, "Max Transceive Bytes: " + nfc.getMaxTransceiveLength());
 
+	byte[] cmd = new byte[2];
+	cmd[0] = (byte) 0x02; // flag
+	cmd[1] = (byte) 0x2B; // command
+	byte[] infoRmation = nfc.transceive(cmd);
+	int blockNumber = infoRmation[12] + 1;
+	int oneBlockSize = infoRmation[13] + 1;
+
 	// NfcV Tag has 64 Blocks with 4 Byte
-	if ((data.length / 4) > 64) {
-	    // ERROR HERE!
-	    Log.d(TAG, "too much data...");
+	if ((data.length / oneBlockSize) > blockNumber) {
+	    throw new IOException("Data is too big");
 	}
 
-	if ((data.length % 4) != 0) {
-	    byte[] ndata = new byte[(data.length) + (4 - (data.length % 4))];
+	if ((data.length % oneBlockSize) != 0) {
+	    byte[] ndata = new byte[(data.length) + (oneBlockSize - (data.length % oneBlockSize))];
 	    Arrays.fill(ndata, (byte) 0x00);
 	    System.arraycopy(data, 0, ndata, 0, data.length);
 	    data = ndata;
 	}
 
-	byte[] arrByte = new byte[7];
+	byte[] arrByte = new byte[3 + oneBlockSize];
 	// Flags
 	arrByte[0] = 0x42;
 	// Command
 	arrByte[1] = 0x21;
 
-	for (int i = 0; i < (data.length / 4); i++) {
-
+	for (int i = 0; i < (data.length / oneBlockSize); i++) {
 	    // block number
 	    arrByte[2] = (byte) (i);
-
-	    // data, DONT SEND LSB FIRST!
-	    arrByte[3] = data[(i * 4)];
-	    arrByte[4] = data[(i * 4) + 1];
-	    arrByte[5] = data[(i * 4) + 2];
-	    arrByte[6] = data[(i * 4) + 3];
+	    // data
+	    System.arraycopy(data, i * oneBlockSize, arrByte, 3, oneBlockSize);
 
 	    Log.d(TAG, "Writing Data to block " + i + " [" + printHexString(arrByte) + "]");
 	    try {
+		// Result will probably never get anywhere ...
 		nfc.transceive(arrByte);
 	    } catch (IOException e) {
 		if (e.getMessage().equals("Tag was lost.")) {
 		    // continue, because of Tag bug
-		    Log.d(
-			TAG,
-			"Verify Block "
-			    + i
-			    + ": "
-			    + verify(nfc, i, new byte[] { data[(i * 4)], data[(i * 4) + 1],
-				data[(i * 4) + 2], data[(i * 4) + 3] }));
+		    // TODO Verify
 		} else {
 		    throw e;
 		}

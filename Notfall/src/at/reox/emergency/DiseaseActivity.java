@@ -74,7 +74,6 @@ public class DiseaseActivity extends Activity {
 	at.setAdapter(adapter);
     }
 
-    // TODO
     public void onAdd(View v) {
 	AutoCompleteTextView at = (AutoCompleteTextView) findViewById(R.id.diseaseAutoComplete);
 

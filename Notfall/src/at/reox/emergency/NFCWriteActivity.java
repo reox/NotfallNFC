@@ -1,6 +1,5 @@
 package at.reox.emergency;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import android.app.Activity;
@@ -8,7 +7,6 @@ import android.app.FragmentTransaction;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.nfc.FormatException;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.NfcV;
@@ -17,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
 import at.reox.emergency.tools.NfcUtils;
 
 public class NFCWriteActivity extends Activity {
@@ -56,7 +55,6 @@ public class NFCWriteActivity extends Activity {
 	if (tag != null) {
 	    Log.d(TAG, "Got a tag that supports these Tech: " + Arrays.toString(tag.getTechList()));
 
-	    // TODO error handling
 	    new WriteNFC().execute(tag);
 	}
     }
@@ -95,18 +93,17 @@ public class NFCWriteActivity extends Activity {
 
     private class WriteNFC extends AsyncTask<Tag, Void, Void> {
 
+	private Exception e;
+
 	@Override
 	protected Void doInBackground(Tag... params) {
 	    byte[] data = ((EmergencyApplication) getApplication()).getData();
 
 	    try {
 		NfcUtils.write(params[0], data);
-	    } catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	    } catch (FormatException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	    } catch (Exception e) {
+		cancel(true);
+		this.e = e;
 	    }
 	    return null;
 	}
@@ -119,6 +116,14 @@ public class NFCWriteActivity extends Activity {
 	@Override
 	protected void onPostExecute(Void v) {
 	    replaceFragment("done");
+	}
+
+	@Override
+	protected void onCancelled() {
+	    Toast.makeText(NFCWriteActivity.this, "Fehler beim Schreiben: " + e.getMessage(),
+		Toast.LENGTH_LONG).show();
+	    Log.e(TAG, "Error", e);
+	    replaceFragment("place");
 	}
 
     }

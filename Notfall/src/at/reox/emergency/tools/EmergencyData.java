@@ -150,6 +150,12 @@ public class EmergencyData {
 
     public int getAge() {
 	if (svnr.length() == 10) {
+	    int month = Integer.parseInt(svnr.substring(6, 8));
+	    if (month > 12) {
+		// SVNR is a pseudo one!
+		// TODO ... do something
+	    }
+
 	    int year = Integer.parseInt(svnr.substring(8));
 	    int cyear = Calendar.getInstance().get(Calendar.YEAR);
 	    // this is a very very lame way... FIXME

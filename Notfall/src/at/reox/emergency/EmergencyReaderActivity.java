@@ -82,9 +82,6 @@ public class EmergencyReaderActivity extends Activity {
 	Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 	// do something with tagFromIntent
 	Log.d("Nfcreader", "Found a Tag!" + tag);
-
-	// TODO Fake data here because tags dont work right now
-	// TODO exception handling
 	new ReadNFC().execute(tag);
     }
 
