@@ -101,6 +101,14 @@ public class NFCWriteActivity extends Activity {
 
 	    try {
 		NfcUtils.write(params[0], data);
+
+		byte[] rdata = NfcUtils.read(params[0]);
+		for (int i = 0; i < data.length; i++) {
+		    if (rdata[i] != data[i]) {
+			cancel(true);
+			throw new Exception("Data missmatch at verify");
+		    }
+		}
 	    } catch (Exception e) {
 		cancel(true);
 		this.e = e;

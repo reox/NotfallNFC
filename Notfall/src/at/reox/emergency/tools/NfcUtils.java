@@ -40,36 +40,14 @@ public class NfcUtils {
 	    // block number
 	    arrByte[2] = (byte) (i);
 	    byte[] result = nfc.transceive(arrByte);
+	    if (result[0] != 0) {
+		throw new IOException("Data Read was unsuccessfull");
+	    }
 	    System.arraycopy(result, 1, data, i * oneBlockSize, oneBlockSize);
 	}
 
 	nfc.close();
 	return data;
-    }
-
-    public static boolean verify(NfcV nfc, int block, byte[] data) {
-
-	try {
-	    byte[] arrByte = new byte[3];
-	    // Flags
-	    arrByte[0] = 0x02; // 0x02 = Fast Mode
-	    // Command
-	    arrByte[1] = 0x20; // read single block
-
-	    arrByte[2] = (byte) (block);
-	    byte[] result = nfc.transceive(arrByte);
-
-	    for (int i = 0; i < 4; i++) {
-		if (result[i + 1] != data[i]) {
-		    return false;
-		}
-	    }
-
-	    return true;
-	} catch (IOException e) {
-	    return false;
-	}
-
     }
 
     public static void write(Tag tag, byte[] data) throws IOException, FormatException {
@@ -120,7 +98,6 @@ public class NfcUtils {
 	    } catch (IOException e) {
 		if (e.getMessage().equals("Tag was lost.")) {
 		    // continue, because of Tag bug
-		    // TODO Verify
 		} else {
 		    throw e;
 		}

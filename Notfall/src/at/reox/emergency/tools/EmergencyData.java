@@ -122,7 +122,7 @@ public class EmergencyData {
 	return s;
     }
 
-    // TODO
+    // TODO get pzn from database
     public List<Map<String, String>> getMedication(Context context) {
 	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 	for (String s : PZN) {
@@ -150,15 +150,9 @@ public class EmergencyData {
 
     public int getAge() {
 	if (svnr.length() == 10) {
-	    int month = Integer.parseInt(svnr.substring(6, 8));
-	    if (month > 12) {
-		// SVNR is a pseudo one!
-		// TODO ... do something
-	    }
-
 	    int year = Integer.parseInt(svnr.substring(8));
 	    int cyear = Calendar.getInstance().get(Calendar.YEAR);
-	    // this is a very very lame way... FIXME
+	    // this is a very very lame way... works for the moment
 	    if (year > (cyear - 2000)) {
 		year += 1900;
 	    } else {
