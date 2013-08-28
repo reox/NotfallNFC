@@ -14,7 +14,7 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     private static final String DATABASE_NAME = "emergeData";
 
     private Context mCtx;
@@ -26,9 +26,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-	String query = "CREATE TABLE icd (number text, name text); CREATE TABLE pzn (number text, name text)";
-
-	db.execSQL(query);
+	db.execSQL("CREATE TABLE icd (number text, name text)");
+	db.execSQL("CREATE TABLE pzn (number text, name text)");
 	SQLiteStatement stmt = db.compileStatement("insert into icd values (?, ?)");
 
 	// Fill up Database with Values...
@@ -71,7 +70,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
 	if (oldV != newV) {
-	    db.execSQL("DROP TABLE icd; DROP TABLE pzn;");
+	    db.execSQL("DROP TABLE if exists icd");
+	    db.execSQL("DROP TABLE if exists pzn");
 
 	    onCreate(db);
 	}
@@ -95,6 +95,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	SQLiteDatabase db = getReadableDatabase();
 	Cursor c = db.rawQuery(query, null);
 	c.moveToFirst();
+	if (c.getCount() == 0) {
+	    return "Unknown ICD Code";
+	}
 	return c.getString(0);
     }
 
@@ -104,6 +107,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	SQLiteDatabase db = getReadableDatabase();
 	Cursor c = db.rawQuery(query, null);
 	c.moveToFirst();
+	if (c.getCount() == 0) {
+	    return "Unknown Code";
+	}
+	return c.getString(0);
+    }
+
+    public String getPZNName(String code) {
+	Log.d("Database", "select number of pzn code " + code);
+	String query = "SELECT name from pzn where number ='" + code + "' limit 1";
+	SQLiteDatabase db = getReadableDatabase();
+	Cursor c = db.rawQuery(query, null);
+	c.moveToFirst();
+	if (c.getCount() == 0) {
+	    return "Unknown Medication";
+	}
 	return c.getString(0);
     }
 

@@ -34,9 +34,9 @@ public class MedicationActivity extends Activity {
 	ListView lv = (ListView) findViewById(R.id.list_list);
 	Intent intent = getIntent();
 
+	DatabaseHelper dh = new DatabaseHelper(this);
 	for (String s : intent.getStringArrayExtra("pzndata")) {
-	    // TODO get from list
-	    data.add(createItem(s, "Generic Item GEN"));
+	    data.add(createItem(s, dh.getPZNName(s)));
 	}
 
 	simpleAdpt = new SimpleAdapter(this, data, android.R.layout.simple_list_item_2,
@@ -135,7 +135,9 @@ public class MedicationActivity extends Activity {
 		if (format.equals("CODE_39") && contents.startsWith("-")
 		    && (contents.length() == 8)) {
 		    // should have a proper PZN Code here...
-		    data.add(createItem(contents.substring(1), "Unknown Medication"));
+		    DatabaseHelper dh = new DatabaseHelper(this);
+		    String pzn = contents.substring(1);
+		    data.add(createItem(pzn, dh.getPZNName(pzn)));
 		    simpleAdpt.notifyDataSetChanged();
 		}
 

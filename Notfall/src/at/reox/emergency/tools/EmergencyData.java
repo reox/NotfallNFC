@@ -122,11 +122,12 @@ public class EmergencyData {
 	return s;
     }
 
-    // TODO get pzn from database
     public List<Map<String, String>> getMedication(Context context) {
+	DatabaseHelper dh = new DatabaseHelper(context);
+
 	List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 	for (String s : PZN) {
-	    data.add(createItem(s, "foobar"));
+	    data.add(createItem(s, dh.getPZNName(s)));
 	}
 
 	return data;
