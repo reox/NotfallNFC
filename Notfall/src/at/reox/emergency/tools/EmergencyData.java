@@ -419,111 +419,119 @@ public class EmergencyData {
 
 	ByteBuffer b = ByteBuffer.wrap(data);
 
-	// Getting information from the flags
-	byte flags = b.get();
-	sex = flags & 0x1;
-	organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
+	try {
+	    // Getting information from the flags
+	    byte flags = b.get();
+	    sex = flags & 0x1;
+	    organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
 
-	// parse the name
-	int n = b.getShort() & 0xFFFF;
-	byte[] t = new byte[n];
-	for (int s = 0; s < n; s++) {
-	    t[s] = b.get();
-	}
-	name = new String(t);
+	    // parse the name
+	    int n = b.getShort() & 0xFFFF;
+	    byte[] t = new byte[n];
+	    for (int s = 0; s < n; s++) {
+		t[s] = b.get();
+	    }
+	    name = new String(t);
 
-	// parse the surname
-	n = b.getShort() & 0xFFFF;
-	t = new byte[n];
-	for (int s = 0; s < n; s++) {
-	    t[s] = b.get();
-	}
-	surname = new String(t);
+	    // parse the surname
+	    n = b.getShort() & 0xFFFF;
+	    t = new byte[n];
+	    for (int s = 0; s < n; s++) {
+		t[s] = b.get();
+	    }
+	    surname = new String(t);
 
-	// parse the address
-	n = b.getShort() & 0xFFFF;
-	t = new byte[n];
-	for (int s = 0; s < n; s++) {
-	    t[s] = b.get();
-	}
-	address = new String(t);
+	    // parse the address
+	    n = b.getShort() & 0xFFFF;
+	    t = new byte[n];
+	    for (int s = 0; s < n; s++) {
+		t[s] = b.get();
+	    }
+	    address = new String(t);
 
-	// get the svnr
-	long number = (b.get() << 32) | b.getInt();
-	svnr = new String(number + "");
+	    // get the svnr
+	    long number = (b.get() << 32) | b.getInt();
+	    svnr = new String(number + "");
 
-	// get the blood group
-	byte group = b.get();
-	bloodgroup = (group >>> 4) & 0xF;
-	rhesus = (group >>> 2) & 0x3;
-	kell = group & 0x3;
+	    // get the blood group
+	    byte group = b.get();
+	    bloodgroup = (group >>> 4) & 0xF;
+	    rhesus = (group >>> 2) & 0x3;
+	    kell = group & 0x3;
 
-	// now we have some extra data here...
-	int extraCount = b.getShort() & 0xFFFF;
-	for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
-	    byte ident = b.get();
-	    int len = b.getShort() & 0xFFFF;
+	    // now we have some extra data here...
+	    int extraCount = b.getShort() & 0xFFFF;
+	    for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
+		byte ident = b.get();
+		int len = b.getShort() & 0xFFFF;
 
-	    switch (ident) {
-	    case TYPE_EXTRA:
-		t = new byte[len];
-		for (int s = 0; s < len; s++) {
-		    t[s] = b.get();
-		}
-		extra = new String(t);
-		break;
-	    case TYPE_MEDICATION:
-		if ((len % 4) != 0) {
-		    throw new EmergencyDataParseException("Number of Medication Elements missmatch");
-		}
-		for (int s = 0; s < (len / 4); s++) {
-		    addPZN(new String(b.getInt() + ""));
-		}
-		break;
-	    case TYPE_DISEASE:
-		if ((len % 3) != 0) {
-		    throw new EmergencyDataParseException("Number of Disease Elements missmatch");
-		}
-
-		for (int s = 0; s < (len / 3); s++) {
-		    char a = chars[b.get()];
-		    int c1 = b.get();
-		    int c2 = b.get();
-
-		    String icd = a + "";
-		    if (c1 < 10) {
-			icd += "0" + c1;
-		    } else {
-			icd += c1 + "";
+		switch (ident) {
+		case TYPE_EXTRA:
+		    t = new byte[len];
+		    for (int s = 0; s < len; s++) {
+			t[s] = b.get();
 		    }
-		    if (c2 != 0x7F) {
-			icd += "." + c2;
+		    extra = new String(t);
+		    break;
+		case TYPE_MEDICATION:
+		    if ((len % 4) != 0) {
+			throw new EmergencyDataParseException(
+			    "Number of Medication Elements missmatch");
 		    }
-		    addICD(icd);
-		}
-		break;
-	    default: // we need this if we find something that we dont know..
-		for (int s = 0; s < len; s++) {
-		    b.get();
+		    for (int s = 0; s < (len / 4); s++) {
+			addPZN(new String(b.getInt() + ""));
+		    }
+		    break;
+		case TYPE_DISEASE:
+		    if ((len % 3) != 0) {
+			throw new EmergencyDataParseException(
+			    "Number of Disease Elements missmatch");
+		    }
+
+		    for (int s = 0; s < (len / 3); s++) {
+			char a = chars[b.get()];
+			int c1 = b.get();
+			int c2 = b.get();
+
+			String icd = a + "";
+			if (c1 < 10) {
+			    icd += "0" + c1;
+			} else {
+			    icd += c1 + "";
+			}
+			if (c2 != 0x7F) {
+			    icd += "." + c2;
+			}
+			addICD(icd);
+		    }
+		    break;
+		default: // we need this if we find something that we dont know..
+		    for (int s = 0; s < len; s++) {
+			b.get();
+		    }
 		}
 	    }
+
+	    // read timestamp
+	    update = new Date(b.getLong());
+
+	    // get crc , we check the whole thing for read errors...
+	    int crc = b.getShort() & 0xFFFF;
+	    int ccrc = CRC.crc16(Arrays.copyOf(data, b.position() - 2));
+	    Log.d(
+		TAG,
+		"Found CRC: " + Integer.toHexString(crc) + ", computed crc: "
+		    + Integer.toHexString(ccrc));
+	    if (crc != ccrc) {
+		throw new EmergencyDataParseException("CRC does not match");
+	    }
+
+	    // every byte after this is garbage.. dont read it
+
+	} catch (Exception e) {
+	    throw new EmergencyDataParseException(
+		"Tag is not well formatted, or data could not be read", e);
 	}
-
-	// read timestamp
-	update = new Date(b.getLong());
-
-	// get crc , we check the whole thing for read errors...
-	int crc = b.getShort() & 0xFFFF;
-	int ccrc = CRC.crc16(Arrays.copyOf(data, b.position() - 2));
-	Log.d(
-	    TAG,
-	    "Found CRC: " + Integer.toHexString(crc) + ", computed crc: "
-		+ Integer.toHexString(ccrc));
-	if (crc != ccrc) {
-	    throw new EmergencyDataParseException("CRC does not match");
-	}
-
-	// every byte after this is garbage.. dont read it
 
 	return this;
 

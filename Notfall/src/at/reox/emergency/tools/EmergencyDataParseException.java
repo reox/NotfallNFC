@@ -11,4 +11,7 @@ public class EmergencyDataParseException extends Exception {
 	super(string);
     }
 
+    public EmergencyDataParseException(String string, Exception e) {
+	super(string, e);
+    }
 }

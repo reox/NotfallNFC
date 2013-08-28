@@ -14,7 +14,7 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
     private static final String DATABASE_NAME = "emergeData";
 
     private Context mCtx;
@@ -26,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-	String query = "CREATE TABLE icd (number text, name text)";
+	String query = "CREATE TABLE icd (number text, name text); CREATE TABLE pzn (number text, name text)";
 
 	db.execSQL(query);
 	SQLiteStatement stmt = db.compileStatement("insert into icd values (?, ?)");
@@ -48,12 +48,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	} catch (IOException e) {
 	    Log.w("Database", "Error while filling ICD Values", e);
 	}
+
+	stmt = db.compileStatement("insert into pzn values (?, ?)");
+
+	try {
+	    InputStream input = mCtx.getAssets().open("pzn.csv");
+	    BufferedReader br = new BufferedReader(new InputStreamReader(input, "ISO-8859-1"));
+
+	    String line;
+	    while ((line = br.readLine()) != null) {
+		String[] pzn = line.split(";");
+		stmt.bindString(1, pzn[0].replaceAll("\"", ""));
+		stmt.bindString(2, pzn[1].replaceAll("\"", ""));
+		stmt.execute();
+	    }
+	} catch (IOException e) {
+
+	}
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
 	if (oldV != newV) {
-	    db.execSQL("DROP TABLE icd");
+	    db.execSQL("DROP TABLE icd; DROP TABLE pzn;");
 
 	    onCreate(db);
 	}
