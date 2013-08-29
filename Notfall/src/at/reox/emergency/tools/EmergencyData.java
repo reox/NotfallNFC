@@ -480,7 +480,7 @@ public class EmergencyData {
 			    "Number of Medication Elements missmatch");
 		    }
 		    for (int s = 0; s < (len / 4); s++) {
-			addPZN(new String(b.getInt() + ""));
+			addPZN(String.format("%07d", b.getInt()));
 		    }
 		    break;
 		case TYPE_DISEASE:

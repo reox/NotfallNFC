@@ -81,12 +81,21 @@ public class NfcUtils {
 
 	byte[] arrByte = new byte[3 + oneBlockSize];
 	// Flags
-	arrByte[0] = 0x42;
+
+	// The texas instruments (E00780...) needs special flag here, need to add 0x40
+	byte[] id = tag.getId();
+
+	if ((id[7] == 0xe0) && (id[6] == 0x07) && (id[5] == 0x80)) {
+	    arrByte[0] = 0x42;
+	} else {
+	    arrByte[0] = 0x02;
+	}
 	// Command
 	arrByte[1] = 0x21;
 
 	for (int i = 0; i < (data.length / oneBlockSize); i++) {
-	    // block number
+	    // block numberAction Processed.Document notification sent successfully!
+
 	    arrByte[2] = (byte) (i);
 	    // data
 	    System.arraycopy(data, i * oneBlockSize, arrByte, 3, oneBlockSize);
@@ -94,7 +103,9 @@ public class NfcUtils {
 	    Log.d(TAG, "Writing Data to block " + i + " [" + printHexString(arrByte) + "]");
 	    try {
 		// Result will probably never get anywhere ...
-		nfc.transceive(arrByte);
+		byte[] result = nfc.transceive(arrByte);
+
+		Log.d(TAG, Arrays.toString(result) + "Wrote Data to Tag");
 	    } catch (IOException e) {
 		if (e.getMessage().equals("Tag was lost.")) {
 		    // continue, because of Tag bug
