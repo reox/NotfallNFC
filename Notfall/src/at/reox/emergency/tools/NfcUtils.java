@@ -85,11 +85,12 @@ public class NfcUtils {
 	// The texas instruments (E00780...) needs special flag here, need to add 0x40
 	byte[] id = tag.getId();
 
-	if ((id[7] == 0xe0) && (id[6] == 0x07) && (id[5] == 0x80)) {
+	if (((id[7] & 0xFF) == 0xe0) && ((id[6] & 0xFF) == 0x07) && ((id[5] & 0xFF) == 0x80)) {
 	    arrByte[0] = 0x42;
 	} else {
 	    arrByte[0] = 0x02;
 	}
+	Log.d(TAG, "Set command to " + Integer.toHexString(arrByte[0]));
 	// Command
 	arrByte[1] = 0x21;
 
