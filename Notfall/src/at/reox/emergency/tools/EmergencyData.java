@@ -329,16 +329,17 @@ public class EmergencyData {
 	b.put(flags);
 
 	// add the name
-	b.putShort((short) name.length());
+	b.putShort((short) name.getBytes().length);
 	b.put(name.getBytes());
 
 	// add the surname
-	b.putShort((short) surname.length());
+	b.putShort((short) surname.getBytes().length);
 	b.put(surname.getBytes());
 
 	// Add the address
-	b.putShort((short) address.length());
+	b.putShort((short) address.getBytes().length);
 	b.put(address.getBytes());
+	Log.d(TAG, address.getBytes().length + " " + address);
 
 	// svnr is always nnnX DDMMYY.
 	// so we can use an 33 bit = 5 Byte value here!
@@ -347,6 +348,7 @@ public class EmergencyData {
 	    b.putInt(0x00);
 	} else {
 	    long number = Long.parseLong(svnr);
+	    System.out.println(number + " <<-- svnr");
 	    b.put((byte) ((number >> 32) & 0xFF)); // strip off first byte
 	    b.putInt((int) (number & 0xFFFFFFFF)); // get 32bit
 	}
@@ -362,6 +364,7 @@ public class EmergencyData {
 	b.put((byte) ((bloodgroup << 4) | (rhesus << 2) | kell));
 
 	// Extra Data
+	Log.d(TAG, "Extra Count: " + extracount);
 	b.putShort(extracount);
 
 	if (PZN.size() > 0) {
@@ -395,8 +398,9 @@ public class EmergencyData {
 	}
 
 	if (extra.length() > 0) {
+	    Log.d("foobar", "Extra Written..");
 	    b.put(TYPE_EXTRA);
-	    b.putShort((short) extra.length());
+	    b.putShort((short) extra.getBytes().length);
 	    b.put(extra.getBytes());
 	}
 
@@ -426,6 +430,8 @@ public class EmergencyData {
 	    sex = flags & 0x1;
 	    organdonor = (flags & (0x1 << 1)) == (0x1 << 1);
 
+	    Log.d(TAG, "Flags: " + sex + " " + organdonor);
+
 	    // parse the name
 	    int n = b.getShort() & 0xFFFF;
 	    byte[] t = new byte[n];
@@ -433,6 +439,7 @@ public class EmergencyData {
 		t[s] = b.get();
 	    }
 	    name = new String(t);
+	    Log.d(TAG, "Name: " + name);
 
 	    // parse the surname
 	    n = b.getShort() & 0xFFFF;
@@ -441,18 +448,25 @@ public class EmergencyData {
 		t[s] = b.get();
 	    }
 	    surname = new String(t);
+	    Log.d(TAG, "Surname: " + surname);
 
 	    // parse the address
 	    n = b.getShort() & 0xFFFF;
+	    System.out.println(n);
 	    t = new byte[n];
 	    for (int s = 0; s < n; s++) {
 		t[s] = b.get();
 	    }
+	    System.out.println(Arrays.toString(t));
 	    address = new String(t);
+	    Log.d(TAG, "Address" + address);
 
 	    // get the svnr
-	    long number = (b.get() << 32) | b.getInt();
+	    long msb = b.get() & 0xFF;
+	    long lsb = b.getInt() & 0xFFFFFFFF;
+	    long number = ((msb << 32)) | ((lsb));
 	    svnr = new String(number + "");
+	    Log.d(TAG, "SVNR: " + svnr);
 
 	    // get the blood group
 	    byte group = b.get();
@@ -461,13 +475,15 @@ public class EmergencyData {
 	    kell = group & 0x3;
 
 	    // now we have some extra data here...
-	    int extraCount = b.getShort() & 0xFFFF;
+	    int extraCount = ((b.get() & 0xFF) << 8) | (b.get() & 0xFF);
+	    Log.d(TAG, "Extra Count: " + extraCount);
 	    for (int i = 0; i < extraCount; i++) { // EXTRA COUNT Field
 		byte ident = b.get();
-		int len = b.getShort() & 0xFFFF;
+		int len = ((b.get() & 0xFF) << 8) | (b.get() & 0xFF);
 
 		switch (ident) {
 		case TYPE_EXTRA:
+		    Log.d("foobar", "Extra len: " + len);
 		    t = new byte[len];
 		    for (int s = 0; s < len; s++) {
 			t[s] = b.get();
@@ -507,6 +523,7 @@ public class EmergencyData {
 		    }
 		    break;
 		default: // we need this if we find something that we dont know..
+		    Log.d(TAG, "Found unusual content, skipping " + len + " bytes...");
 		    for (int s = 0; s < len; s++) {
 			b.get();
 		    }
@@ -530,6 +547,8 @@ public class EmergencyData {
 	    // every byte after this is garbage.. dont read it
 
 	} catch (Exception e) {
+	    Log.d("foobar", "bla " + e.getMessage());
+	    e.printStackTrace();
 	    throw new EmergencyDataParseException(
 		"Tag is not well formatted, or data could not be read", e);
 	}
